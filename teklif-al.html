@@ -1,0 +1,1102 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teklif Oluştur - World Bilişim | Ücretsiz Teklif Alın</title>
+    <meta name="description" content="World Bilişim'den ücretsiz teklif alın. Web tasarım, SEO, dijital pazarlama ve diğer dijital hizmetler için profesyonel teklifler.">
+    <meta name="keywords" content="teklif al, ücretsiz teklif, web tasarım teklifi, SEO teklifi, dijital pazarlama teklifi, Bodrum">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="animated-bg"></div>
+
+    <!-- Floating Particles -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Loading Screen -->
+    <div class="loading" id="loading">
+        <div class="loading-spinner"></div>
+    </div>
+
+    <!-- Top Header Bar -->
+    <div class="top-header">
+        <div class="container">
+            <div class="top-header-content">
+                <div class="top-header-left">
+                    <a href="mailto:info@worldbilisim.com" class="top-header-item">
+                        <i class="fas fa-envelope"></i>
+                        info@worldbilisim.com
+                    </a>
+                    <a href="tel:+905309429478" class="top-header-item">
+                        <i class="fas fa-phone"></i>
+                        +90 0530 942 9478
+                    </a>
+                    <div class="top-header-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        Müskebi, Düzalan Cd. No:69, 48400 Bodrum/Muğla
+                    </div>
+                </div>
+                <div class="top-header-right">
+                    <button id="" class="theme-toggle" aria-label="Temayı Değiştir">
+                        <i class="fas fa-sun"></i>
+                    </button>
+                    <a href="#" class="customer-panel-link">
+                        <i class="fas fa-user-shield"></i>
+                        Müşteri Paneli
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-globe"></i>
+                </div>
+                World Bilişim
+            </div>
+            <button class="menu-toggle" id="menuToggle" aria-label="Menüyü Aç/Kapat">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Ana Sayfa</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0);" id="kurumsalMenu" data-href="hakkimizda.html">Kurumsal <i class="fas fa-chevron-down" style="font-size: 0.8em;"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                        <li><a href="hakkimizda.html#tarihce">Tarihçemiz</a></li>
+                        <li><a href="">Basında Biz</a></li>
+                        <li><a href="politikalar.html">Politikalarımız</a></li>
+                    </ul>
+                </li>
+                <li><a href="hizmetler.html">Hizmetlerimiz</a></li>
+                <li><a href="referanslar.html">Portföyümüz</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="iletisim.html">İletişim</a></li>
+                <li><a href="teklif-al.html" class="cta-nav">Ücretsiz Teklif</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Quote Hero Section -->
+        <section class="about-hero">
+            <div class="container">
+                <div class="about-hero-content">
+                    <div class="about-hero-text">
+                        <span class="section-badge">Ücretsiz Teklif</span>
+                        <h1 class="hero-title">Teklif Oluştur</h1>
+                        <p class="hero-subtitle">
+                            Dijital projeleriniz için profesyonel teklif alın. Birkaç adımda ihtiyaçlarınızı belirtin, size özel çözümler sunalım.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quote Form Section -->
+        <section class="about-content-section">
+            <div class="container">
+                <div class="quote-form-container">
+                    <!-- Progress Indicator -->
+                    <div class="quote-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="progressFill"></div>
+                        </div>
+                        <div class="progress-steps">
+                            <div class="progress-step active" data-step="1">
+                                <div class="step-number">1</div>
+                                <span class="step-title">Hizmet Seçimi</span>
+                            </div>
+                            <div class="progress-step" data-step="2">
+                                <div class="step-number">2</div>
+                                <span class="step-title">Önceki Deneyim</span>
+                            </div>
+                            <div class="progress-step" data-step="3">
+                                <div class="step-number">3</div>
+                                <span class="step-title">Proje Detayları</span>
+                            </div>
+                            <div class="progress-step" data-step="4">
+                                <div class="step-number">4</div>
+                                <span class="step-title">Başvuru Bilgileri</span>
+                            </div>
+                            <div class="progress-step" data-step="5">
+                                <div class="step-number">5</div>
+                                <span class="step-title">Teklif Özeti</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Multi-Step Form -->
+                    <form class="quote-form" id="quoteForm">
+                        <!-- Step 1: Service Selection -->
+                        <div class="form-step active" id="step1">
+                            <div class="step-header">
+                                <h2>Hangi Hizmeti İstiyorsunuz?</h2>
+                                <p>Size en uygun hizmeti seçin</p>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="service">Hizmet Türü *</label>
+                                <select id="service" name="service" required>
+                                    <option value="">Hizmet Seçiniz</option>
+                                    <!-- Services will be loaded dynamically -->
+                                </select>
+                            </div>
+
+                            <div class="form-actions">
+                                <button type="button" class="btn btn-primary" onclick="nextStep()">
+                                    Devam Et <i class="fas fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Step 2: Previous Experience -->
+                        <div class="form-step" id="step2">
+                            <div class="step-header">
+                                <h2>Daha Önce Hizmet Aldınız mı?</h2>
+                                <p>Önceki deneyimlerinizi paylaşın</p>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label>Daha önce benzer hizmet aldınız mı? *</label>
+                                <div class="radio-group">
+                                    <label class="radio-option">
+                                        <input type="radio" name="previousService" value="evet" required>
+                                        <span class="radio-custom"></span>
+                                        Evet
+                                    </label>
+                                    <label class="radio-option">
+                                        <input type="radio" name="previousService" value="hayir" required>
+                                        <span class="radio-custom"></span>
+                                        Hayır
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="conditional-fields" id="previousServiceFields" style="display: none;">
+                                <div class="form-group">
+                                    <label for="previousCompany">Hangi Firma?</label>
+                                    <input type="text" id="previousCompany" name="previousCompany" placeholder="Firma adını yazın">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="previousServiceType">Ne Hizmeti Aldınız?</label>
+                                    <input type="text" id="previousServiceType" name="previousServiceType" placeholder="Aldığınız hizmet türü">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="previousResult">Nasıl Sonuçlandı?</label>
+                                    <textarea id="previousResult" name="previousResult" rows="4" placeholder="Deneyiminizi kısaca anlatın"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="form-actions">
+                                <button type="button" class="btn btn-secondary" onclick="prevStep()">
+                                    <i class="fas fa-arrow-left"></i> Geri
+                                </button>
+                                <button type="button" class="btn btn-primary" onclick="nextStep()">
+                                    Devam Et <i class="fas fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Step 3: Project Details -->
+                        <div class="form-step" id="step3">
+                            <div class="step-header">
+                                <h2>Proje Detayları</h2>
+                                <p>Seçtiğiniz hizmete göre gerekli bilgileri doldurun</p>
+                            </div>
+                            
+                            <div class="dynamic-fields" id="dynamicFields">
+                                <!-- Fields will be loaded based on selected service -->
+                            </div>
+
+                            <div class="form-group">
+                                <label for="projectDescription">Proje Açıklaması</label>
+                                <textarea id="projectDescription" name="projectDescription" rows="4" placeholder="Projeniz hakkında detaylı bilgi verin"></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="budget">Bütçe Aralığı</label>
+                                <select id="budget" name="budget">
+                                    <option value="">Bütçe Seçiniz</option>
+                                    <option value="1000-5000">1.000 - 5.000 TL</option>
+                                    <option value="5000-15000">5.000 - 15.000 TL</option>
+                                    <option value="15000-50000">15.000 - 50.000 TL</option>
+                                    <option value="50000+">50.000 TL+</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="timeline">Teslim Süresi</label>
+                                <select id="timeline" name="timeline">
+                                    <option value="">Süre Seçiniz</option>
+                                    <option value="1-2-weeks">1-2 Hafta</option>
+                                    <option value="1-month">1 Ay</option>
+                                    <option value="2-3-months">2-3 Ay</option>
+                                    <option value="3+months">3+ Ay</option>
+                                </select>
+                            </div>
+
+                            <div class="form-actions">
+                                <button type="button" class="btn btn-secondary" onclick="prevStep()">
+                                    <i class="fas fa-arrow-left"></i> Geri
+                                </button>
+                                <button type="button" class="btn btn-primary" onclick="nextStep()">
+                                    Devam Et <i class="fas fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Step 4: Application Type -->
+                        <div class="form-step" id="step4">
+                            <div class="step-header">
+                                <h2>Başvuru Türü</h2>
+                                <p>Kurumsal mı yoksa bireysel mi?</p>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label>Başvuru Türü *</label>
+                                <div class="radio-group">
+                                    <label class="radio-option">
+                                        <input type="radio" name="applicationType" value="kurumsal" required>
+                                        <span class="radio-custom"></span>
+                                        Kurumsal
+                                    </label>
+                                    <label class="radio-option">
+                                        <input type="radio" name="applicationType" value="bireysel" required>
+                                        <span class="radio-custom"></span>
+                                        Bireysel
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!-- Corporate Fields -->
+                            <div class="conditional-fields" id="corporateFields" style="display: none;">
+                                <div class="form-group">
+                                    <label for="companyName">Firma Adı *</label>
+                                    <input type="text" id="companyName" name="companyName" placeholder="Firma adınızı yazın">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="taxOffice">Vergi Dairesi</label>
+                                    <input type="text" id="taxOffice" name="taxOffice" placeholder="Vergi dairesi">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="taxNumber">Vergi Numarası</label>
+                                    <input type="text" id="taxNumber" name="taxNumber" placeholder="Vergi numarası">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="companyAddress">Adres</label>
+                                    <textarea id="companyAddress" name="companyAddress" rows="3" placeholder="Firma adresi"></textarea>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="contactPerson">İlgili Kişi Adı *</label>
+                                    <input type="text" id="contactPerson" name="contactPerson" placeholder="İlgili kişi adı">
+                                </div>
+                            </div>
+
+                            <!-- Individual Fields -->
+                            <div class="conditional-fields" id="individualFields" style="display: none;">
+                                <div class="form-group">
+                                    <label for="fullName">Ad Soyad *</label>
+                                    <input type="text" id="fullName" name="fullName" placeholder="Ad ve soyadınızı yazın">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="individualAddress">Adres</label>
+                                    <textarea id="individualAddress" name="individualAddress" rows="3" placeholder="Adresiniz"></textarea>
+                                </div>
+                            </div>
+
+                            <!-- Common Fields -->
+                            <div class="form-group">
+                                <label for="email">E-posta Adresi *</label>
+                                <input type="email" id="email" name="email" placeholder="E-posta adresiniz" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Telefon Numarası *</label>
+                                <input type="tel" id="phone" name="phone" placeholder="Telefon numaranız" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="expectedGain">Beklenen Hizmet Kazancı</label>
+                                <textarea id="expectedGain" name="expectedGain" rows="4" placeholder="Bu hizmetten ne bekliyorsunuz? Hedeflerinizi kısaca anlatın"></textarea>
+                            </div>
+
+                            <div class="form-actions">
+                                <button type="button" class="btn btn-secondary" onclick="prevStep()">
+                                    <i class="fas fa-arrow-left"></i> Geri
+                                </button>
+                                <button type="button" class="btn btn-primary" onclick="nextStep()">
+                                    Devam Et <i class="fas fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Step 5: Summary -->
+                        <div class="form-step" id="step5">
+                            <div class="step-header">
+                                <h2>Teklif Özeti</h2>
+                                <p>Girdiğiniz bilgileri kontrol edin</p>
+                            </div>
+                            
+                            <div class="quote-summary" id="quoteSummary">
+                                <!-- Summary will be generated dynamically -->
+                            </div>
+
+                            <div class="form-group">
+                                <label class="checkbox-option">
+                                    <input type="checkbox" id="termsAccepted" name="termsAccepted" required>
+                                    <span class="checkbox-custom"></span>
+                                    <span class="checkbox-text">
+                                        <a href="politikalar.html#gizlilik" target="_blank">Gizlilik Politikası</a> ve 
+                                        <a href="politikalar.html#kullanim-sartlari" target="_blank">Kullanım Şartları</a>'nı okudum ve kabul ediyorum *
+                                    </span>
+                                </label>
+                            </div>
+
+                            <div class="form-actions">
+                                <button type="button" class="btn btn-secondary" onclick="prevStep()">
+                                    <i class="fas fa-arrow-left"></i> Geri
+                                </button>
+                                <button type="submit" class="btn btn-primary">
+                                    <i class="fas fa-paper-plane"></i> Teklifi Oluştur
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="footer-logo-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <div class="footer-logo-text">World Bilişim</div>
+                    </div>
+                    <p>
+                        Bodrum'da dijital pazarlama, web tasarım ve SEO hizmetleri sunan lider ajans. Modern teknolojiler ve yenilikçi çözümlerle markanızı dijital world'da zirveye taşıyoruz.
+                    </p>
+                    <div class="social-links">
+                        <a href="https://facebook.com/worldbil" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/worldbil" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://instagram.com/worldbil" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://linkedin.com/company/worldbil" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://youtube.com/@worldbil" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="https://wa.me/905309429478" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Hizmetlerimiz</h3>
+                    <p><a href="hizmetler.html">Web Tasarım</a></p>
+                    <p><a href="hizmetler.html">SEO Hizmetleri</a></p>
+                    <p><a href="hizmetler.html">E-Ticaret Çözümleri</a></p>
+                    <p><a href="hizmetler.html">Google Ads</a></p>
+                    <p><a href="hizmetler.html">Sosyal Medya Yönetimi</a></p>
+                    <p><a href="hizmetler.html">Dijital Pazarlama</a></p>
+                </div>
+                <div class="footer-section">
+                    <h3>Kurumsal</h3>
+                    <p><a href="referanslar.html">Portföyümüz</a></p>
+                    <p><a href="hakkimizda.html">Hakkımızda</a></p>
+                    <p><a href="hakkimizda.html#tarihce">Tarihçemiz</a></p>
+                    <p><a href="basin-kiti.html">Basında Biz</a></p>
+                    <p><a href="politikalar.html">Politikalarımız</a></p>
+                    <p><a href="blog.html">Blog</a></p>
+                    <p><a href="iletisim.html">İletişim</a></p>
+                </div>
+                <div class="footer-section">
+                    <h3>İletişim Bilgileri</h3>
+                    <p><i class="fas fa-map-marker-alt" style="margin-right: 8px; color: var(--color-primary);"></i> Müskebi, Düzalan Cd. No:69, 48400 Bodrum/Muğla</p>
+                    <p><i class="fas fa-phone" style="margin-right: 8px; color: var(--color-primary);"></i> +90 0530 942 9478</p>
+                    <p>
+                        <i class="fas fa-envelope" style="margin-right: 8px; color: var(--color-primary);"></i> info@worldbilisim.com<br />
+                        iletisim@worldbilisim.com
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Chat Widget -->
+    <div class="chat-widget">
+        <div class="chat-menu" id="chatMenu">
+            <a href="https://wa.me/905309429478" class="chat-option" target="_blank">
+                <div class="chat-option-icon">
+                    <i class="fab fa-whatsapp"></i>
+                </div>
+                <div class="chat-option-content">
+                    <h4>WhatsApp</h4>
+                    <p>Hızlı destek için</p>
+                </div>
+            </a>
+
+            <a href="tel:+905309429478" class="chat-option">
+                <div class="chat-option-icon">
+                    <i class="fas fa-phone"></i>
+                </div>
+                <div class="chat-option-content">
+                    <h4>Telefon Araması</h4>
+                    <p>Doğrudan görüşme</p>
+                </div>
+            </a>
+
+            <a href="#" class="chat-option" id="chatbotOption">
+                <div class="chat-option-icon">
+                    <i class="fas fa-comments"></i>
+                </div>
+                <div class="chat-option-content">
+                    <h4>Canlı Destek</h4>
+                    <p>Online danışmanlık</p>
+                </div>
+            </a>
+
+            <!-- ✅ Tema Değiştir butonu (a değil, button) -->
+            <div class="chat-option theme-option">
+                <div class="chat-option-icon">
+                    <i class="fas fa-sun"></i>
+                </div>
+                <div class="chat-option-content">
+                    <h4>Tema Değiştir</h4>
+                    <p>Açık / Koyu mod</p>
+                </div>
+                                    <button id="themeToggle" class="theme-toggle" aria-label="Temayı Değiştir"></button>
+            </div>
+        </div>
+
+        <button class="chat-toggle" id="chatToggle">
+            <i class="fas fa-comments"></i>
+        </button>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <script>
+        // Services data - will be loaded from hizmetler.html
+        const services = [
+            { id: 'web-design', name: 'Web Tasarım', category: 'web-design' },
+            { id: 'wordpress-development', name: 'WordPress Geliştirme', category: 'web-design' },
+            { id: 'sectoral-websites', name: 'Sektörel Hazır Siteler', category: 'web-design' },
+            { id: 'app-development', name: 'Uygulama Geliştirme', category: 'web-design' },
+            { id: 'seo-services', name: 'SEO Hizmetleri', category: 'digital-marketing' },
+            { id: 'local-seo', name: 'Lokal SEO', category: 'digital-marketing' },
+            { id: 'google-ads', name: 'Google & Facebook Ads', category: 'digital-marketing' },
+            { id: 'social-media', name: 'Sosyal Medya Yönetimi', category: 'digital-marketing' },
+            { id: 'email-marketing', name: 'E-mail Pazarlama', category: 'digital-marketing' },
+            { id: 'graphic-design', name: 'Grafik Tasarım', category: 'digital-marketing' },
+            { id: 'logo-design', name: 'Logo Tasarım', category: 'branding' },
+            { id: 'corporate-identity', name: 'Kurumsal Kimlik', category: 'branding' },
+            { id: 'brand-awareness', name: 'Marka Bilinirliği', category: 'branding' },
+            { id: 'catalog-design', name: 'Katalog Tasarımı', category: 'branding' },
+            { id: 'domain-hosting', name: 'Domain & Hosting', category: 'technical' },
+            { id: 'performance-optimization', name: 'Performans Optimizasyonu', category: 'technical' },
+            { id: 'security-tests', name: 'Güvenlik Testleri', category: 'technical' },
+            { id: 'vds-vps', name: 'VDS/VPS Hizmetleri', category: 'technical' },
+            { id: 'ddos-protection', name: 'DDoS Koruması', category: 'technical' },
+            { id: 'ecommerce-site', name: 'E-ticaret Sitesi', category: 'e-commerce' },
+            { id: 'virtual-pos', name: 'Sanal POS Entegrasyonu', category: 'e-commerce' },
+            { id: 'ecommerce-consulting', name: 'E-ticaret Danışmanlığı', category: 'e-commerce' },
+            { id: 'ai-chatbot', name: 'AI Chatbot', category: 'automation-ai' },
+            { id: 'online-appointment', name: 'Online Randevu Sistemi', category: 'automation-ai' }
+        ];
+
+        // Service-specific fields
+        const serviceFields = {
+            'web-design': [
+                { type: 'url', name: 'siteUrl', label: 'Mevcut Site URL (varsa)', placeholder: 'https://example.com' },
+                { type: 'text', name: 'siteType', label: 'Site Türü', placeholder: 'Kurumsal, E-ticaret, Blog vb.' },
+                { type: 'number', name: 'pageCount', label: 'Tahmini Sayfa Sayısı', placeholder: '10' }
+            ],
+            'wordpress-development': [
+                { type: 'url', name: 'siteUrl', label: 'Mevcut Site URL (varsa)', placeholder: 'https://example.com' },
+                { type: 'text', name: 'themeType', label: 'Tema Türü', placeholder: 'Özel tema, Hazır tema, E-ticaret' },
+                { type: 'text', name: 'plugins', label: 'İstenen Eklentiler', placeholder: 'WooCommerce, Contact Form 7, Yoast SEO' }
+            ],
+            'seo-services': [
+                { type: 'url', name: 'targetUrl', label: 'Hedef Site URL', placeholder: 'https://example.com', required: true },
+                { type: 'text', name: 'targetKeywords', label: 'Hedef Anahtar Kelimeler', placeholder: 'anahtar kelime 1, anahtar kelime 2' },
+                { type: 'text', name: 'targetLocation', label: 'Hedef Lokasyon', placeholder: 'Bodrum, İstanbul, Türkiye' }
+            ],
+            'local-seo': [
+                { type: 'url', name: 'targetUrl', label: 'Hedef Site URL', placeholder: 'https://example.com', required: true },
+                { type: 'text', name: 'businessName', label: 'İşletme Adı', placeholder: 'İşletme adınız' },
+                { type: 'text', name: 'businessAddress', label: 'İşletme Adresi', placeholder: 'Tam adres' },
+                { type: 'text', name: 'businessCategory', label: 'İşletme Kategorisi', placeholder: 'Restoran, Otel, Mağaza vb.' }
+            ],
+            'ecommerce-site': [
+                { type: 'number', name: 'productCount', label: 'Tahmini Ürün Sayısı', placeholder: '100' },
+                { type: 'text', name: 'paymentMethods', label: 'İstenen Ödeme Yöntemleri', placeholder: 'Kredi kartı, Havale, Kapıda ödeme' },
+                { type: 'text', name: 'shippingMethods', label: 'Kargo Yöntemleri', placeholder: 'Kargo, PTT, Yurtiçi' }
+            ],
+            'app-development': [
+                { type: 'text', name: 'platform', label: 'Platform', placeholder: 'iOS, Android, Cross-platform' },
+                { type: 'text', name: 'appType', label: 'Uygulama Türü', placeholder: 'E-ticaret, Sosyal medya, İş uygulaması' },
+                { type: 'number', name: 'featureCount', label: 'Tahmini Özellik Sayısı', placeholder: '15' }
+            ],
+            'social-media': [
+                { type: 'text', name: 'platforms', label: 'Hedef Platformlar', placeholder: 'Instagram, Facebook, LinkedIn, Twitter' },
+                { type: 'number', name: 'postFrequency', label: 'Aylık Post Sayısı', placeholder: '30' },
+                { type: 'text', name: 'contentType', label: 'İçerik Türü', placeholder: 'Görsel, Video, Story, Reel' }
+            ],
+            'google-ads': [
+                { type: 'url', name: 'targetUrl', label: 'Hedef Site URL', placeholder: 'https://example.com', required: true },
+                { type: 'text', name: 'targetKeywords', label: 'Hedef Anahtar Kelimeler', placeholder: 'anahtar kelime 1, anahtar kelime 2' },
+                { type: 'number', name: 'monthlyBudget', label: 'Aylık Bütçe (TL)', placeholder: '5000' }
+            ]
+        };
+
+        let currentStep = 1;
+        const totalSteps = 5;
+
+        // Initialize the form
+        document.addEventListener('DOMContentLoaded', function() {
+            loadServices();
+            updateProgress();
+            setupEventListeners();
+            
+            // Initialize required attributes for the first step
+            const firstStep = document.getElementById('step1');
+            if (firstStep) {
+                addRequiredToStep(firstStep);
+            }
+        });
+
+        // Load services into dropdown
+        function loadServices() {
+            const serviceSelect = document.getElementById('service');
+            if (!serviceSelect) return;
+
+            // Clear existing options except the first one
+            serviceSelect.innerHTML = '<option value="">Hizmet Seçiniz</option>';
+
+            // Add services
+            services.forEach(service => {
+                const option = document.createElement('option');
+                option.value = service.id;
+                option.textContent = service.name;
+                serviceSelect.appendChild(option);
+            });
+        }
+
+        // Setup event listeners
+        function setupEventListeners() {
+            // Previous service radio buttons
+            const previousServiceRadios = document.querySelectorAll('input[name="previousService"]');
+            previousServiceRadios.forEach(radio => {
+                radio.addEventListener('change', function() {
+                    const fields = document.getElementById('previousServiceFields');
+                    if (fields) {
+                        if (this.value === 'evet') {
+                            fields.style.display = 'block';
+                        } else {
+                            fields.style.display = 'none';
+                            // Remove required from fields when hidden
+                            const hiddenFields = fields.querySelectorAll('[required]');
+                            hiddenFields.forEach(field => field.removeAttribute('required'));
+                        }
+                    }
+                });
+            });
+
+            // Application type radio buttons
+            const applicationTypeRadios = document.querySelectorAll('input[name="applicationType"]');
+            applicationTypeRadios.forEach(radio => {
+                radio.addEventListener('change', function() {
+                    const corporateFields = document.getElementById('corporateFields');
+                    const individualFields = document.getElementById('individualFields');
+                    
+                    if (this.value === 'kurumsal') {
+                        if (corporateFields) {
+                            corporateFields.style.display = 'block';
+                            // Add required to corporate fields
+                            const companyNameField = corporateFields.querySelector('#companyName');
+                            const contactPersonField = corporateFields.querySelector('#contactPerson');
+                            if (companyNameField) companyNameField.setAttribute('required', 'required');
+                            if (contactPersonField) contactPersonField.setAttribute('required', 'required');
+                        }
+                        if (individualFields) {
+                            individualFields.style.display = 'none';
+                            // Remove required from individual fields
+                            const fullNameField = individualFields.querySelector('#fullName');
+                            if (fullNameField) fullNameField.removeAttribute('required');
+                        }
+                    } else {
+                        if (corporateFields) {
+                            corporateFields.style.display = 'none';
+                            // Remove required from corporate fields
+                            const companyNameField = corporateFields.querySelector('#companyName');
+                            const contactPersonField = corporateFields.querySelector('#contactPerson');
+                            if (companyNameField) companyNameField.removeAttribute('required');
+                            if (contactPersonField) contactPersonField.removeAttribute('required');
+                        }
+                        if (individualFields) {
+                            individualFields.style.display = 'block';
+                            // Add required to individual fields
+                            const fullNameField = individualFields.querySelector('#fullName');
+                            if (fullNameField) fullNameField.setAttribute('required', 'required');
+                        }
+                    }
+                });
+            });
+
+            // Service selection change
+            const serviceSelect = document.getElementById('service');
+            if (serviceSelect) {
+                serviceSelect.addEventListener('change', function() {
+                    loadDynamicFields(this.value);
+                });
+            }
+
+            // Form submission
+            const form = document.getElementById('quoteForm');
+            if (form) {
+                form.addEventListener('submit', handleFormSubmission);
+            }
+        }
+
+        // Load dynamic fields based on selected service
+        function loadDynamicFields(serviceId) {
+            const dynamicFields = document.getElementById('dynamicFields');
+            if (!dynamicFields) return;
+
+            dynamicFields.innerHTML = '';
+
+            if (serviceFields[serviceId]) {
+                serviceFields[serviceId].forEach(field => {
+                    const fieldGroup = document.createElement('div');
+                    fieldGroup.className = 'form-group';
+
+                    const label = document.createElement('label');
+                    label.htmlFor = field.name;
+                    label.textContent = field.label;
+                    if (field.required) {
+                        label.innerHTML += ' *';
+                    }
+
+                    let input;
+                    if (field.type === 'textarea') {
+                        input = document.createElement('textarea');
+                        input.rows = 4;
+                    } else {
+                        input = document.createElement('input');
+                        input.type = field.type;
+                    }
+
+                    input.id = field.name;
+                    input.name = field.name;
+                    input.placeholder = field.placeholder;
+                    if (field.required) {
+                        input.setAttribute('required', 'required');
+                    }
+
+                    fieldGroup.appendChild(label);
+                    fieldGroup.appendChild(input);
+                    dynamicFields.appendChild(fieldGroup);
+                });
+            }
+        }
+
+        // Navigation functions
+        function nextStep() {
+            if (validateCurrentStep()) {
+                if (currentStep < totalSteps) {
+                    const currentStepElement = document.getElementById(`step${currentStep}`);
+                    const nextStepElement = document.getElementById(`step${currentStep + 1}`);
+                    
+                    if (currentStepElement) {
+                        currentStepElement.classList.remove('active');
+                        // Remove required attributes from current step
+                        removeRequiredFromStep(currentStepElement);
+                    }
+                    
+                    currentStep++;
+                    
+                    if (nextStepElement) {
+                        nextStepElement.classList.add('active');
+                        // Add required attributes to new step
+                        addRequiredToStep(nextStepElement);
+                    }
+                    
+                    updateProgress();
+                }
+            }
+        }
+
+        function prevStep() {
+            if (currentStep > 1) {
+                const currentStepElement = document.getElementById(`step${currentStep}`);
+                const prevStepElement = document.getElementById(`step${currentStep - 1}`);
+                
+                if (currentStepElement) {
+                    currentStepElement.classList.remove('active');
+                    // Remove required attributes from current step
+                    removeRequiredFromStep(currentStepElement);
+                }
+                
+                currentStep--;
+                
+                if (prevStepElement) {
+                    prevStepElement.classList.add('active');
+                    // Add required attributes to new step
+                    addRequiredToStep(prevStepElement);
+                }
+                
+                updateProgress();
+            }
+        }
+
+        // Remove required attributes from a step
+        function removeRequiredFromStep(stepElement) {
+            if (!stepElement) return;
+            
+            const requiredFields = stepElement.querySelectorAll('[required]');
+            requiredFields.forEach(field => {
+                field.removeAttribute('required');
+            });
+        }
+
+        // Add required attributes to a step
+        function addRequiredToStep(stepElement) {
+            if (!stepElement) return;
+            
+            // Add required to fields that should be required
+            const serviceSelect = stepElement.querySelector('#service');
+            if (serviceSelect) {
+                serviceSelect.setAttribute('required', 'required');
+            }
+            
+            const previousServiceRadios = stepElement.querySelectorAll('input[name="previousService"]');
+            if (previousServiceRadios.length > 0) {
+                previousServiceRadios.forEach(radio => {
+                    radio.setAttribute('required', 'required');
+                });
+            }
+            
+            const applicationTypeRadios = stepElement.querySelectorAll('input[name="applicationType"]');
+            if (applicationTypeRadios.length > 0) {
+                applicationTypeRadios.forEach(radio => {
+                    radio.setAttribute('required', 'required');
+                });
+            }
+            
+            const emailField = stepElement.querySelector('#email');
+            if (emailField) {
+                emailField.setAttribute('required', 'required');
+            }
+            
+            const phoneField = stepElement.querySelector('#phone');
+            if (phoneField) {
+                phoneField.setAttribute('required', 'required');
+            }
+            
+            // Handle conditional fields - only add required if they're visible
+            const corporateFields = stepElement.querySelector('#corporateFields');
+            if (corporateFields && corporateFields.style.display !== 'none') {
+                const companyNameField = stepElement.querySelector('#companyName');
+                if (companyNameField) {
+                    companyNameField.setAttribute('required', 'required');
+                }
+                
+                const contactPersonField = stepElement.querySelector('#contactPerson');
+                if (contactPersonField) {
+                    contactPersonField.setAttribute('required', 'required');
+                }
+            }
+            
+            const individualFields = stepElement.querySelector('#individualFields');
+            if (individualFields && individualFields.style.display !== 'none') {
+                const fullNameField = stepElement.querySelector('#fullName');
+                if (fullNameField) {
+                    fullNameField.setAttribute('required', 'required');
+                }
+            }
+            
+            const termsAcceptedField = stepElement.querySelector('#termsAccepted');
+            if (termsAcceptedField) {
+                termsAcceptedField.setAttribute('required', 'required');
+            }
+        }
+
+        // Validate current step
+        function validateCurrentStep() {
+            const currentStepElement = document.getElementById(`step${currentStep}`);
+            if (!currentStepElement) return false;
+            
+            const requiredFields = currentStepElement.querySelectorAll('[required]');
+            
+            for (let field of requiredFields) {
+                if (!field.value.trim()) {
+                    field.focus();
+                    showError('Lütfen tüm zorunlu alanları doldurun.');
+                    return false;
+                }
+            }
+
+            // Step-specific validation
+            if (currentStep === 1) {
+                const service = document.getElementById('service');
+                if (service && !service.value) {
+                    showError('Lütfen bir hizmet seçin.');
+                    return false;
+                }
+            }
+
+            return true;
+        }
+
+        // Update progress bar and steps
+        function updateProgress() {
+            const progressFill = document.getElementById('progressFill');
+            const progressSteps = document.querySelectorAll('.progress-step');
+            
+            if (progressFill) {
+                const progress = (currentStep / totalSteps) * 100;
+                progressFill.style.width = progress + '%';
+            }
+
+            if (progressSteps.length > 0) {
+                progressSteps.forEach((step, index) => {
+                    const stepNumber = index + 1;
+                    if (stepNumber <= currentStep) {
+                        step.classList.add('active');
+                    } else {
+                        step.classList.remove('active');
+                    }
+                });
+            }
+
+            // Update step 5 summary if we're on step 5
+            if (currentStep === 5) {
+                generateSummary();
+            }
+        }
+
+        // Generate summary for step 5
+        function generateSummary() {
+            const summary = document.getElementById('quoteSummary');
+            if (!summary) return;
+
+            let summaryHTML = '<div class="summary-section">';
+
+            // Service
+            const service = document.getElementById('service');
+            if (service && service.value) {
+                const serviceName = service.options[service.selectedIndex]?.text || service.value;
+                summaryHTML += `
+                    <div class="summary-item">
+                        <strong>Seçilen Hizmet:</strong> ${serviceName}
+                    </div>
+                `;
+            }
+
+            // Previous experience
+            const previousService = document.querySelector('input[name="previousService"]:checked');
+            if (previousService) {
+                summaryHTML += `
+                    <div class="summary-item">
+                        <strong>Önceki Deneyim:</strong> ${previousService.value === 'evet' ? 'Evet' : 'Hayır'}
+                    </div>
+                `;
+                
+                if (previousService.value === 'evet') {
+                    const company = document.getElementById('previousCompany');
+                    const serviceType = document.getElementById('previousServiceType');
+                    if (company && company.value) summaryHTML += `<div class="summary-item"><strong>Önceki Firma:</strong> ${company.value}</div>`;
+                    if (serviceType && serviceType.value) summaryHTML += `<div class="summary-item"><strong>Önceki Hizmet:</strong> ${serviceType.value}</div>`;
+                }
+            }
+
+            // Application type
+            const applicationType = document.querySelector('input[name="applicationType"]:checked');
+            if (applicationType) {
+                summaryHTML += `
+                    <div class="summary-item">
+                        <strong>Başvuru Türü:</strong> ${applicationType.value === 'kurumsal' ? 'Kurumsal' : 'Bireysel'}
+                    </div>
+                `;
+
+                if (applicationType.value === 'kurumsal') {
+                    const companyName = document.getElementById('companyName');
+                    const contactPerson = document.getElementById('contactPerson');
+                    if (companyName && companyName.value) summaryHTML += `<div class="summary-item"><strong>Firma Adı:</strong> ${companyName.value}</div>`;
+                    if (contactPerson && contactPerson.value) summaryHTML += `<div class="summary-item"><strong>İlgili Kişi:</strong> ${contactPerson.value}</div>`;
+                } else {
+                    const fullName = document.getElementById('fullName');
+                    if (fullName && fullName.value) summaryHTML += `<div class="summary-item"><strong>Ad Soyad:</strong> ${fullName.value}</div>`;
+                }
+            }
+
+            // Contact info
+            const email = document.getElementById('email');
+            const phone = document.getElementById('phone');
+            if (email && email.value) summaryHTML += `<div class="summary-item"><strong>E-posta:</strong> ${email.value}</div>`;
+            if (phone && phone.value) summaryHTML += `<div class="summary-item"><strong>Telefon:</strong> ${phone.value}</div>`;
+
+            summaryHTML += '</div>';
+            summary.innerHTML = summaryHTML;
+        }
+
+        // Handle form submission
+        function handleFormSubmission(e) {
+            e.preventDefault();
+            
+            if (!validateCurrentStep()) {
+                return;
+            }
+
+            // Check terms acceptance
+            const termsAccepted = document.getElementById('termsAccepted');
+            if (!termsAccepted || !termsAccepted.checked) {
+                showCheckboxError('Teklifi oluşturabilmek için Gizlilik Politikası ve Kullanım Şartları\'nı kabul etmelisiniz.');
+                return;
+            }
+
+            // Show success message
+            showSuccess('Teklifiniz başarıyla oluşturuldu! En kısa sürede size dönüş yapacağız.');
+            
+            // Reset form
+            const form = document.getElementById('quoteForm');
+            if (form) {
+                form.reset();
+            }
+            
+            currentStep = 1;
+            updateProgress();
+            
+            // Reset all steps
+            const allSteps = document.querySelectorAll('.form-step');
+            allSteps.forEach(step => step.classList.remove('active'));
+            
+            const firstStep = document.getElementById('step1');
+            if (firstStep) {
+                firstStep.classList.add('active');
+                addRequiredToStep(firstStep);
+            }
+        }
+
+        // Show checkbox-specific error
+        function showCheckboxError(message) {
+            const termsAccepted = document.getElementById('termsAccepted');
+            if (!termsAccepted) return;
+            
+            // Remove any existing error
+            const existingError = document.querySelector('.checkbox-error');
+            if (existingError) {
+                existingError.remove();
+            }
+            
+            // Create error message
+            const errorDiv = document.createElement('div');
+            errorDiv.className = 'checkbox-error error-message';
+            errorDiv.textContent = message;
+            errorDiv.style.cssText = `
+                background: var(--color-danger);
+                color: white;
+                padding: 8px 12px;
+                border-radius: 6px;
+                margin: 8px 0;
+                font-size: 0.9rem;
+                text-align: left;
+            `;
+            
+            // Insert after the checkbox
+            const checkboxContainer = termsAccepted.closest('.form-group');
+            if (checkboxContainer) {
+                checkboxContainer.appendChild(errorDiv);
+            }
+            
+            // Remove error after 5 seconds
+            setTimeout(() => {
+                if (errorDiv.parentNode) {
+                    errorDiv.remove();
+                }
+            }, 5000);
+        }
+
+        // Utility functions
+        function showError(message) {
+            const currentStepElement = document.getElementById(`step${currentStep}`);
+            if (!currentStepElement) return;
+            
+            // Remove any existing error
+            const existingError = currentStepElement.querySelector('.error-message');
+            if (existingError) {
+                existingError.remove();
+            }
+            
+            // Create and show error message
+            const errorDiv = document.createElement('div');
+            errorDiv.className = 'error-message';
+            errorDiv.textContent = message;
+            errorDiv.style.cssText = `
+                background: var(--color-danger);
+                color: white;
+                padding: 12px 16px;
+                border-radius: 8px;
+                margin: 16px 0;
+                text-align: center;
+            `;
+            
+            currentStepElement.insertBefore(errorDiv, currentStepElement.firstChild);
+            
+            setTimeout(() => {
+                if (errorDiv.parentNode) {
+                    errorDiv.remove();
+                }
+            }, 5000);
+        }
+
+        function showSuccess(message) {
+            const currentStepElement = document.getElementById(`step${currentStep}`);
+            if (!currentStepElement) return;
+            
+            // Remove any existing success message
+            const existingSuccess = currentStepElement.querySelector('.success-message');
+            if (existingSuccess) {
+                existingSuccess.remove();
+            }
+            
+            // Create and show success message
+            const successDiv = document.createElement('div');
+            successDiv.className = 'success-message';
+            successDiv.textContent = message;
+            successDiv.style.cssText = `
+                background: var(--color-success);
+                color: white;
+                padding: 12px 16px;
+                border-radius: 8px;
+                margin: 16px 0;
+                text-align: center;
+            `;
+            
+            currentStepElement.insertBefore(successDiv, currentStepElement.firstChild);
+            
+            setTimeout(() => {
+                if (successDiv.parentNode) {
+                    successDiv.remove();
+                }
+            }, 5000);
+        }
+    </script>
+</body>
+</html>

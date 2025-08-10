@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Politikalarımız - World Bilişim | Gizlilik ve Çerez Politikaları</title>
+        <meta name="description" content="World Bilişim'in gizlilik politikası, çerez politikası, kullanım şartları ve diğer önemli politikaları. Müşteri hakları ve veri güvenliği konularında şeffaf yaklaşımımız." />
+        <meta name="keywords" content="gizlilik politikası, çerez politikası, kullanım şartları, veri güvenliği, müşteri hakları, World Bilişim politikaları" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <!-- Animated Background -->
+        <div class="animated-bg"></div>
+
+        <!-- Floating Particles -->
+        <div class="particles" id="particles"></div>
+
+        <!-- Loading Screen -->
+        <div class="loading" id="loading">
+            <div class="loading-spinner"></div>
+        </div>
+
+        <!-- Top Header Bar -->
+        <div class="top-header">
+            <div class="container">
+                <div class="top-header-content">
+                    <div class="top-header-left">
+                        <a href="mailto:info@worldbilisim.com" class="top-header-item">
+                            <i class="fas fa-envelope"></i>
+                            info@worldbilisim.com
+                        </a>
+                        <a href="tel:+905309429478" class="top-header-item">
+                            <i class="fas fa-phone"></i>
+                            +90 0530 942 9478
+                        </a>
+                        <div class="top-header-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Müskebi, Düzalan Cd. No:69, 48400 Bodrum/Muğla
+                        </div>
+                    </div>
+                    <div class="top-header-right">
+                        <button id="" class="theme-toggle" aria-label="Temayı Değiştir">
+                            <i class="fas fa-sun"></i>
+                        </button>
+                        <a href="#" class="customer-panel-link">
+                            <i class="fas fa-user-shield"></i>
+                            Müşteri Paneli
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Header -->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    World Bilişim
+                </div>
+                <button class="menu-toggle" id="menuToggle" aria-label="Menüyü Aç/Kapat">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Ana Sayfa</a></li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0);" id="kurumsalMenu" data-href="kurumsal.html">Kurumsal <i class="fas fa-chevron-down" style="font-size: 0.8em;"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                            <li><a href="hakkimizda.html#tarihce">Tarihçemiz</a></li>
+                            <li><a href="">Basında Biz</a></li>
+                            <li><a href="hakkimizda.html#politikalar">Politikalarımız</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="hizmetler.html">Hizmetlerimiz</a></li>
+                    <li><a href="referanslar.html">Portföyümüz</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="iletisim.html">İletişim</a></li>
+                    <li><a href="teklif-al.html" class="cta-nav">Ücretsiz Teklif</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="about-hero">
+            <div class="container">
+                <div class="about-hero-content">
+                    <div class="about-hero-text">
+                        <span class="section-badge">Politikalarımız</span>
+                        <h1 class="hero-title">Şeffaf ve Güvenilir Yaklaşımımız</h1>
+                        <p class="hero-subtitle">
+                            World Bilişim olarak müşterilerimizin haklarını korumak ve şeffaf bir yaklaşım benimsemek için kapsamlı politikalar geliştirdik. Tüm politikalarımızı buradan inceleyebilirsiniz.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Policies Content Section -->
+        <section class="about-content-section">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text-container">
+                        <!-- Content Area -->
+                        <div class="policies-content">
+                        <!-- Gizlilik Politikası -->
+                        <div id="gizlilik" class="policy-content active">
+                            <div class="policy-header">
+                                <h2>Gizlilik Politikası</h2>
+                                <p class="policy-date">Son güncelleme: 15 Mart 2024</p>
+                            </div>
+                            <div class="policy-body">
+                                <h3>1. Genel Bilgiler</h3>
+                                <p>World Bilişim olarak kişisel verilerinizin güvenliği bizim için son derece önemlidir. Bu gizlilik politikası, hangi bilgileri topladığımızı, nasıl kullandığımızı ve koruduğumuzu açıklar.</p>
+                                
+                                <h3>2. Topladığımız Bilgiler</h3>
+                                <ul>
+                                    <li><strong>Kişisel Bilgiler:</strong> Ad, soyad, e-posta adresi, telefon numarası</li>
+                                    <li><strong>İletişim Bilgileri:</strong> Adres bilgileri ve iletişim tercihleri</li>
+                                    <li><strong>Teknik Bilgiler:</strong> IP adresi, tarayıcı bilgileri, cihaz bilgileri</li>
+                                    <li><strong>Kullanım Verileri:</strong> Web sitemizi nasıl kullandığınıza dair bilgiler</li>
+                                </ul>
+
+                                <h3>3. Bilgilerin Kullanımı</h3>
+                                <p>Topladığımız bilgileri aşağıdaki amaçlarla kullanırız:</p>
+                                <ul>
+                                    <li>Hizmetlerimizi sunmak ve iyileştirmek</li>
+                                    <li>Müşteri desteği sağlamak</li>
+                                    <li>Yasal yükümlülüklerimizi yerine getirmek</li>
+                                    <li>Güvenliği sağlamak</li>
+                                </ul>
+
+                                <h3>4. Bilgi Paylaşımı</h3>
+                                <p>Kişisel bilgilerinizi üçüncü taraflarla paylaşmayız, ancak aşağıdaki durumlar hariç:</p>
+                                <ul>
+                                    <li>Yasal zorunluluk durumunda</li>
+                                    <li>Açık rızanız olduğunda</li>
+                                    <li>Hizmet sağlayıcılarımızla (sadece gerekli bilgiler)</li>
+                                </ul>
+
+                                <h3>5. Veri Güvenliği</h3>
+                                <p>Kişisel verilerinizi korumak için endüstri standardı güvenlik önlemleri kullanırız. Bu önlemler şunları içerir:</p>
+                                <ul>
+                                    <li>SSL şifreleme</li>
+                                    <li>Güvenli veri depolama</li>
+                                    <li>Düzenli güvenlik denetimleri</li>
+                                    <li>Erişim kontrolü</li>
+                                </ul>
+
+                                <h3>6. Çerezler</h3>
+                                <p>Web sitemizde çerezler kullanırız. Detaylı bilgi için <a href="#cerez">Çerez Politikamızı</a> inceleyebilirsiniz.</p>
+
+                                <h3>7. Haklarınız</h3>
+                                <p>Kişisel verilerinizle ilgili aşağıdaki haklara sahipsiniz:</p>
+                                <ul>
+                                    <li>Bilgilerinize erişim hakkı</li>
+                                    <li>Düzeltme hakkı</li>
+                                    <li>Silme hakkı</li>
+                                    <li>İşlemeyi kısıtlama hakkı</li>
+                                    <li>Veri taşınabilirliği hakkı</li>
+                                </ul>
+
+                                <h3>8. İletişim</h3>
+                                <p>Gizlilik politikamızla ilgili sorularınız için bizimle iletişime geçebilirsiniz:</p>
+                                <p><strong>E-posta:</strong> gizlilik@worldbilisim.com<br>
+                                <strong>Telefon:</strong> +90 0530 942 9478</p>
+                            </div>
+                        </div>
+
+                        <!-- Çerez Politikası -->
+                        <div id="cerez" class="policy-content">
+                            <div class="policy-header">
+                                <h2>Çerez Politikası</h2>
+                                <p class="policy-date">Son güncelleme: 15 Mart 2024</p>
+                            </div>
+                            <div class="policy-body">
+                                <h3>1. Çerez Nedir?</h3>
+                                <p>Çerezler, web sitemizi ziyaret ettiğinizde cihazınıza yerleştirilen küçük metin dosyalarıdır. Bu dosyalar, deneyiminizi iyileştirmek ve sitemizi daha kullanışlı hale getirmek için kullanılır.</p>
+
+                                <h3>2. Kullandığımız Çerez Türleri</h3>
+                                
+                                <h4>Zorunlu Çerezler</h4>
+                                <p>Bu çerezler web sitemizin temel işlevleri için gereklidir ve kapatılamaz.</p>
+                                <ul>
+                                    <li><strong>Oturum Çerezleri:</strong> Giriş yaptığınızda oturumunuzu korur</li>
+                                    <li><strong>Güvenlik Çerezleri:</strong> Güvenliği sağlamak için kullanılır</li>
+                                </ul>
+
+                                <h4>Analitik Çerezler</h4>
+                                <p>Web sitemizin nasıl kullanıldığını anlamamıza yardımcı olur.</p>
+                                <ul>
+                                    <li><strong>Google Analytics:</strong> Ziyaretçi istatistikleri</li>
+                                    <li><strong>Performans Çerezleri:</strong> Sayfa yükleme hızlarını ölçer</li>
+                                </ul>
+
+                                <h4>Fonksiyonel Çerezler</h4>
+                                <p>Gelişmiş işlevsellik sağlar.</p>
+                                <ul>
+                                    <li><strong>Dil Tercihi:</strong> Dil seçiminizi hatırlar</li>
+                                    <li><strong>Tema Tercihi:</strong> Açık/koyu tema seçiminizi saklar</li>
+                                </ul>
+
+                                <h4>Reklam Çerezleri</h4>
+                                <p>Size daha ilgili reklamlar göstermek için kullanılır.</p>
+
+                                <h3>3. Çerez Yönetimi</h3>
+                                <p>Tarayıcınızın ayarlarından çerezleri kontrol edebilirsiniz:</p>
+                                <ul>
+                                    <li>Tüm çerezleri kabul etme</li>
+                                    <li>Çerezleri reddetme</li>
+                                    <li>Çerezleri silme</li>
+                                    <li>Belirli çerezleri engelleme</li>
+                                </ul>
+
+                                <h3>4. Üçüncü Taraf Çerezler</h3>
+                                <p>Web sitemizde aşağıdaki üçüncü taraf hizmetlerini kullanırız:</p>
+                                <ul>
+                                    <li><strong>Google Analytics:</strong> Web sitesi analizi</li>
+                                    <li><strong>Google Ads:</strong> Reklam performansı</li>
+                                    <li><strong>Facebook Pixel:</strong> Sosyal medya reklamları</li>
+                                </ul>
+
+                                <h3>5. Çerez Ayarları</h3>
+                                <p>Çerez tercihlerinizi aşağıdaki bağlantıdan yönetebilirsiniz:</p>
+                                <button class="btn btn-secondary" id="cookieSettings">
+                                    <i class="fas fa-cog"></i>
+                                    Çerez Ayarları
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Kullanım Şartları -->
+                        <div id="kullanim-sartlari" class="policy-content">
+                            <div class="policy-header">
+                                <h2>Kullanım Şartları</h2>
+                                <p class="policy-date">Son güncelleme: 15 Mart 2024</p>
+                            </div>
+                            <div class="policy-body">
+                                <h3>1. Genel Kabul</h3>
+                                <p>Web sitemizi kullanarak bu şartları kabul etmiş sayılırsınız. Bu şartları kabul etmiyorsanız, sitemizi kullanmayınız.</p>
+
+                                <h3>2. Hizmet Kapsamı</h3>
+                                <p>World Bilişim aşağıdaki hizmetleri sunar:</p>
+                                <ul>
+                                    <li>Web tasarım ve geliştirme</li>
+                                    <li>SEO ve dijital pazarlama</li>
+                                    <li>E-ticaret çözümleri</li>
+                                    <li>Google Ads yönetimi</li>
+                                    <li>Sosyal medya yönetimi</li>
+                                </ul>
+
+                                <h3>3. Kullanıcı Sorumlulukları</h3>
+                                <p>Web sitemizi kullanırken aşağıdaki kurallara uymanız gerekir:</p>
+                                <ul>
+                                    <li>Yasal ve etik kurallara uygun davranış</li>
+                                    <li>Başkalarının haklarına saygı</li>
+                                    <li>Güvenlik önlemlerine uyum</li>
+                                    <li>Doğru bilgi sağlama</li>
+                                </ul>
+
+                                <h3>4. Fikri Mülkiyet</h3>
+                                <p>Web sitemizdeki tüm içerik World Bilişim'e aittir ve telif hakkı koruması altındadır. İçeriği kopyalama, dağıtma veya değiştirme hakkınız yoktur.</p>
+
+                                <h3>5. Sorumluluk Sınırları</h3>
+                                <p>World Bilişim, hizmetlerimizin kullanımından doğabilecek dolaylı zararlardan sorumlu değildir. Sorumluluğumuz, ödenen ücretle sınırlıdır.</p>
+
+                                <h3>6. Hizmet Değişiklikleri</h3>
+                                <p>Hizmetlerimizi önceden haber vermeksizin değiştirme veya sonlandırma hakkımız saklıdır.</p>
+
+                                <h3>7. Uyuşmazlık Çözümü</h3>
+                                <p>Bu şartlarla ilgili uyuşmazlıklar Türkiye Cumhuriyeti mahkemelerinde çözülür.</p>
+                            </div>
+                        </div>
+
+                        <!-- Veri Güvenliği -->
+                        <div id="veri-güvenligi" class="policy-content">
+                            <div class="policy-header">
+                                <h2>Veri Güvenliği Politikası</h2>
+                                <p class="policy-date">Son güncelleme: 15 Mart 2024</p>
+                            </div>
+                            <div class="policy-body">
+                                <h3>1. Güvenlik Standartları</h3>
+                                <p>World Bilişim, müşteri verilerinin güvenliği için en yüksek standartları uygular:</p>
+                                <ul>
+                                    <li>SSL/TLS şifreleme</li>
+                                    <li>Güvenli veri depolama</li>
+                                    <li>Düzenli güvenlik denetimleri</li>
+                                    <li>Erişim kontrolü ve yetkilendirme</li>
+                                </ul>
+
+                                <h3>2. Veri Koruma Önlemleri</h3>
+                                <h4>Teknik Önlemler</h4>
+                                <ul>
+                                    <li>Güçlü şifreleme algoritmaları</li>
+                                    <li>Güvenlik duvarları</li>
+                                    <li>DDoS koruması</li>
+                                    <li>Düzenli yedekleme</li>
+                                </ul>
+
+                                <h4>Organizasyonel Önlemler</h4>
+                                <ul>
+                                    <li>Personel eğitimi</li>
+                                    <li>Güvenlik politikaları</li>
+                                    <li>Erişim kontrolü</li>
+                                    <li>Olay müdahale planları</li>
+                                </ul>
+
+                                <h3>3. Veri İşleme Prensipleri</h3>
+                                <p>Kişisel verileri işlerken aşağıdaki prensiplere uyarız:</p>
+                                <ul>
+                                    <li><strong>Yasallık:</strong> Yasal temele dayalı işleme</li>
+                                    <li><strong>Şeffaflık:</strong> Açık ve anlaşılır bilgilendirme</li>
+                                    <li><strong>Hedef sınırlılığı:</strong> Belirlenen amaçlarla sınırlı kullanım</li>
+                                    <li><strong>Veri minimizasyonu:</strong> Minimum gerekli veri</li>
+                                    <li><strong>Doğruluk:</strong> Güncel ve doğru veri</li>
+                                    <li><strong>Saklama süresi sınırlılığı:</strong> Belirli sürelerle sınırlı saklama</li>
+                                </ul>
+
+                                <h3>4. Veri İhlali Bildirimi</h3>
+                                <p>Veri güvenliği ihlali durumunda:</p>
+                                <ul>
+                                    <li>72 saat içinde KVKK'ya bildirim</li>
+                                    <li>Etkilenen kişilere bilgilendirme</li>
+                                    <li>Olayın detaylı analizi</li>
+                                    <li>Önleyici önlemlerin alınması</li>
+                                </ul>
+
+                                <h3>5. Güvenlik Sertifikaları</h3>
+                                <p>Güvenlik standartlarımızı kanıtlamak için:</p>
+                                <ul>
+                                    <li>ISO 27001 Bilgi Güvenliği Yönetim Sistemi</li>
+                                    <li>SSL sertifikaları</li>
+                                    <li>Düzenli güvenlik denetimleri</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Müşteri Hakları -->
+                        <div id="müşteri-haklari" class="policy-content">
+                            <div class="policy-header">
+                                <h2>Müşteri Hakları</h2>
+                                <p class="policy-date">Son güncelleme: 15 Mart 2024</p>
+                            </div>
+                            <div class="policy-body">
+                                <h3>1. Bilgi Alma Hakkı</h3>
+                                <p>Müşterilerimiz aşağıdaki bilgileri alma hakkına sahiptir:</p>
+                                <ul>
+                                    <li>Hizmetlerimiz hakkında detaylı bilgi</li>
+                                    <li>Fiyatlandırma ve ödeme koşulları</li>
+                                    <li>Hizmet süreleri ve teslim tarihleri</li>
+                                    <li>Kalite garantisi koşulları</li>
+                                </ul>
+
+                                <h3>2. Seçim Yapma Hakkı</h3>
+                                <p>Müşterilerimiz:</p>
+                                <ul>
+                                    <li>Hizmet paketlerini seçme</li>
+                                    <li>Ödeme yöntemini belirleme</li>
+                                    <li>İletişim tercihlerini ayarlama</li>
+                                    <li>Hizmet değişikliklerini talep etme</li>
+                                </ul>
+
+                                <h3>3. Güvenlik Hakkı</h3>
+                                <p>Müşterilerimizin güvenliği için:</p>
+                                <ul>
+                                    <li>Kişisel verilerin korunması</li>
+                                    <li>Güvenli ödeme işlemleri</li>
+                                    <li>Şeffaf işlem süreçleri</li>
+                                    <li>Gizlilik garantisi</li>
+                                </ul>
+
+                                <h3>4. Tazminat Hakkı</h3>
+                                <p>Hizmet kalitesi sorunları durumunda:</p>
+                                <ul>
+                                    <li>Ücretsiz düzeltme</li>
+                                    <li>Hizmet yenileme</li>
+                                    <li>Kısmi iade</li>
+                                    <li>Tam iade (koşullar dahilinde)</li>
+                                </ul>
+
+                                <h3>5. Şikayet Hakkı</h3>
+                                <p>Memnuniyetsizlik durumunda:</p>
+                                <ul>
+                                    <li>Doğrudan iletişim hakkı</li>
+                                    <li>Hızlı yanıt alma hakkı</li>
+                                    <li>Çözüm talep etme hakkı</li>
+                                    <li>Üst yönetime başvurma hakkı</li>
+                                </ul>
+
+                                <h3>6. Eğitim ve Bilgilendirme Hakkı</h3>
+                                <p>Müşterilerimiz:</p>
+                                <ul>
+                                    <li>Hizmet kullanımı hakkında eğitim alma</li>
+                                    <li>Güncellemeler hakkında bilgilendirilme</li>
+                                    <li>Yeni özellikler hakkında bilgi alma</li>
+                                    <li>Teknik destek alma</li>
+                                </ul>
+
+                                <h3>7. İletişim Kanalları</h3>
+                                <p>Haklarınızı kullanmak için:</p>
+                                <p><strong>Telefon:</strong> +90 0530 942 9478<br>
+                                <strong>E-posta:</strong> haklar@worldbilisim.com<br>
+                                <strong>Adres:</strong> Müskebi, Düzalan Cd. No:69, 48400 Bodrum/Muğla</p>
+                            </div>
+                        </div>
+
+                        <!-- Hizmet Şartları -->
+                        <div id="hizmet-sartlari" class="policy-content">
+                            <div class="policy-header">
+                                <h2>Hizmet Şartları</h2>
+                                <p class="policy-date">Son güncelleme: 15 Mart 2024</p>
+                            </div>
+                            <div class="policy-body">
+                                <h3>1. Hizmet Kapsamı</h3>
+                                <p>World Bilişim aşağıdaki dijital pazarlama hizmetlerini sunar:</p>
+                                
+                                <h4>Web Tasarım ve Geliştirme</h4>
+                                <ul>
+                                    <li>Kurumsal web siteleri</li>
+                                    <li>E-ticaret siteleri</li>
+                                    <li>Blog ve içerik siteleri</li>
+                                    <li>Mobil uyumlu tasarım</li>
+                                    <li>Web uygulamaları</li>
+                                </ul>
+
+                                <h4>SEO ve Dijital Pazarlama</h4>
+                                <ul>
+                                    <li>Arama motoru optimizasyonu</li>
+                                    <li>İçerik pazarlaması</li>
+                                    <li>Yerel SEO</li>
+                                    <li>Teknik SEO</li>
+                                    <li>SEO danışmanlığı</li>
+                                </ul>
+
+                                <h4>Google Ads ve Reklam Yönetimi</h4>
+                                <ul>
+                                    <li>Google Ads hesap yönetimi</li>
+                                    <li>Reklam kampanyası oluşturma</li>
+                                    <li>Performans optimizasyonu</li>
+                                    <li>ROI analizi</li>
+                                    <li>A/B testleri</li>
+                                </ul>
+
+                                <h3>2. Hizmet Süreçleri</h3>
+                                <h4>Proje Başlangıcı</h4>
+                                <ul>
+                                    <li>İhtiyaç analizi</li>
+                                    <li>Teklif hazırlama</li>
+                                    <li>Sözleşme imzalama</li>
+                                    <li>Proje planı oluşturma</li>
+                                </ul>
+
+                                <h4>Geliştirme Süreci</h4>
+                                <ul>
+                                    <li>Tasarım aşaması</li>
+                                    <li>Geliştirme aşaması</li>
+                                    <li>Test aşaması</li>
+                                    <li>Müşteri onayı</li>
+                                </ul>
+
+                                <h4>Teslim ve Destek</h4>
+                                <ul>
+                                    <li>Canlıya alma</li>
+                                    <li>Eğitim ve dokümantasyon</li>
+                                    <li>Teknik destek</li>
+                                    <li>Bakım hizmetleri</li>
+                                </ul>
+
+                                <h3>3. Kalite Standartları</h3>
+                                <p>Tüm hizmetlerimizde aşağıdaki standartları uygularız:</p>
+                                <ul>
+                                    <li>Modern teknoloji kullanımı</li>
+                                    <li>Responsive tasarım</li>
+                                    <li>SEO uyumlu kodlama</li>
+                                    <li>Hızlı yükleme süreleri</li>
+                                    <li>Güvenlik standartları</li>
+                                </ul>
+
+                                <h3>4. Teslim Süreleri</h3>
+                                <p>Proje teslim süreleri proje kapsamına göre değişir:</p>
+                                <ul>
+                                    <li><strong>Kurumsal Web Sitesi:</strong> 4-6 hafta</li>
+                                    <li><strong>E-ticaret Sitesi:</strong> 6-8 hafta</li>
+                                    <li><strong>SEO Hizmeti:</strong> 3-6 ay (ilk sonuçlar)</li>
+                                    <li><strong>Google Ads:</strong> 2-4 hafta (kampanya kurulumu)</li>
+                                </ul>
+
+                                <h3>5. Revizyon Politikası</h3>
+                                <p>Müşteri memnuniyeti için:</p>
+                                <ul>
+                                    <li>2 adet ücretsiz revizyon</li>
+                                    <li>Kapsam dışı değişiklikler için ek ücret</li>
+                                    <li>Revizyon süreleri: 3-5 iş günü</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Ödeme Politikası -->
+                        <div id="ödeme-politikasi" class="policy-content">
+                            <div class="policy-header">
+                                <h2>Ödeme Politikası</h2>
+                                <p class="policy-date">Son güncelleme: 15 Mart 2024</p>
+                            </div>
+                            <div class="policy-body">
+                                <h3>1. Ödeme Yöntemleri</h3>
+                                <p>Aşağıdaki ödeme yöntemlerini kabul ediyoruz:</p>
+                                <ul>
+                                    <li><strong>Banka Havalesi/EFT:</strong> TL ve USD hesapları</li>
+                                    <li><strong>Kredi Kartı:</strong> Tüm kartlar (taksitli ödeme)</li>
+                                    <li><strong>PayPal:</strong> Uluslararası ödemeler</li>
+                                    <li><strong>Stripe:</strong> Güvenli online ödeme</li>
+                                    <li><strong>Nakit:</strong> Ofisimizde</li>
+                                </ul>
+
+                                <h3>2. Ödeme Planları</h3>
+                                <h4>Web Tasarım Projeleri</h4>
+                                <ul>
+                                    <li><strong>%50:</strong> Proje başlangıcında</li>
+                                    <li><strong>%30:</strong> Tasarım onayı sonrası</li>
+                                    <li><strong>%20:</strong> Proje tesliminde</li>
+                                </ul>
+
+                                <h4>Aylık Hizmetler (SEO, Google Ads)</h4>
+                                <ul>
+                                    <li><strong>%100:</strong> Ay başında ödeme</li>
+                                    <li><strong>Yıllık ödeme:</strong> %10 indirim</li>
+                                </ul>
+
+                                <h3>3. Fiyatlandırma</h3>
+                                <p>Fiyatlarımız şeffaf ve net olarak belirtilir:</p>
+                                <ul>
+                                    <li>KDV dahil fiyatlar</li>
+                                    <li>Gizli maliyet yok</li>
+                                    <li>Detaylı fiyat teklifi</li>
+                                    <li>Özel projeler için özel fiyatlandırma</li>
+                                </ul>
+
+                                <h3>4. Taksit Seçenekleri</h3>
+                                <p>Kredi kartı ile ödemelerde:</p>
+                                <ul>
+                                    <li><strong>2 Taksit:</strong> Komisyonsuz</li>
+                                    <li><strong>3-6 Taksit:</strong> %2 komisyon</li>
+                                    <li><strong>7-12 Taksit:</strong> %5 komisyon</li>
+                                </ul>
+
+                                <h3>5. Gecikme Faizi</h3>
+                                <p>Ödeme gecikmelerinde:</p>
+                                <ul>
+                                    <li>İlk 15 gün: Faiz uygulanmaz</li>
+                                    <li>15 gün sonrası: Aylık %2 gecikme faizi</li>
+                                    <li>60 gün sonrası: Yasal takip başlatılır</li>
+                                </ul>
+
+                                <h3>6. Fatura ve Makbuz</h3>
+                                <p>Tüm ödemeler için:</p>
+                                <ul>
+                                    <li>E-fatura gönderimi</li>
+                                    <li>Ödeme makbuzu</li>
+                                    <li>Detaylı hizmet dökümü</li>
+                                    <li>KDV ayrıntısı</li>
+                                </ul>
+
+                                <h3>7. Para İadesi</h3>
+                                <p>İade koşulları:</p>
+                                <ul>
+                                    <li>Proje iptal edilirse: Yapılan işe göre kısmi iade</li>
+                                    <li>Hizmet kalitesi sorunları: Tam iade</li>
+                                    <li>İade süresi: 5-10 iş günü</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- İptal Politikası -->
+                        <div id="iptal-politikasi" class="policy-content">
+                            <div class="policy-header">
+                                <h2>İptal Politikası</h2>
+                                <p class="policy-date">Son güncelleme: 15 Mart 2024</p>
+                            </div>
+                            <div class="policy-body">
+                                <h3>1. İptal Koşulları</h3>
+                                <p>Hizmet iptal işlemleri aşağıdaki koşullar altında gerçekleştirilebilir:</p>
+
+                                <h4>Web Tasarım Projeleri</h4>
+                                <ul>
+                                    <li><strong>Proje başlamadan önce:</strong> Tam iade</li>
+                                    <li><strong>Tasarım aşamasında:</strong> %50 iade</li>
+                                    <li><strong>Geliştirme aşamasında:</strong> %25 iade</li>
+                                    <li><strong>Test aşamasından sonra:</strong> İade yok</li>
+                                </ul>
+
+                                <h4>Aylık Hizmetler (SEO, Google Ads)</h4>
+                                <ul>
+                                    <li><strong>İlk 30 gün:</strong> Tam iade</li>
+                                    <li><strong>30 gün sonrası:</strong> Ay sonu iptal</li>
+                                    <li><strong>Yıllık sözleşmeler:</strong> Kalan aylar için %50 iade</li>
+                                </ul>
+
+                                <h3>2. İptal Prosedürü</h3>
+                                <p>İptal işlemi için aşağıdaki adımları izleyin:</p>
+                                <ol>
+                                    <li>Yazılı iptal talebinde bulunun</li>
+                                    <li>İptal gerekçesini belirtin</li>
+                                    <li>Proje durumunu değerlendirin</li>
+                                    <li>İade tutarını hesaplayın</li>
+                                    <li>İade işlemini başlatın</li>
+                                </ol>
+
+                                <h3>3. İptal Gerekçeleri</h3>
+                                <p>Geçerli iptal gerekçeleri:</p>
+                                <ul>
+                                    <li>Hizmet kalitesi yetersizliği</li>
+                                    <li>Teslim tarihinin aşılması</li>
+                                    <li>Sözleşme koşullarına uyulmaması</li>
+                                    <li>Müşterinin işletme koşullarındaki değişiklik</li>
+                                    <li>Bütçe değişiklikleri</li>
+                                </ul>
+
+                                <h3>4. İade Süreci</h3>
+                                <p>İade işlemleri:</p>
+                                <ul>
+                                    <li><strong>Değerlendirme süresi:</strong> 3-5 iş günü</li>
+                                    <li><strong>İade onayı:</strong> 1-2 iş günü</li>
+                                    <li><strong>Para transferi:</strong> 5-10 iş günü</li>
+                                    <li><strong>Toplam süre:</strong> En fazla 15 iş günü</li>
+                                </ul>
+
+                                <h3>5. İptal Edilemeyen Durumlar</h3>
+                                <p>Aşağıdaki durumlarda iptal kabul edilmez:</p>
+                                <ul>
+                                    <li>Proje tamamlandıktan sonra</li>
+                                    <li>Canlıya alınan projeler</li>
+                                    <li>Özel geliştirme projeleri (tamamlandığında)</li>
+                                    <li>Üçüncü taraf hizmet bedelleri</li>
+                                </ul>
+
+                                <h3>6. Kısmi İptal</h3>
+                                <p>Proje kapsamında kısmi iptal durumları:</p>
+                                <ul>
+                                    <li>Belirli sayfalarda değişiklik</li>
+                                    <li>Özellik çıkarma</li>
+                                    <li>Hizmet kapsamı daraltma</li>
+                                    <li>Orantılı fiyat düzenlemesi</li>
+                                </ul>
+
+                                <h3>7. İletişim</h3>
+                                <p>İptal talepleri için:</p>
+                                <p><strong>E-posta:</strong> iptal@worldbilisim.com<br>
+                                <strong>Telefon:</strong> +90 0530 942 9478<br>
+                                <strong>Çalışma Saatleri:</strong> Pazartesi-Cuma 09:00-18:00</p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
+                    <!-- Sidebar -->
+                    <div class="about-sidebar">
+                        <div class="policies-sidebar">
+                            <div class="sidebar-header">
+                                <h3>Politikalarımız</h3>
+                                <p>Tüm politikalarımızı buradan inceleyebilirsiniz</p>
+                            </div>
+                            <nav class="policies-nav">
+                                <a href="#gizlilik" class="policy-nav-item active" data-policy="gizlilik">
+                                    <i class="fas fa-shield-alt"></i>
+                                    <span>Gizlilik Politikası</span>
+                                </a>
+                                <a href="#cerez" class="policy-nav-item" data-policy="cerez">
+                                    <i class="fas fa-cookie-bite"></i>
+                                    <span>Çerez Politikası</span>
+                                </a>
+                                <a href="#kullanim-sartlari" class="policy-nav-item" data-policy="kullanim-sartlari">
+                                    <i class="fas fa-file-contract"></i>
+                                    <span>Kullanım Şartları</span>
+                                </a>
+                                <a href="#veri-güvenligi" class="policy-nav-item" data-policy="veri-güvenligi">
+                                    <i class="fas fa-lock"></i>
+                                    <span>Veri Güvenliği</span>
+                                </a>
+                                <a href="#müşteri-haklari" class="policy-nav-item" data-policy="müşteri-haklari">
+                                    <i class="fas fa-user-shield"></i>
+                                    <span>Müşteri Hakları</span>
+                                </a>
+                                <a href="#hizmet-sartlari" class="policy-nav-item" data-policy="hizmet-sartlari">
+                                    <i class="fas fa-handshake"></i>
+                                    <span>Hizmet Şartları</span>
+                                </a>
+                                <a href="#ödeme-politikasi" class="policy-nav-item" data-policy="ödeme-politikasi">
+                                    <i class="fas fa-credit-card"></i>
+                                    <span>Ödeme Politikası</span>
+                                </a>
+                                <a href="#iptal-politikasi" class="policy-nav-item" data-policy="iptal-politikasi">
+                                    <i class="fas fa-undo"></i>
+                                    <span>İptal Politikası</span>
+                                </a>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <div class="footer-logo">
+                            <div class="footer-logo-icon">
+                                <i class="fas fa-globe"></i>
+                            </div>
+                            <div class="footer-logo-text">World Bilişim</div>
+                        </div>
+                        <p>
+                            Bodrum'da dijital pazarlama, web tasarım ve SEO hizmetleri sunan lider ajans. Modern teknolojiler ve yenilikçi çözümlerle markanızı dijital world'da zirveye taşıyoruz.
+                        </p>
+                        <div class="social-links">
+                            <a href="https://facebook.com/worldbil" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://twitter.com/worldbil" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="https://instagram.com/worldbil" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="https://linkedin.com/company/worldbil" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://youtube.com/@worldbil" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                            <a href="https://wa.me/905309429478" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Hizmetlerimiz</h3>
+                        <p><a href="hizmetler.html">Web Tasarım</a></p>
+                        <p><a href="hizmetler.html">SEO Hizmetleri</a></p>
+                        <p><a href="hizmetler.html">E-Ticaret Çözümleri</a></p>
+                        <p><a href="hizmetler.html">Google Ads</a></p>
+                        <p><a href="hizmetler.html">Sosyal Medya Yönetimi</a></p>
+                        <p><a href="hizmetler.html">Dijital Pazarlama</a></p>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Kurumsal</h3>
+                        <p><a href="referanslar.html">Portföyümüz</a></p>
+                        <p><a href="hakkimizda.html">Hakkımızda</a></p>
+                        <p><a href="hakkimizda.html#tarihce">Tarihçemiz</a></p>
+                        <p><a href="basin-kiti.html">Basında Biz</a></p>
+                        <p><a href="politikalar.html">Politikalarımız</a></p>
+                        <p><a href="blog.html">Blog</a></p>
+                        <p><a href="iletisim.html">İletişim</a></p>
+                    </div>
+                    <div class="footer-section">
+                        <h3>İletişim Bilgileri</h3>
+                        <p><i class="fas fa-map-marker-alt" style="margin-right: 8px; color: var(--color-primary);"></i> Müskebi, Düzalan Cd. No:69, 48400 Bodrum/Muğla</p>
+                        <p><i class="fas fa-phone" style="margin-right: 8px; color: var(--color-primary);"></i> +90 0530 942 9478</p>
+                        <p>
+                            <i class="fas fa-envelope" style="margin-right: 8px; color: var(--color-primary);"></i> info@worldbilisim.com<br />
+                            iletisim@worldbilisim.com
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Chat Widget -->
+        <div class="chat-widget">
+            <div class="chat-menu" id="chatMenu">
+                <a href="https://wa.me/905309429478" class="chat-option" target="_blank">
+                    <div class="chat-option-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <div class="chat-option-content">
+                        <h4>WhatsApp</h4>
+                        <p>Hızlı destek için</p>
+                    </div>
+                </a>
+
+                <a href="tel:+905309429478" class="chat-option">
+                    <div class="chat-option-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="chat-option-content">
+                        <h4>Telefon Araması</h4>
+                        <p>Doğrudan görüşme</p>
+                    </div>
+                </a>
+
+                <a href="#" class="chat-option" id="chatbotOption">
+                    <div class="chat-option-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <div class="chat-option-content">
+                        <h4>Canlı Destek</h4>
+                        <p>Online danışmanlık</p>
+                    </div>
+                </a>
+
+                <!-- ✅ Tema Değiştir butonu (a değil, button) -->
+                <div class="chat-option theme-option">
+                    <div class="chat-option-icon">
+                        <i class="fas fa-sun"></i>
+                    </div>
+                    <div class="chat-option-content">
+                        <h4>Tema Değiştir</h4>
+                        <p>Açık / Koyu mod</p>
+                    </div>
+                    <button id="themeToggle" class="theme-toggle" aria-label="Temayı Değiştir"></button>
+                </div>
+            </div>
+
+            <button class="chat-toggle" id="chatToggle">
+                <i class="fas fa-comments"></i>
+            </button>
+        </div>
+
+        <!-- Scripts -->
+        <script src="script.js"></script>
+        <script>
+            // Politika navigasyonu
+            document.addEventListener('DOMContentLoaded', function() {
+                const policyNavItems = document.querySelectorAll('.policy-nav-item');
+                const policyContents = document.querySelectorAll('.policy-content');
+
+                policyNavItems.forEach(item => {
+                    item.addEventListener('click', function(e) {
+                        e.preventDefault();
+                        
+                        const targetPolicy = this.getAttribute('data-policy');
+                        
+                        // Aktif nav item'ı güncelle
+                        policyNavItems.forEach(nav => nav.classList.remove('active'));
+                        this.classList.add('active');
+                        
+                        // Aktif içeriği güncelle
+                        policyContents.forEach(content => {
+                            content.classList.remove('active');
+                            if (content.id === targetPolicy) {
+                                content.classList.add('active');
+                            }
+                        });
+
+                        // Smooth scroll to content
+                        document.querySelector('.policies-content').scrollTop = 0;
+                    });
+                });
+
+                // URL hash'e göre aktif politikayı ayarla
+                const hash = window.location.hash.substring(1);
+                if (hash) {
+                    const targetNavItem = document.querySelector(`[data-policy="${hash}"]`);
+                    if (targetNavItem) {
+                        targetNavItem.click();
+                    }
+                }
+
+                // Çerez ayarları butonu
+                const cookieSettingsBtn = document.getElementById('cookieSettings');
+                if (cookieSettingsBtn) {
+                    cookieSettingsBtn.addEventListener('click', function() {
+                        alert('Çerez ayarları paneli yakında eklenecektir.');
+                    });
+                }
+            });
+        </script>
+    </body>
+</html>
+                   

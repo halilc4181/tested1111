@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Tasarım Hizmetleri - World Bilişim</title>
+  <meta name="description" content="World Bilişim olarak modern, responsive ve kullanıcı dostu web siteleri tasarlıyoruz. Markanızın dijital kimliğini yansıtan özgün tasarımlarla rakiplerinizin önüne geçin.">
+  <meta name="keywords" content="web tasarım, responsive tasarım, SEO uyumlu web sitesi, mobil uyumlu web tasarım, UI/UX, Bodrum web tasarım, profesyonel web sitesi">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Animated Background -->
+  <div class="animated-bg"></div>
+
+  <!-- Floating Particles -->
+  <div class="particles" id="particles"></div>
+
+  <!-- Loading Screen -->
+  <div class="loading" id="loading">
+      <div class="loading-spinner"></div>
+  </div>
+
+  <!-- Top Header Bar -->
+  <div class="top-header">
+      <div class="container">
+          <div class="top-header-content">
+              <div class="top-header-left">
+                  <a href="mailto:info@worldbilisim.com" class="top-header-item">
+                      <i class="fas fa-envelope"></i>
+                      info@worldbilisim.com
+                  </a>
+                  <a href="tel:+905309429478" class="top-header-item">
+                      <i class="fas fa-phone"></i>
+                      +90 0530 942 9478
+                  </a>
+                  <div class="top-header-item">
+                      <i class="fas fa-map-marker-alt"></i>
+                      Müskebi, Düzalan Cd. No:69, 48400 Bodrum/Muğla
+                  </div>
+              </div>
+              <div class="top-header-right">
+                  <button id="" class="theme-toggle" aria-label="Temayı Değiştir">
+                      <i class="fas fa-sun"></i>
+                  </button>
+                  <a href="#" class="customer-panel-link">
+                      <i class="fas fa-user-shield"></i>
+                      Müşteri Paneli
+                  </a>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header" id="header">
+      <nav class="nav container">
+          <div class="logo">
+              <div class="logo-icon">
+                  <i class="fas fa-globe"></i>
+              </div>
+              World Bilişim
+          </div>
+          <button class="menu-toggle" id="menuToggle" aria-label="Menüyü Aç/Kapat">
+              <i class="fas fa-bars"></i>
+          </button>
+          <ul class="nav-menu" id="navMenu">
+              <li><a href="index.html">Ana Sayfa</a></li>
+              <li class="dropdown">
+                  <a href="javascript:void(0);" id="kurumsalMenu" data-href="hakkimizda.html">Kurumsal <i class="fas fa-chevron-down" style="font-size: 0.8em;"></i></a>
+                  <ul class="dropdown-menu">
+                      <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                      <li><a href="hakkimizda.html#tarihce">Tarihçemiz</a></li>
+                      <li><a href="">Basında Biz</a></li>
+                      <li><a href="politikalar.html">Politikalarımız</a></li>
+                  </ul>
+              </li>
+              <li><a href="hizmetler.html">Hizmetlerimiz</a></li>
+              <li><a href="referanslar.html">Portföyümüz</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="iletisim.html">İletişim</a></li>
+              <li><a href="teklif-al.html" class="cta-nav">Ücretsiz Teklif</a></li>
+          </ul>
+      </nav>
+  </header>
+
+  <main>
+      <!-- Breadcrumb Section -->
+      <section class="breadcrumb-section">
+          <div class="container">
+              <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                      <li><a href="index.html">Ana Sayfa</a></li>
+                      <li><a href="hizmetler.html">Hizmetler</a></li>
+                      <li aria-current="page">Web Tasarım</li>
+                  </ol>
+              </nav>
+          </div>
+      </section>
+
+      <!-- Service Detail Hero Section -->
+      <section class="service-detail-hero">
+          <div class="container">
+              <div class="service-detail-hero-wrapper">
+                  <div class="service-detail-hero-content fade-in">
+                      <span class="section-badge">Uzman Seviye Hizmet</span>
+                      <h1 class="hero-title">Web Tasarım Hizmetleri</h1>
+                      <p class="hero-subtitle">
+                          Modern, responsive ve kullanıcı dostu web siteleri tasarlıyoruz. Markanızın dijital kimliğini yansıtan özgün tasarımlarla rakiplerinizin önüne geçin.
+                      </p>
+                      <div class="service-features-list">
+                          <span><i class="fas fa-check-circle"></i> Responsive ve mobil uyumlu tasarım</span>
+                          <span><i class="fas fa-check-circle"></i> SEO optimizasyonu dahil</span>
+                          <span><i class="fas fa-check-circle"></i> Hızlı yükleme performansı</span>
+                          <span><i class="fas fa-check-circle"></i> Modern UI/UX tasarım</span>
+                          <span><i class="fas fa-check-circle"></i> 6 ay ücretsiz destek</span>
+                      </div>
+                      <div class="hero-buttons">
+                          <a href="teklif-al.html" class="btn btn-primary">Hemen Başla</a>
+                          <a href="iletisim.html" class="btn btn-secondary">Ücretsiz Danışmanlık</a>
+                      </div>
+                  </div>
+                  <!-- Service Info Grid - Moved to Hero Section -->
+                  <div class="info-grid fade-in">
+                      <div class="info-card">
+                          <div class="info-icon"><i class="fas fa-clock"></i></div>
+                          <div class="info-text">
+                              <h3 class="info-title">Teslimat Süresi</h3>
+                              <p class="info-value">5-15 iş günü</p>
+                          </div>
+                      </div>
+                      <div class="info-card">
+                          <div class="info-icon"><i class="fas fa-star"></i></div>
+                          <div class="info-text">
+                              <h3 class="info-title">Deneyim Seviyesi</h3>
+                              <p class="info-value">Uzman (8+ yıl)</p>
+                          </div>
+                      </div>
+                      <div class="info-card">
+                          <div class="info-icon"><i class="fas fa-shield-alt"></i></div>
+                          <div class="info-text">
+                              <h3 class="info-title">Garanti</h3>
+                              <p class="info-value">6 ay ücretsiz destek</p>
+                          </div>
+                      </div>
+                      <div class="info-card">
+                          <div class="info-icon"><i class="fas fa-sync-alt"></i></div>
+                          <div class="info-text">
+                              <h3 class="info-title">Revizyon</h3>
+                              <p class="info-value">3 kez ücretsiz revizyon</p>
+                          </div>
+                      </div>
+                      <div class="info-card">
+                          <div class="info-icon"><i class="fas fa-lira-sign"></i></div>
+                          <div class="info-text">
+                              <h3 class="info-title">Başlangıç Fiyatı</h3>
+                              <p class="info-value">₺2.500'den başlar</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <!-- How We Work Section - Web Design Process -->
+      <section class="how-we-work">
+          <div class="container">
+              <div class="section-header fade-in">
+                  <span class="section-badge">Çalışma Sürecimiz</span>
+                  <h2 class="section-title">Web Tasarım Süreci</h2>
+                  <p class="section-subtitle">
+                      Profesyonel web tasarım projelerinizi 8 adımda tamamlıyoruz.
+                  </p>
+              </div>
+              <div class="process-grid">
+                  <div class="process-step fade-in">
+                      <div class="process-number">1</div>
+                      <div class="process-icon">
+                          <i class="fas fa-handshake"></i>
+                      </div>
+                      <h3 class="process-title">Keşif & Analiz</h3>
+                      <p class="process-description">
+                          İhtiyaçlarınızı dinliyor, hedef kitlenizi analiz ediyor ve rakip analizi yapıyoruz.
+                      </p>
+                  </div>
+                  <div class="process-step fade-in">
+                      <div class="process-number">2</div>
+                      <div class="process-icon">
+                          <i class="fas fa-clipboard-list"></i>
+                      </div>
+                      <h3 class="process-title">Planlama</h3>
+                      <p class="process-description">
+                          Site haritası oluşturuyor, içerik planlaması yapıyor ve teknik gereksinimleri belirliyoruz.
+                      </p>
+                  </div>
+                  <div class="process-step fade-in">
+                      <div class="process-number">3</div>
+                      <div class="process-icon">
+                          <i class="fas fa-palette"></i>
+                      </div>
+                      <h3 class="process-title">Tasarım</h3>
+                      <p class="process-description">
+                          Wireframe ve mockup hazırlıyor, görsel tasarım sürecini sizinle birlikte yürütüyoruz.
+                      </p>
+                  </div>
+                  <div class="process-step fade-in">
+                      <div class="process-number">4</div>
+                      <div class="process-icon">
+                          <i class="fas fa-code"></i>
+                      </div>
+                      <h3 class="process-title">Geliştirme</h3>
+                      <p class="process-description">
+                          Modern teknolojilerle kodlama yapıyor, responsive tasarımı hayata geçiriyoruz.
+                      </p>
+                  </div>
+                  <div class="process-step fade-in">
+                      <div class="process-number">5</div>
+                      <div class="process-icon">
+                          <i class="fas fa-vial"></i>
+                      </div>
+                      <h3 class="process-title">Test & Optimizasyon</h3>
+                      <p class="process-description">
+                          Tüm cihazlarda test ediyor, hız optimizasyonu yapıyor ve SEO ayarlarını tamamlıyoruz.
+                      </p>
+                  </div>
+                  <div class="process-step fade-in">
+                      <div class="process-number">6</div>
+                      <div class="process-icon">
+                          <i class="fas fa-rocket"></i>
+                      </div>
+                      <h3 class="process-title">Yayınlama</h3>
+                      <p class="process-description">
+                          Sitenizi canlıya alıyor, eğitim veriyor ve 6 ay boyunca ücretsiz destek sağlıyoruz.
+                      </p>
+                  </div>
+                  <div class="process-step fade-in">
+                      <div class="process-number">7</div>
+                      <div class="process-icon">
+                          <i class="fas fa-graduation-cap"></i>
+                      </div>
+                      <h3 class="process-title">Eğitim & Teslim</h3>
+                      <p class="process-description">
+                          Admin paneli kullanımı için detaylı eğitim veriyor, tüm dökümanları teslim ediyoruz.
+                      </p>
+                  </div>
+                  <div class="process-step fade-in">
+                      <div class="process-number">8</div>
+                      <div class="process-icon">
+                          <i class="fas fa-chart-line"></i>
+                      </div>
+                      <h3 class="process-title">İzleme & Raporlama</h3>
+                      <p class="process-description">
+                          Site performansını izliyor, aylık raporlar sunuyor ve sürekli iyileştirme önerileri veriyoruz.
+                      </p>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <!-- Features Section -->
+      <section class="features-section">
+          <div class="container">
+              <div class="section-header fade-in">
+                  <span class="section-badge">Özelliklerimiz</span>
+                  <h2 class="section-title">Neden Bizi Seçmelisiniz?</h2>
+                  <p class="section-subtitle">
+                      Web tasarım hizmetlerimizde sunduğumuz değer katma özellikler.
+                  </p>
+              </div>
+              <div class="features-grid">
+                  <div class="feature-card fade-in">
+                      <div class="feature-icon-wrapper">
+                          <i class="fas fa-mobile-alt feature-icon"></i>
+                      </div>
+                      <h3 class="feature-title">Responsive Tasarım</h3>
+                      <p class="feature-description">Tüm cihazlarda mükemmel görünüm sağlayan responsive tasarımlar. Mobil, tablet ve masaüstü uyumluluğu garantili.</p>
+                      <ul class="feature-list">
+                          <li><i class="fas fa-check"></i> Mobil-first yaklaşım</li>
+                          <li><i class="fas fa-check"></i> Tüm ekran boyutlarında uyum</li>
+                          <li><i class="fas fa-check"></i> Touch-friendly arayüz</li>
+                          <li><i class="fas fa-check"></i> Cross-browser uyumluluk</li>
+                      </ul>
+                  </div>
+                  <div class="feature-card fade-in">
+                      <div class="feature-icon-wrapper">
+                          <i class="fas fa-search feature-icon"></i>
+                      </div>
+                      <h3 class="feature-title">SEO Optimizasyonu</h3>
+                      <p class="feature-description">Google'da üst sıralarda yer almanız için teknik SEO optimizasyonları dahil ediyoruz.</p>
+                      <ul class="feature-list">
+                          <li><i class="fas fa-check"></i> Meta tag optimizasyonu</li>
+                          <li><i class="fas fa-check"></i> Schema markup</li>
+                          <li><i class="fas fa-check"></i> Site haritası oluşturma</li>
+                          <li><i class="fas fa-check"></i> Hız optimizasyonu</li>
+                      </ul>
+                  </div>
+                  <div class="feature-card fade-in">
+                      <div class="feature-icon-wrapper">
+                          <i class="fas fa-tachometer-alt feature-icon"></i>
+                      </div>
+                      <h3 class="feature-title">Yüksek Performans</h3>
+                      <p class="feature-description">Hızlı yüklenen, optimize edilmiş kodlar ile kullanıcı deneyimini en üst seviyeye çıkarıyoruz.</p>
+                      <ul class="feature-list">
+                          <li><i class="fas fa-check"></i> Görsel optimizasyonu</li>
+                          <li><i class="fas fa-check"></i> Kod minifikasyonu</li>
+                          <li><i class="fas fa-check"></i> Önbellekleme stratejileri</li>
+                          <li><i class="fas fa-check"></i> CDN entegrasyonu</li>
+                      </ul>
+                  </div>
+                  <div class="feature-card fade-in">
+                      <div class="feature-icon-wrapper">
+                          <i class="fas fa-lock feature-icon"></i>
+                      </div>
+                      <h3 class="feature-title">Güvenlik</h3>
+                      <p class="feature-description">SSL sertifikası, güvenlik güncellemeleri ve backup sistemleri ile sitenizi koruyoruz.</p>
+                      <ul class="feature-list">
+                          <li><i class="fas fa-check"></i> SSL sertifikası</li>
+                          <li><i class="fas fa-check"></i> Güvenlik duvarı</li>
+                          <li><i class="fas fa-check"></i> Otomatik yedekleme</li>
+                          <li><i class="fas fa-check"></i> Malware koruması</li>
+                      </ul>
+                  </div>
+                  <div class="feature-card fade-in">
+                      <div class="feature-icon-wrapper">
+                          <i class="fas fa-cogs feature-icon"></i>
+                      </div>
+                      <h3 class="feature-title">Kolay Yönetim</h3>
+                      <p class="feature-description">Kullanıcı dostu admin paneli ile içeriklerinizi kolayca güncelleyebilirsiniz.</p>
+                      <ul class="feature-list">
+                          <li><i class="fas fa-check"></i> Sürükle-bırak editör</li>
+                          <li><i class="fas fa-check"></i> Medya yönetimi</li>
+                          <li><i class="fas fa-check"></i> Kullanıcı eğitimi</li>
+                          <li><i class="fas fa-check"></i> Video rehberler</li>
+                      </ul>
+                  </div>
+                  <div class="feature-card fade-in">
+                      <div class="feature-icon-wrapper">
+                          <i class="fas fa-headset feature-icon"></i>
+                      </div>
+                      <h3 class="feature-title">7/24 Destek</h3>
+                      <p class="feature-description">6 ay boyunca ücretsiz teknik destek ve bakım hizmeti sunuyoruz.</p>
+                      <ul class="feature-list">
+                          <li><i class="fas fa-check"></i> Teknik destek</li>
+                          <li><i class="fas fa-check"></i> İçerik güncellemeleri</li>
+                          <li><i class="fas fa-check"></i> Hata giderme</li>
+                          <li><i class="fas fa-check"></i> Performans izleme</li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <!-- About Web Design Section -->
+      <section class="about-web-design">
+          <div class="container">
+              <div class="section-header fade-in">
+                  <span class="section-badge">Web Tasarım Hakkında</span>
+                  <h2 class="section-title">Profesyonel Web Tasarım Nedir?</h2>
+              </div>
+              <div class="about-content">
+                  <div class="about-text-container fade-in">
+                      <p>Web tasarım, bir web sitesinin görsel ve işlevsel öğelerinin planlanması, tasarlanması ve uygulanması sürecidir. Modern web tasarım, sadece estetik görünümle sınırlı kalmayıp, kullanıcı deneyimi (UX), arama motoru optimizasyonu (SEO) ve mobil uyumluluk gibi teknik faktörleri de kapsar.</p>
+                      <h3>Web Tasarımın Önemi</h3>
+                      <p>Günümüzde işletmelerin dijital varlığı, başarılarının temel taşlarından biridir. Profesyonel bir web sitesi, markanızın güvenilirliğini artırır, müşteri kazanımını kolaylaştırır ve satışlarınızı doğrudan etkiler. İstatistiklere göre, kullanıcılar bir web sitesi hakkında ilk izlenimlerini sadece 0.05 saniyede oluşturur.</p>
+                      <h3>Modern Web Tasarım Trendleri</h3>
+                      <p>2024 yılında web tasarım trendleri, minimalizm, koyu tema tasarımları, mikro-animasyonlar ve yapay zeka entegrasyonları etrafında şekilleniyor. Responsive tasarım artık bir seçenek değil, zorunluluk haline gelmiştir. Mobil cihazlardan internet kullanımının %60'ı aştığı günümüzde, mobil-first yaklaşım kritik önem taşır.</p>
+                      <h3>SEO Uyumlu Web Tasarım</h3>
+                      <p>Arama motoru optimizasyonu (SEO), web tasarım sürecinin ayrılmaz bir parçasıdır. Teknik SEO, sayfa hızı optimizasyonu, yapılandırılmış veri işaretlemeleri ve kullanıcı deneyimi sinyalleri, Google sıralamanızı doğrudan etkiler. Core Web Vitals metrikleri, 2021'den itibaren Google'ın sıralama faktörleri arasına girmiştir.</p>
+                      <h3>Web Tasarım Süreci</h3>
+                      <p>Başarılı bir web tasarım projesi, detaylı planlama ile başlar. Hedef kitle analizi, rakip analizi, site haritası oluşturma ve wireframe tasarımı, projenin temel adımlarıdır. Tasarım aşamasında marka kimliği, renk paleti ve tipografi seçimleri, sitenin genel atmosferini belirler.</p>
+                      <h3>Teknoloji Seçimi</h3>
+                      <p>Web tasarım projelerinde teknoloji seçimi, projenin başarısını doğrudan etkiler. HTML5, CSS3, JavaScript gibi temel teknolojilerin yanı sıra, React, Vue.js gibi modern framework'ler, dinamik ve interaktif web siteleri oluşturmak için kullanılır. İçerik yönetim sistemleri (CMS) seçiminde WordPress, Drupal ve özel çözümler değerlendirilir.</p>
+                  </div>
+                  <div class="about-sidebar fade-in">
+                      <div class="sidebar-card">
+                          <h4>Hızlı Bilgiler</h4>
+                          <ul>
+                              <li><i class="fas fa-check-circle"></i> Ortalama Proje Süresi: <strong>2-4 hafta</strong></li>
+                              <li><i class="fas fa-check-circle"></i> %100 Mobil Uyumlu</li>
+                              <li><i class="fas fa-check-circle"></i> SEO Optimizasyonu Dahil</li>
+                              <li><i class="fas fa-check-circle"></i> SSL Sertifikası</li>
+                              <li><i class="fas fa-check-circle"></i> 6 Ay Ücretsiz Destek</li>
+                          </ul>
+                      </div>
+                      <div class="sidebar-card">
+                          <h4>Popüler Özellikler</h4>
+                          <ul>
+                              <li><i class="fas fa-check-circle"></i> Responsive Tasarım</li>
+                              <li><i class="fas fa-check-circle"></i> SEO Optimizasyonu</li>
+                              <li><i class="fas fa-check-circle"></i> Hız Optimizasyonu</li>
+                              <li><i class="fas fa-check-circle"></i> Admin Paneli</li>
+                              <li><i class="fas fa-check-circle"></i> Blog Sistemi</li>
+                              <li><i class="fas fa-check-circle"></i> İletişim Formu</li>
+                              <li><i class="fas fa-check-circle"></i> Sosyal Medya</li>
+                              <li><i class="fas fa-check-circle"></i> Google Analytics</li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <!-- Additional Services Section -->
+      <section class="additional-services">
+          <div class="container">
+              <div class="section-header fade-in">
+                  <span class="section-badge">Ek Hizmetler</span>
+                  <h2 class="section-title">Web Sitenizi Daha da Güçlendirin</h2>
+                  <p class="section-subtitle">
+                      Web tasarım hizmetimizle birlikte alabileceğiniz ek hizmetler.
+                  </p>
+              </div>
+              <div class="additional-services-grid">
+                  <div class="additional-service-card fade-in">
+                      <h3 class="service-title">SEO Paketi</h3>
+                      <p class="service-description">Google'da üst sıralarda yer alın</p>
+                      <ul class="service-features">
+                          <li><i class="fas fa-check"></i> Anahtar kelime araştırması</li>
+                          <li><i class="fas fa-check"></i> İçerik optimizasyonu</li>
+                          <li><i class="fas fa-check"></i> Link building</li>
+                      </ul>
+                      <div class="service-price">
+                          <span>+₺1.500/ay</span>
+                          <button class="btn btn-primary btn-small">Ekle</button>
+                      </div>
+                  </div>
+                  <div class="additional-service-card fade-in">
+                      <h3 class="service-title">Sosyal Medya Yönetimi</h3>
+                      <p class="service-description">Sosyal medyada aktif olun</p>
+                      <ul class="service-features">
+                          <li><i class="fas fa-check"></i> İçerik planlama</li>
+                          <li><i class="fas fa-check"></i> Görsel tasarım</li>
+                          <li><i class="fas fa-check"></i> Etkileşim yönetimi</li>
+                      </ul>
+                      <div class="service-price">
+                          <span>+₺2.000/ay</span>
+                          <button class="btn btn-primary btn-small">Ekle</button>
+                      </div>
+                  </div>
+                  <div class="additional-service-card fade-in">
+                      <h3 class="service-title">E-ticaret Modülü</h3>
+                      <p class="service-description">Online satış yapın</p>
+                      <ul class="service-features">
+                          <li><i class="fas fa-check"></i> Ürün kataloğu</li>
+                          <li><i class="fas fa-check"></i> Ödeme sistemi</li>
+                          <li><i class="fas fa-check"></i> Stok yönetimi</li>
+                      </ul>
+                      <div class="service-price">
+                          <span>+₺3.500</span>
+                          <button class="btn btn-primary btn-small">Ekle</button>
+                      </div>
+                  </div>
+                  <div class="additional-service-card fade-in">
+                      <h3 class="service-title">Premium Hosting</h3>
+                      <p class="service-description">Yüksek performans ve güvenlik</p>
+                      <ul class="service-features">
+                          <li><i class="fas fa-check"></i> SSD depolama</li>
+                          <li><i class="fas fa-check"></i> Günlük yedekleme</li>
+                          <li><i class="fas fa-check"></i> SSL sertifikası</li>
+                      </ul>
+                      <div class="service-price">
+                          <span>+₺500/yıl</span>
+                          <button class="btn btn-primary btn-small">Ekle</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <!-- Social Proof & Certifications - Specific for Web Design -->
+      <section class="social-proof">
+          <div class="container">
+              <div class="section-header fade-in">
+                  <span class="section-badge">Güven & Sertifikalar</span>
+                  <h2 class="section-title">Güvenilir Ortağınız</h2>
+                  <p class="section-subtitle">
+                      Sektördeki uzmanlığımızı kanıtlayan sertifikalar ve başarılarımız.
+                  </p>
+              </div>
+              <div class="certifications-grid">
+                  <div class="certification-item fade-in">
+                      <div class="certification-icon">
+                          <i class="fab fa-google"></i>
+                      </div>
+                      <h4 class="certification-name">Google Partner</h4>
+                      <p class="certification-desc">Sertifikalı Google Ads ve Analytics uzmanı</p>
+                  </div>
+                  <div class="certification-item fade-in">
+                      <div class="certification-icon">
+                          <i class="fas fa-star"></i>
+                      </div>
+                      <h4 class="certification-name">8+ Yıl Deneyim</h4>
+                      <p class="certification-desc">Web tasarım alanında uzman ekip</p>
+                  </div>
+                  <div class="certification-item fade-in">
+                      <div class="certification-icon">
+                          <i class="fas fa-users"></i>
+                      </div>
+                      <h4 class="certification-name">500+ Mutlu Müşteri</h4>
+                      <p class="certification-desc">Başarıyla tamamlanan projeler</p>
+                  </div>
+                  <div class="certification-item fade-in">
+                      <div class="certification-icon">
+                          <i class="fas fa-lock"></i>
+                      </div>
+                      <h4 class="certification-name">ISO 27001</h4>
+                      <p class="certification-desc">Bilgi güvenliği yönetim sistemi</p>
+                  </div>
+                  <div class="certification-item fade-in">
+                      <div class="certification-icon">
+                          <i class="fas fa-smile"></i>
+                      </div>
+                      <h4 class="certification-name">%98 Memnuniyet</h4>
+                      <p class="certification-desc">Müşteri memnuniyet oranımız</p>
+                  </div>
+                  <div class="certification-item fade-in">
+                      <div class="certification-icon">
+                          <i class="fas fa-headset"></i>
+                      </div>
+                      <h4 class="certification-name">7/24 Destek</h4>
+                      <p class="certification-desc">Kesintisiz teknik destek hizmeti</p>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <!-- Reference Works Section - Specific for Web Design -->
+      <section class="reference-works">
+          <div class="container">
+              <div class="section-header fade-in">
+                  <span class="section-badge">Referans Çalışmalarımız</span>
+                  <h2 class="section-title">Başarılı Projelerimiz</h2>
+                  <p class="section-subtitle">
+                      Farklı sektörlerden müşterilerimiz için gerçekleştirdiğimiz web tasarım projeleri.
+                  </p>
+              </div>
+
+              <div class="portfolio-cards-grid">
+                  <div class="portfolio-detail-card fade-in">
+                      <div class="portfolio-detail-image">
+                          <i class="fas fa-building"></i>
+                      </div>
+                      <div class="portfolio-detail-content">
+                          <h3 class="portfolio-detail-title">TechCorp Web Sitesi</h3>
+                          <span class="portfolio-detail-client">TechCorp Kurumsal Web Sitesi</span>
+                          <p class="portfolio-detail-description">B2B teknoloji şirketi için kurumsal web sitesi tasarımı. Modern tasarım ve gelişmiş CMS sistemi.</p>
+                          <div class="portfolio-stats">
+                              <div class="stat-item">
+                                  <span class="stat-number">250%</span>
+                                  <span class="stat-label">Trafik Artışı</span>
+                              </div>
+                              <div class="stat-item">
+                                  <span class="stat-number">180%</span>
+                                  <span class="stat-label">Dönüşüm Artışı</span>
+                              </div>
+                          </div>
+                          <div class="portfolio-detail-tags">
+                              <span class="portfolio-tag">WordPress</span>
+                              <span class="portfolio-tag">Custom Theme</span>
+                              <span class="portfolio-tag">SEO</span>
+                          </div>
+                          <a href="#" class="portfolio-detail-link">Projeyi İncele <i class="fas fa-arrow-right"></i></a>
+                      </div>
+                  </div>
+                  <div class="portfolio-detail-card fade-in">
+                      <div class="portfolio-detail-image" style="background: var(--gradient-button-accent);">
+                          <i class="fas fa-hotel"></i>
+                      </div>
+                      <div class="portfolio-detail-content">
+                          <h3 class="portfolio-detail-title">Boutique Hotel Web Sitesi</h3>
+                          <span class="portfolio-detail-client">Boutique Hotel Rezervasyon Sitesi</span>
+                          <p class="portfolio-detail-description">Lüks otel için rezervasyon sistemi entegreli web sitesi. Çoklu dil desteği ve ödeme sistemi.</p>
+                          <div class="portfolio-stats">
+                              <div class="stat-item">
+                                  <span class="stat-number">320%</span>
+                                  <span class="stat-label">Online Rezervasyon</span>
+                              </div>
+                              <div class="stat-item">
+                                  <span class="stat-number">95%</span>
+                                  <span class="stat-label">Müşteri Memnuniyeti</span>
+                              </div>
+                          </div>
+                          <div class="portfolio-detail-tags">
+                              <span class="portfolio-tag">React</span>
+                              <span class="portfolio-tag">Booking System</span>
+                              <span class="portfolio-tag">Multi-language</span>
+                          </div>
+                          <a href="#" class="portfolio-detail-link">Projeyi İncele <i class="fas fa-arrow-right"></i></a>
+                      </div>
+                  </div>
+                  <div class="portfolio-detail-card fade-in">
+                      <div class="portfolio-detail-image" style="background: var(--gradient-button-tertiary);">
+                          <i class="fas fa-store"></i>
+                      </div>
+                      <div class="portfolio-detail-content">
+                          <h3 class="portfolio-detail-title">E-ticaret Mağazası</h3>
+                          <span class="portfolio-detail-client">Fashion Store E-ticaret</span>
+                          <p class="portfolio-detail-description">Moda markası için kapsamlı e-ticaret sitesi. Gelişmiş filtreleme ve ödeme sistemleri.</p>
+                          <div class="portfolio-stats">
+                              <div class="stat-item">
+                                  <span class="stat-number">400%</span>
+                                  <span class="stat-label">Online Satış</span>
+                              </div>
+                              <div class="stat-item">
+                                  <span class="stat-number">60%</span>
+                                  <span class="stat-label">Sepet Dönüşümü</span>
+                              </div>
+                          </div>
+                          <div class="portfolio-detail-tags">
+                              <span class="portfolio-tag">WooCommerce</span>
+                              <span class="portfolio-tag">Payment Gateway</span>
+                              <span class="portfolio-tag">Inventory</span>
+                          </div>
+                          <a href="#" class="portfolio-detail-link">Projeyi İncele <i class="fas fa-arrow-right"></i></a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <!-- FAQ Section - Specific for Web Design -->
+      <section class="faq">
+          <div class="container">
+              <div class="section-header fade-in">
+                  <span class="section-badge">Sıkça Sorulan Sorular</span>
+                  <h2 class="section-title">Web tasarım hizmetlerimiz hakkında merak ettikleriniz.</h2>
+              </div>
+              <div class="faq-container">
+                  <div class="faq-item fade-in">
+                      <div class="faq-question">
+                          <span>Web tasarım süreci ne kadar sürer?</span>
+                          <i class="fas fa-plus faq-icon"></i>
+                      </div>
+                      <div class="faq-answer">
+                          <div class="faq-answer-content">
+                              Projenin karmaşıklığına ve özelliklerine bağlı olarak değişmekle birlikte, ortalama bir kurumsal web sitesi için 2-4 hafta, daha kapsamlı e-ticaret siteleri için 4-6 hafta sürebilir. Detaylı bir zaman çizelgesi, proje analizi sonrası sunulur.
+                          </div>
+                      </div>
+                  </div>
+                  <div class="faq-item fade-in">
+                      <div class="faq-question">
+                          <span>Hangi teknolojileri kullanıyorsunuz?</span>
+                          <i class="fas fa-plus faq-icon"></i>
+                      </div>
+                      <div class="faq-answer">
+                          <div class="faq-answer-content">
+                              HTML5, CSS3, JavaScript gibi temel web teknolojilerinin yanı sıra, React, Vue.js gibi modern JavaScript kütüphaneleri ve framework'leri kullanıyoruz. İçerik yönetim sistemleri için WordPress ve özel CMS çözümleri sunuyoruz.
+                          </div>
+                      </div>
+                  </div>
+                  <div class="faq-item fade-in">
+                      <div class="faq-question">
+                          <span>Revizyon hakkım var mı?</span>
+                          <i class="fas fa-plus faq-icon"></i>
+                      </div>
+                      <div class="faq-answer">
+                          <div class="faq-answer-content">
+                              Evet, her web tasarım projemizde 3 kez ücretsiz revizyon hakkı sunuyoruz. Bu sayede tasarım ve işlevsellik beklentilerinize tam olarak uyum sağlayana kadar değişiklikler yapabiliriz.
+                          </div>
+                      </div>
+                  </div>
+                  <div class="faq-item fade-in">
+                      <div class="faq-question">
+                          <span>Hosting ve domain dahil mi?</span>
+                          <i class="fas fa-plus faq-icon"></i>
+                      </div>
+                      <div class="faq-answer">
+                          <div class="faq-answer-content">
+                              Temel web tasarım paketlerimize hosting ve domain dahil değildir. Ancak, bu hizmetleri ek paket olarak uygun fiyatlarla sunmaktayız. İhtiyaçlarınıza göre en uygun hosting ve domain çözümlerini sağlayabiliriz.
+                          </div>
+                      </div>
+                  </div>
+                  <div class="faq-item fade-in">
+                      <div class="faq-question">
+                          <span>Mobil uyumlu olacak mı?</span>
+                          <i class="fas fa-plus faq-icon"></i>
+                      </div>
+                      <div class="faq-answer">
+                          <div class="faq-answer-content">
+                              Kesinlikle! Tasarladığımız tüm web siteleri %100 responsive ve mobil uyumludur. Web siteniz, tüm cihazlarda (masaüstü, tablet, mobil) mükemmel bir kullanıcı deneyimi sunacak şekilde optimize edilir.
+                          </div>
+                      </div>
+                  </div>
+                  <div class="faq-item fade-in">
+                      <div class="faq-question">
+                          <span>İçerikleri ben mi hazırlayacağım?</span>
+                          <i class="fas fa-plus faq-icon"></i>
+                      </div>
+                      <div class="faq-answer">
+                          <div class="faq-answer-content">
+                              İçeriklerinizi (metinler, görseller, videolar) genellikle müşterilerimizden bekliyoruz. Ancak, talep etmeniz halinde profesyonel içerik yazımı ve görsel hazırlama hizmetleri de sunabiliriz. Bu konuda size rehberlik etmekten memnuniyet duyarız.
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <!-- Call to Action Section -->
+      <section class="cta-section">
+          <div class="container">
+              <div class="cta-content fade-in">
+                  <h2 class="cta-title">Web Sitenizi Hayata Geçirmeye Hazır mısınız?</h2>
+                  <p class="cta-subtitle">Profesyonel web tasarım hizmetimizle markanızı dijital world'da öne çıkarın. Ücretsiz danışmanlık için hemen iletişime geçin.</p>
+                  <div class="cta-buttons">
+                      <a href="teklif-al.html" class="btn btn-primary">Ücretsiz Teklif Al</a>
+                      <a href="tel:+905309429478" class="btn btn-secondary">Hemen Arayın</a>
+                  </div>
+              </div>
+          </div>
+      </section>
+  </main>
+
+  <!-- Chat Widget -->
+        <div class="chat-widget">
+            <div class="chat-menu" id="chatMenu">
+                <a href="https://wa.me/905309429478" class="chat-option" target="_blank">
+                    <div class="chat-option-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <div class="chat-option-content">
+                        <h4>WhatsApp</h4>
+                        <p>Hızlı destek için</p>
+                    </div>
+                </a>
+
+                <a href="tel:+905309429478" class="chat-option">
+                    <div class="chat-option-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="chat-option-content">
+                        <h4>Telefon Araması</h4>
+                        <p>Doğrudan görüşme</p>
+                    </div>
+                </a>
+
+                <a href="#" class="chat-option" id="chatbotOption">
+                    <div class="chat-option-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <div class="chat-option-content">
+                        <h4>Canlı Destek</h4>
+                        <p>Online danışmanlık</p>
+                    </div>
+                </a>
+
+                <!-- ✅ Tema Değiştir butonu (a değil, button) -->
+                <div class="chat-option theme-option">
+                    <div class="chat-option-icon">
+                        <i class="fas fa-sun"></i>
+                    </div>
+                    <div class="chat-option-content">
+                        <h4>Tema Değiştir</h4>
+                        <p>Açık / Koyu mod</p>
+                    </div>
+                    <button id="themeToggle" class="theme-toggle" aria-label="Temayı Değiştir"></button>
+                </div>
+            </div>
+
+            <button class="chat-toggle" id="chatToggle">
+                <i class="fas fa-comments"></i>
+            </button>
+        </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+      <div class="container">
+          <div class="footer-content">
+              <div class="footer-section">
+                  <div class="footer-logo">
+                      <div class="footer-logo-icon">
+                          <i class="fas fa-globe"></i>
+                      </div>
+                                              <div class="footer-logo-text">World Bilişim</div>
+                  </div>
+                  <p>
+                      Bodrum'da dijital pazarlama, web tasarım ve SEO hizmetleri sunan lider ajans. 
+                                              Modern teknolojiler ve yenilikçi çözümlerle markanızı dijital world'da zirveye taşıyoruz.
+                  </p>
+                  <div class="social-links">
+                      <a href="https://facebook.com/dunyabil" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                      <a href="https://twitter.com/dunyabil" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                      <a href="https://instagram.com/dunyabil" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                      <a href="https://linkedin.com/company/dunyabil" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                      <a href="https://youtube.com/@dunyabil" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                      <a href="https://wa.me/905309429478" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                  </div>
+              </div>
+              <div class="footer-section">
+                  <h3>Hizmetlerimiz</h3>
+                  <p><a href="#services">Web Tasarım</a></p>
+                  <p><a href="#services">SEO Hizmetleri</a></p>
+                  <p><a href="#services">E-Ticaret Çözümleri</a></p>
+                  <p><a href="#services">Google Ads</a></p>
+                  <p><a href="#services">Sosyal Medya Yönetimi</a></p>
+                  <p><a href="#services">Dijital Pazarlama</a></p>
+              </div>
+              <div class="footer-section">
+                  <h3>Kurumsal</h3>
+                  <p><a href="#portfolio">Portföyümüz</a></p>
+                  <p><a href="kurumsal.html">Hakkımızda</a></p>
+                  <p><a href="kurumsal.html#tarihce">Tarihçemiz</a></p>
+                  <p><a href="basin-kiti.html">Basında Biz</a></p>
+                  <p><a href="kurumsal.html#politikalar">Politikalarımız</a></p>
+                  <p><a href="#blog">Blog</a></p>
+                  <p><a href="#contact">İletişim</a></p>
+              </div>
+              <div class="footer-section">
+                  <h3>İletişim Bilgileri</h3>
+                  <p><i class="fas fa-map-marker-alt" style="margin-right: 8px; color: var(--color-primary);"></i>
+                  Müskebi, Düzalan Cd. No:69, 48400 Bodrum/Muğla</p>
+                  <p><i class="fas fa-phone" style="margin-right: 8px; color: var(--color-primary);"></i>
+                  +90 0530 942 9478</p>
+                  <p><i class="fas fa-envelope" style="margin-right: 8px; color: var(--color-primary);"></i>
+                  info@worldbilisim.com<br>iletisim@worldbilisim.com</p>
+              </div>
+          </div>
+      </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+  <script>
+      // FAQ Accordion (if not already in script.js)
+      document.querySelectorAll('.faq-question').forEach(question => {
+          question.addEventListener('click', () => {
+              const faqItem = question.closest('.faq-item');
+              if (!faqItem) return;
+
+              const isActive = faqItem.classList.contains('active');
+              // Close all other open FAQs
+              document.querySelectorAll('.faq-item.active').forEach(item => {
+                  if (item !== faqItem) {
+                      item.classList.remove('active');
+                  }
+              });
+              // Toggle current FAQ
+              if (!isActive) {
+                  faqItem.classList.add('active');
+              } else {
+                  faqItem.classList.remove('active');
+              }
+          });
+      });
+  </script>
+</body>
+</html>

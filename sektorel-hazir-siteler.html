@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sektörel Hazır Siteler - World Bilişim</title>
+  <meta name="description" content="World Bilişim olarak sektörel hazır siteler sunuyoruz. Restoran, otel, e-ticaret, kurumsal ve daha fazlası için özel tasarlanmış hazır web sitesi şablonları. Hızlı kurulum ve uygun fiyatlar.">
+  <meta name="keywords" content="sektörel hazır siteler, hazır web sitesi, sektör şablonları, restoran web sitesi, otel web sitesi, e-ticaret şablonu, kurumsal web sitesi, Bodrum hazır siteler">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Animated Background -->
+  <div class="animated-bg"></div>
+
+  <!-- Floating Particles -->
+  <div class="particles" id="particles"></div>
+
+  <!-- Loading Screen -->
+  <div class="loading" id="loading">
+      <div class="loading-spinner"></div>
+  </div>
+
+  <!-- Top Header Bar -->
+  <div class="top-header">
+      <div class="container">
+          <div class="top-header-content">
+              <div class="top-header-left">
+                  <a href="mailto:info@worldbilisim.com" class="top-header-item">
+                      <i class="fas fa-envelope"></i>
+                      info@worldbilisim.com
+                  </a>
+                  <a href="tel:+905309429478" class="top-header-item">
+                      <i class="fas fa-phone"></i>
+                      +90 0530 942 9478
+                  </a>
+                  <div class="top-header-item">
+                      <i class="fas fa-map-marker-alt"></i>
+                      Müskebi, Düzalan Cd. No:69, 48400 Bodrum/Muğla
+                  </div>
+              </div>
+              <div class="top-header-right">
+                  <button id="" class="theme-toggle" aria-label="Temayı Değiştir">
+                      <i class="fas fa-sun"></i>
+                  </button>
+                  <a href="#" class="customer-panel-link">
+                      <i class="fas fa-user-shield"></i>
+                      Müşteri Paneli
+                  </a>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header" id="header">
+      <nav class="nav container">
+          <div class="logo">
+              <div class="logo-icon">
+                  <i class="fas fa-globe"></i>
+              </div>
+              World Bilişim
+          </div>
+          <button class="menu-toggle" id="menuToggle" aria-label="Menüyü Aç/Kapat">
+              <i class="fas fa-bars"></i>
+          </button>
+          <ul class="nav-menu" id="navMenu">
+              <li><a href="index.html">Ana Sayfa</a></li>
+              <li class="dropdown">
+                  <a href="javascript:void(0);" id="kurumsalMenu" data-href="hakkimizda.html">Kurumsal <i class="fas fa-chevron-down" style="font-size: 0.8em;"></i></a>
+                  <ul class="dropdown-menu">
+                      <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                      <li><a href="hakkimizda.html#tarihce">Tarihçemiz</a></li>
+                      <li><a href="">Basında Biz</a></li>
+                      <li><a href="politikalar.html">Politikalarımız</a></li>
+                  </ul>
+              </li>
+              <li><a href="hizmetler.html">Hizmetlerimiz</a></li>
+              <li><a href="referanslar.html">Portföyümüz</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="iletisim.html">İletişim</a></li>
+              <li><a href="teklif-al.html" class="cta-nav">Ücretsiz Teklif</a></li>
+          </ul>
+      </nav>
+  </header>
+
+  <main>
+      <!-- Breadcrumb Section -->
+      <section class="breadcrumb-section">
+          <div class="container">
+              <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                      <li><a href="index.html">Ana Sayfa</a></li>
+                      <li><a href="hizmetler.html">Hizmetler</a></li>
+                      <li aria-current="page">Sektörel Hazır Siteler</li>
+                  </ol>
+              </nav>
+          </div>
+      </section>
+
+      <!-- Service Detail Hero Section -->
+      <section class="service-detail-hero">
+          <div class="container">
+              <div class="service-detail-hero-wrapper">
+                  <div class="service-detail-hero-content fade-in">
+                      <span class="section-badge">Hızlı ve Uygun Fiyatlı</span>
+                      <h1 class="hero-title">Sektörel Hazır Siteler</h1>
+                      <p class="hero-subtitle">
+                          Sektörünüze özel hazırlanmış web site şablonları ile hızlı ve uygun fiyatlı dijital varlığınızı oluşturun. Restoran, otel, e-ticaret ve daha fazlası için özel tasarlanmış çözümler.
+                      </p>
+                      <div class="service-features-list">
+                          <span><i class="fas fa-check-circle"></i> Sektörel özel tasarımlar</span>
+                          <span><i class="fas fa-check-circle"></i> Hızlı kurulum (24-48 saat)</span>
+                          <span><i class="fas fa-check-circle"></i> Mobil uyumlu tasarım</span>
+                          <span><i class="fas fa-check-circle"></i> SEO optimizasyonu dahil</span>
+                          <span><i class="fas fa-check-circle"></i> 3 ay ücretsiz destek</span>
+                      </div>
+                      <div class="hero-buttons">
+                          <a href="teklif-al.html" class="btn btn-primary">Hemen Başla</a>
+                          <a href="iletisim.html" class="btn btn-secondary">Ücretsiz Danışmanlık</a>
+                      </div>
+                  </div>
+                  <!-- Service Info Grid - Moved to Hero Section -->
+                  <div class="info-grid fade-in">
+                      <div class="info-card">
+                          <div class="info-icon"><i class="fas fa-clock"></i></div>
+                          <div class="info-text">
+                              <h3 class="info-title">Kurulum Süresi</h3>
+                              <p class="info-value">24-48 saat</p>
+                          </div>
+                      </div>
+                      <div class="info-card">
+                          <div class="info-icon"><i class="fas fa-star"></i></div>
+                          <div class="info-text">
+                              <h3 class="info-title">Deneyim Seviyesi</h3>
+                              <p class="info-value">Uzman (8+ yıl)</p>
+                          </div>
+                      </div>
+                      <div class="info-card">
+                          <div class="info-icon"><i class="fas fa-shield-alt"></i></div>
+                          <div class="info-text">
+                              <h3 class="info-title">Güvenlik</h3>
+                              <p class="info-value">SSL sertifikası dahil</p>
+                          </div>
+                      </div>
+                      <div class="info-card">
+                          <div class="info-icon"><i class="fas fa-sync-alt"></i></div>
+                          <div class="info-text">
+                              <h3 class="info-title">Güncelleme</h3>
+                              <p class="info-value">Ücretsiz güncellemeler</p>
+                          </div>
+                      </div>
+                      <div class="info-card">
+                          <div class="info-icon"><i class="fas fa-lira-sign"></i></div>
+                          <div class="info-text">
+                              <h3 class="info-title">Başlangıç Fiyatı</h3>
+                              <p class="info-value">₺1.200'den başlar</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <!-- How We Work Section - Sector-Specific Ready Sites Process -->
+      <section class="how-we-work">
+          <div class="container">
+              <div class="section-header fade-in">
+                  <span class="section-badge">Çalışma Sürecimiz</span>
+                  <h2 class="section-title">Hazır Site Kurulum Süreci</h2>
+                  <p class="section-subtitle">
+                      Sektörel hazır sitelerinizi 6 adımda hızlıca kuruyoruz.
+                  </p>
+              </div>
+              <div class="process-grid">
+                  <div class="process-step fade-in">
+                      <div class="process-number">1</div>
+                      <div class="process-icon">
+                          <i class="fas fa-handshake"></i>
+                      </div>
+                      <h3 class="process-title">Sektör Seçimi</h3>
+                      <p class="process-description">
+                          Sektörünüze uygun hazır site şablonunu seçiyor, ihtiyaçlarınızı analiz ediyor ve özelleştirme detaylarını belirliyoruz.
+                      </p>
+                  </div>
+                  <div class="process-step fade-in">
+                      <div class="process-number">2</div>
+                      <div class="process-icon">
+                          <i class="fas fa-clipboard-list"></i>
+                      </div>
+                      <h3 class="process-title">İçerik Planlama</h3>
+                      <p class="process-description">
+                          Siteniz için gerekli içerikleri planlıyor, görselleri hazırlıyor ve sayfa yapısını oluşturuyoruz.
+                      </p>
+                  </div>
+                  <div class="process-step fade-in">
+                      <div class="process-number">3</div>
+                      <div class="process-icon">
+                          <i class="fas fa-palette"></i>
+                      </div>
+                      <h3 class="process-title">Özelleştirme</h3>
+                      <p class="process-description">
+                          Seçilen şablonu markanıza uygun şekilde özelleştiriyor, renkleri ve logonuzu entegre ediyoruz.
+                      </p>
+                  </div>
+                  <div class="process-step fade-in">
+                      <div class="process-number">4</div>
+                      <div class="process-icon">
+                          <i class="fas fa-code"></i>
+                      </div>
+                      <h3 class="process-title">Teknik Kurulum</h3>
+                      <p class="process-description">
+                          Domain ve hosting ayarlarını yapıyor, SSL sertifikası kuruyor ve teknik optimizasyonları tamamlıyoruz.
+                      </p>
+                  </div>
+                  <div class="process-step fade-in">
+                      <div class="process-number">5</div>
+                      <div class="process-icon">
+                          <i class="fas fa-vial"></i>
+                      </div>
+                      <h3 class="process-title">Test & Yayınlama</h3>
+                      <p class="process-description">
+                          Tüm sayfaları test ediyor, mobil uyumluluğu kontrol ediyor ve sitenizi canlıya alıyoruz.
+                      </p>
+                  </div>
+                  <div class="process-step fade-in">
+                      <div class="process-number">6</div>
+                      <div class="process-icon">
+                          <i class="fas fa-graduation-cap"></i>
+                      </div>
+                      <h3 class="process-title">Eğitim & Teslim</h3>
+                      <p class="process-description">
+                          Site yönetimi için eğitim veriyor, kullanım kılavuzu hazırlıyor ve 3 ay boyunca destek sağlıyoruz.
+                      </p>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <!-- Features Section -->
+      <section class="features-section">
+          <div class="container">
+              <div class="section-header fade-in">
+                  <span class="section-badge">Özelliklerimiz</span>
+                  <h2 class="section-title">Neden Sektörel Hazır Siteler?</h2>
+                  <p class="section-subtitle">
+                      Sektörel hazır sitelerimizde sunduğumuz değer katma özellikler.
+                  </p>
+              </div>
+              <div class="features-grid">
+                  <div class="feature-card fade-in">
+                      <div class="feature-icon-wrapper">
+                          <i class="fas fa-industry feature-icon"></i>
+                      </div>
+                      <h3 class="feature-title">Sektörel Özel Tasarımlar</h3>
+                      <p class="feature-description">Her sektör için özel olarak tasarlanmış şablonlar. Restoran, otel, e-ticaret, kurumsal ve daha fazlası için optimize edilmiş tasarımlar.</p>
+                      <ul class="feature-list">
+                          <li><i class="fas fa-check"></i> Restoran ve kafe şablonları</li>
+                          <li><i class="fas fa-check"></i> Otel ve turizm siteleri</li>
+                          <li><i class="fas fa-check"></i> E-ticaret mağazaları</li>
+                          <li><i class="fas fa-check"></i> Kurumsal web siteleri</li>
+                      </ul>
+                  </div>
+                  <div class="feature-card fade-in">
+                      <div class="feature-icon-wrapper">
+                          <i class="fas fa-rocket feature-icon"></i>
+                      </div>
+                      <h3 class="feature-title">Hızlı Kurulum</h3>
+                      <p class="feature-description">24-48 saat içinde siteniz hazır! Hazır şablonlar sayesinde hızlı kurulum ve hemen yayınlama imkanı.</p>
+                      <ul class="feature-list">
+                          <li><i class="fas fa-check"></i> 24-48 saat kurulum</li>
+                          <li><i class="fas fa-check"></i> Anında yayınlama</li>
+                          <li><i class="fas fa-check"></i> Hızlı özelleştirme</li>
+                          <li><i class="fas fa-check"></i> Kolay içerik yönetimi</li>
+                      </ul>
+                  </div>
+                  <div class="feature-card fade-in">
+                      <div class="feature-icon-wrapper">
+                          <i class="fas fa-mobile-alt feature-icon"></i>
+                      </div>
+                      <h3 class="feature-title">Mobil Uyumlu Tasarım</h3>
+                      <p class="feature-description">Tüm cihazlarda mükemmel görünüm sağlayan responsive tasarımlar. Mobil-first yaklaşım ile optimize edilmiş kullanıcı deneyimi.</p>
+                      <ul class="feature-list">
+                          <li><i class="fas fa-check"></i> Responsive tasarım</li>
+                          <li><i class="fas fa-check"></i> Mobil optimizasyonu</li>
+                          <li><i class="fas fa-check"></i> Touch-friendly arayüz</li>
+                          <li><i class="fas fa-check"></i> Cross-browser uyumluluk</li>
+                      </ul>
+                  </div>
+                  <div class="feature-card fade-in">
+                      <div class="feature-icon-wrapper">
+                          <i class="fas fa-search feature-icon"></i>
+                      </div>
+                      <h3 class="feature-title">SEO Optimizasyonu</h3>
+                      <p class="feature-description">Arama motorlarında üst sıralarda yer almanız için SEO optimizasyonu dahil. Meta taglar, site haritası ve hız optimizasyonu.</p>
+                      <ul class="feature-list">
+                          <li><i class="fas fa-check"></i> SEO optimizasyonu</li>
+                          <li><i class="fas fa-check"></i> Meta tag yönetimi</li>
+                          <li><i class="fas fa-check"></i> Site haritası oluşturma</li>
+                          <li><i class="fas fa-check"></i> Hız optimizasyonu</li>
+                      </ul>
+                  </div>
+                  <div class="feature-card fade-in">
+                      <div class="feature-icon-wrapper">
+                          <i class="fas fa-cogs feature-icon"></i>
+                      </div>
+                      <h3 class="feature-title">Kolay Yönetim</h3>
+                      <p class="feature-description">Kullanıcı dostu admin paneli ile içeriklerinizi kolayca güncelleyebilirsiniz. Sürükle-bırak editör ve medya yönetimi.</p>
+                      <ul class="feature-list">
+                          <li><i class="fas fa-check"></i> Sürükle-bırak editör</li>
+                          <li><i class="fas fa-check"></i> Medya yönetimi</li>
+                          <li><i class="fas fa-check"></i> Kullanıcı eğitimi</li>
+                          <li><i class="fas fa-check"></i> Video rehberler</li>
+                      </ul>
+                  </div>
+                  <div class="feature-card fade-in">
+                      <div class="feature-icon-wrapper">
+                          <i class="fas fa-headset feature-icon"></i>
+                      </div>
+                      <h3 class="feature-title">Teknik Destek</h3>
+                      <p class="feature-description">3 ay boyunca ücretsiz teknik destek ve bakım hizmeti sunuyoruz. Sorularınız için her zaman yanınızdayız.</p>
+                      <ul class="feature-list">
+                          <li><i class="fas fa-check"></i> 3 ay ücretsiz destek</li>
+                          <li><i class="fas fa-check"></i> İçerik güncellemeleri</li>
+                          <li><i class="fas fa-check"></i> Hata giderme</li>
+                          <li><i class="fas fa-check"></i> Performans izleme</li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <!-- About Sector-Specific Ready Sites Section -->
+      <section class="about-web-design">
+          <div class="container">
+              <div class="section-header fade-in">
+                  <span class="section-badge">Sektörel Hazır Siteler Hakkında</span>
+                  <h2 class="section-title">Sektörel Hazır Siteler Nedir?</h2>
+              </div>
+              <div class="about-content">
+                  <div class="about-text-container fade-in">
+                      <p>Sektörel hazır siteler, belirli sektörler için özel olarak tasarlanmış ve hazırlanmış web site şablonlarıdır. Bu şablonlar, sektörün ihtiyaçlarına göre optimize edilmiş, kullanıma hazır web siteleri sunar. Restoran, otel, e-ticaret, kurumsal ve daha birçok sektör için özel tasarlanmış çözümlerdir.</p>
+                      <h3>Sektörel Hazır Sitelerin Avantajları</h3>
+                      <p>Sektörel hazır siteler, özel web tasarımına göre daha hızlı, uygun fiyatlı ve kolay kurulum imkanı sunar. Hazır şablonlar, sektörün ihtiyaçlarına göre optimize edilmiş olduğu için, müşterilerin beklentilerini karşılayan profesyonel web siteleri oluşturmanızı sağlar. Ayrıca, hızlı kurulum sayesinde dijital varlığınızı kısa sürede hayata geçirebilirsiniz.</p>
+                      <h3>Hangi Sektörler İçin Hazır Siteler?</h3>
+                      <p>Sektörel hazır sitelerimiz, restoran ve kafeler, oteller ve turizm işletmeleri, e-ticaret mağazaları, kurumsal şirketler, sağlık sektörü, eğitim kurumları ve daha birçok sektör için özel olarak tasarlanmıştır. Her sektörün kendine özgü ihtiyaçları ve beklentileri göz önünde bulundurularak hazırlanan şablonlar, kullanıcı deneyimini en üst seviyeye çıkarır.</p>
+                      <h3>Hazır Site Kurulum Süreci</h3>
+                      <p>Sektörel hazır site kurulum süreci oldukça basit ve hızlıdır. İlk olarak sektörünüze uygun şablonu seçiyor, ardından markanıza uygun şekilde özelleştiriyoruz. İçeriklerinizi ekliyor, teknik kurulumları tamamlıyor ve sitenizi canlıya alıyoruz. Tüm süreç 24-48 saat içinde tamamlanır.</p>
+                      <h3>Özelleştirme ve Güncelleme</h3>
+                      <p>Hazır sitelerimiz, tamamen özelleştirilebilir yapıda tasarlanmıştır. Renkler, logolar, içerikler ve görseller markanıza uygun şekilde değiştirilebilir. Ayrıca, kullanıcı dostu admin paneli sayesinde içeriklerinizi kolayca güncelleyebilir ve sitenizi yönetebilirsiniz.</p>
+                      <h3>Teknik Özellikler</h3>
+                      <p>Sektörel hazır sitelerimiz, modern web teknolojileri kullanılarak geliştirilmiştir. Responsive tasarım, SEO optimizasyonu, hızlı yükleme süreleri ve güvenlik önlemleri dahil edilmiştir. SSL sertifikası, güvenlik duvarı ve düzenli yedekleme hizmetleri ile siteniz güvende kalır.</p>
+                  </div>
+                  <div class="about-sidebar fade-in">
+                      <div class="sidebar-card">
+                          <h4>Hızlı Bilgiler</h4>
+                          <ul>
+                              <li><i class="fas fa-check-circle"></i> Ortalama Kurulum Süresi: <strong>24-48 saat</strong></li>
+                              <li><i class="fas fa-check-circle"></i> %100 Mobil Uyumlu</li>
+                              <li><i class="fas fa-check-circle"></i> SEO Optimizasyonu Dahil</li>
+                              <li><i class="fas fa-check-circle"></i> SSL Sertifikası</li>
+                              <li><i class="fas fa-check-circle"></i> 3 Ay Ücretsiz Destek</li>
+                          </ul>
+                      </div>
+                      <div class="sidebar-card">
+                          <h4>Mevcut Sektör Şablonları</h4>
+                          <ul>
+                              <li><i class="fas fa-check-circle"></i> Restoran ve Kafe</li>
+                              <li><i class="fas fa-check-circle"></i> Otel ve Turizm</li>
+                              <li><i class="fas fa-check-circle"></i> E-ticaret Mağazası</li>
+                              <li><i class="fas fa-check-circle"></i> Kurumsal Şirket</li>
+                              <li><i class="fas fa-check-circle"></i> Sağlık Sektörü</li>
+                              <li><i class="fas fa-check-circle"></i> Eğitim Kurumu</li>
+                              <li><i class="fas fa-check-circle"></i> Hizmet Sektörü</li>
+                              <li><i class="fas fa-check-circle"></i> Sanat ve Tasarım</li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <!-- Additional Services Section -->
+      <section class="additional-services">
+          <div class="container">
+              <div class="section-header fade-in">
+                  <span class="section-badge">Ek Hizmetler</span>
+                  <h2 class="section-title">Hazır Sitenizi Daha da Güçlendirin</h2>
+                  <p class="section-subtitle">
+                      Sektörel hazır sitelerimizle birlikte alabileceğiniz ek hizmetler.
+                  </p>
+              </div>
+              <div class="additional-services-grid">
+                  <div class="additional-service-card fade-in">
+                      <h3 class="service-title">SEO Paketi</h3>
+                      <p class="service-description">Hazır sitenizi SEO için optimize edin</p>
+                      <ul class="service-features">
+                          <li><i class="fas fa-check"></i> Anahtar kelime araştırması</li>
+                          <li><i class="fas fa-check"></i> İçerik optimizasyonu</li>
+                          <li><i class="fas fa-check"></i> Link building</li>
+                      </ul>
+                      <div class="service-price">
+                          <span>+₺600/ay</span>
+                          <button class="btn btn-primary btn-small">Ekle</button>
+                      </div>
+                  </div>
+                  <div class="additional-service-card fade-in">
+                      <h3 class="service-title">Sosyal Medya Yönetimi</h3>
+                      <p class="service-description">Sosyal medyada aktif olun</p>
+                      <ul class="service-features">
+                          <li><i class="fas fa-check"></i> İçerik planlama</li>
+                          <li><i class="fas fa-check"></i> Görsel tasarım</li>
+                          <li><i class="fas fa-check"></i> Etkileşim yönetimi</li>
+                      </ul>
+                      <div class="service-price">
+                          <span>+₺1.500/ay</span>
+                          <button class="btn btn-primary btn-small">Ekle</button>
+                      </div>
+                  </div>
+                  <div class="additional-service-card fade-in">
+                      <h3 class="service-title">E-ticaret Modülü</h3>
+                      <p class="service-description">Hazır sitenizde online satış yapın</p>
+                      <ul class="service-features">
+                          <li><i class="fas fa-check"></i> Ürün kataloğu</li>
+                          <li><i class="fas fa-check"></i> Ödeme sistemi</li>
+                          <li><i class="fas fa-check"></i> Stok yönetimi</li>
+                      </ul>
+                      <div class="service-price">
+                          <span>+₺2.000</span>
+                          <button class="btn btn-primary btn-small">Ekle</button>
+                      </div>
+                  </div>
+                  <div class="additional-service-card fade-in">
+                      <h3 class="service-title">Premium Hosting</h3>
+                      <p class="service-description">Yüksek performans ve güvenlik</p>
+                      <ul class="service-features">
+                          <li><i class="fas fa-check"></i> SSD depolama</li>
+                          <li><i class="fas fa-check"></i> Günlük yedekleme</li>
+                          <li><i class="fas fa-check"></i> SSL sertifikası</li>
+                      </ul>
+                      <div class="service-price">
+                          <span>+₺300/yıl</span>
+                          <button class="btn btn-primary btn-small">Ekle</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <!-- Social Proof & Certifications - Specific for Ready Sites -->
+      <section class="social-proof">
+          <div class="container">
+              <div class="section-header fade-in">
+                  <span class="section-badge">Güven & Sertifikalar</span>
+                  <h2 class="section-title">Güvenilir Hazır Site Ortağınız</h2>
+                  <p class="section-subtitle">
+                      Sektörel hazır siteler alanındaki uzmanlığımızı kanıtlayan başarılarımız.
+                  </p>
+              </div>
+              <div class="certifications-grid">
+                  <div class="certification-item fade-in">
+                      <div class="certification-icon">
+                          <i class="fas fa-templates"></i>
+                      </div>
+                      <h4 class="certification-name">50+ Sektör Şablonu</h4>
+                      <p class="certification-desc">Farklı sektörler için hazır şablonlar</p>
+                  </div>
+                  <div class="certification-item fade-in">
+                      <div class="certification-icon">
+                          <i class="fas fa-star"></i>
+                      </div>
+                      <h4 class="certification-name">8+ Yıl Deneyim</h4>
+                      <p class="certification-desc">Hazır site geliştirme alanında uzman ekip</p>
+                  </div>
+                  <div class="certification-item fade-in">
+                      <div class="certification-icon">
+                          <i class="fas fa-users"></i>
+                      </div>
+                      <h4 class="certification-name">200+ Hazır Site</h4>
+                      <p class="certification-desc">Başarıyla kurulan hazır siteler</p>
+                  </div>
+                  <div class="certification-item fade-in">
+                      <div class="certification-icon">
+                          <i class="fas fa-lock"></i>
+                      </div>
+                      <h4 class="certification-name">Güvenlik Uzmanı</h4>
+                      <p class="certification-desc">Hazır site güvenlik uzmanlığı</p>
+                  </div>
+                  <div class="certification-item fade-in">
+                      <div class="certification-icon">
+                          <i class="fas fa-smile"></i>
+                      </div>
+                      <h4 class="certification-name">%97 Memnuniyet</h4>
+                      <p class="certification-desc">Hazır site müşteri memnuniyet oranımız</p>
+                  </div>
+                  <div class="certification-item fade-in">
+                      <div class="certification-icon">
+                          <i class="fas fa-headset"></i>
+                      </div>
+                      <h4 class="certification-name">7/24 Hazır Site Destek</h4>
+                      <p class="certification-desc">Kesintisiz hazır site teknik destek hizmeti</p>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <!-- Reference Works Section - Specific for Ready Sites -->
+      <section class="reference-works">
+          <div class="container">
+              <div class="section-header fade-in">
+                  <span class="section-badge">Referans Çalışmalarımız</span>
+                  <h2 class="section-title">Hazır Site Projelerimiz</h2>
+                  <p class="section-subtitle">
+                      Farklı sektörlerden müşterilerimiz için gerçekleştirdiğimiz sektörel hazır site projeleri.
+                  </p>
+              </div>
+
+              <div class="portfolio-cards-grid">
+                  <div class="portfolio-detail-card fade-in">
+                      <div class="portfolio-detail-image">
+                          <i class="fas fa-utensils"></i>
+                      </div>
+                      <div class="portfolio-detail-content">
+                          <h3 class="portfolio-detail-title">Restoran Hazır Sitesi</h3>
+                          <span class="portfolio-detail-client">Bodrum Restoran Şablonu</span>
+                          <p class="portfolio-detail-description">Bodrum'da faaliyet gösteren restoran için özel hazır site şablonu. Menü yönetimi, rezervasyon sistemi ve online sipariş entegrasyonu.</p>
+                          <div class="portfolio-stats">
+                              <div class="stat-item">
+                                  <span class="stat-number">280%</span>
+                                  <span class="stat-label">Online Rezervasyon</span>
+                              </div>
+                              <div class="stat-item">
+                                  <span class="stat-number">95%</span>
+                                  <span class="stat-label">Müşteri Memnuniyeti</span>
+                              </div>
+                          </div>
+                          <div class="portfolio-detail-tags">
+                              <span class="portfolio-tag">Hazır Site</span>
+                              <span class="portfolio-tag">Restoran Şablonu</span>
+                              <span class="portfolio-tag">Rezervasyon</span>
+                          </div>
+                          <a href="#" class="portfolio-detail-link">Projeyi İncele <i class="fas fa-arrow-right"></i></a>
+                      </div>
+                  </div>
+                  <div class="portfolio-detail-card fade-in">
+                      <div class="portfolio-detail-image" style="background: var(--gradient-button-accent);">
+                          <i class="fas fa-hotel"></i>
+                      </div>
+                      <div class="portfolio-detail-content">
+                          <h3 class="portfolio-detail-title">Otel Hazır Sitesi</h3>
+                          <span class="portfolio-detail-client">Boutique Hotel Şablonu</span>
+                          <p class="portfolio-detail-description">Lüks boutique otel için hazır site şablonu. Oda rezervasyon sistemi, galeri yönetimi ve çoklu dil desteği.</p>
+                          <div class="portfolio-stats">
+                              <div class="stat-item">
+                                  <span class="stat-number">320%</span>
+                                  <span class="stat-label">Online Rezervasyon</span>
+                              </div>
+                              <div class="stat-item">
+                                  <span class="stat-number">98%</span>
+                                  <span class="stat-label">Müşteri Memnuniyeti</span>
+                              </div>
+                          </div>
+                          <div class="portfolio-detail-tags">
+                              <span class="portfolio-tag">Hazır Site</span>
+                              <span class="portfolio-tag">Otel Şablonu</span>
+                              <span class="portfolio-tag">Booking System</span>
+                          </div>
+                          <a href="#" class="portfolio-detail-link">Projeyi İncele <i class="fas fa-arrow-right"></i></a>
+                      </div>
+                  </div>
+                  <div class="portfolio-detail-card fade-in">
+                      <div class="portfolio-detail-image" style="background: var(--gradient-button-tertiary);">
+                          <i class="fas fa-store"></i>
+                      </div>
+                      <div class="portfolio-detail-content">
+                          <h3 class="portfolio-detail-title">E-ticaret Hazır Sitesi</h3>
+                          <span class="portfolio-detail-client">Online Mağaza Şablonu</span>
+                          <p class="portfolio-detail-description">Moda markası için hazır e-ticaret şablonu. Ürün kataloğu, ödeme sistemi ve stok yönetimi entegrasyonu.</p>
+                          <div class="portfolio-stats">
+                              <div class="stat-item">
+                                  <span class="stat-number">450%</span>
+                                  <span class="stat-label">Online Satış</span>
+                              </div>
+                              <div class="stat-item">
+                                  <span class="stat-number">70%</span>
+                                  <span class="stat-label">Sepet Dönüşümü</span>
+                              </div>
+                          </div>
+                          <div class="portfolio-detail-tags">
+                              <span class="portfolio-tag">Hazır Site</span>
+                              <span class="portfolio-tag">E-ticaret Şablonu</span>
+                              <span class="portfolio-tag">Payment Gateway</span>
+                          </div>
+                          <a href="#" class="portfolio-detail-link">Projeyi İncele <i class="fas fa-arrow-right"></i></a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <!-- FAQ Section - Specific for Ready Sites -->
+      <section class="faq">
+          <div class="container">
+              <div class="section-header fade-in">
+                  <span class="section-badge">Sıkça Sorulan Sorular</span>
+                  <h2 class="section-title">Sektörel hazır siteler hakkında merak ettikleriniz.</h2>
+              </div>
+              <div class="faq-container">
+                  <div class="faq-item fade-in">
+                      <div class="faq-question">
+                          <span>Hazır site kurulum süreci ne kadar sürer?</span>
+                          <i class="fas fa-plus faq-icon"></i>
+                      </div>
+                      <div class="faq-answer">
+                          <div class="faq-answer-content">
+                              Sektörel hazır site kurulum süreci, seçilen şablonun karmaşıklığına ve özelleştirme detaylarına bağlı olarak 24-48 saat içinde tamamlanır. Basit özelleştirmeler 24 saat, daha kapsamlı özelleştirmeler 48 saat sürebilir.
+                          </div>
+                      </div>
+                  </div>
+                  <div class="faq-item fade-in">
+                      <div class="faq-question">
+                          <span>Hangi sektörler için hazır site şablonları mevcut?</span>
+                          <i class="fas fa-plus faq-icon"></i>
+                      </div>
+                      <div class="faq-answer">
+                          <div class="faq-answer-content">
+                              Restoran ve kafeler, oteller ve turizm işletmeleri, e-ticaret mağazaları, kurumsal şirketler, sağlık sektörü, eğitim kurumları, hizmet sektörü ve sanat-tasarım alanları için özel şablonlarımız mevcuttur. Toplam 50+ farklı sektör şablonu sunuyoruz.
+                          </div>
+                      </div>
+                  </div>
+                  <div class="faq-item fade-in">
+                      <div class="faq-question">
+                          <span>Hazır siteler özelleştirilebilir mi?</span>
+                          <i class="fas fa-plus faq-icon"></i>
+                      </div>
+                      <div class="faq-answer">
+                          <div class="faq-answer-content">
+                              Evet, tüm hazır sitelerimiz tamamen özelleştirilebilir yapıda tasarlanmıştır. Renkler, logolar, içerikler, görseller ve sayfa düzenleri markanıza uygun şekilde değiştirilebilir. Ayrıca, kullanıcı dostu admin paneli ile içeriklerinizi kolayca güncelleyebilirsiniz.
+                          </div>
+                      </div>
+                  </div>
+                  <div class="faq-item fade-in">
+                      <div class="faq-question">
+                          <span>Hazır siteler mobil uyumlu mu?</span>
+                          <i class="fas fa-plus faq-icon"></i>
+                      </div>
+                      <div class="faq-answer">
+                          <div class="faq-answer-content">
+                              Kesinlikle! Tüm sektörel hazır sitelerimiz %100 responsive ve mobil uyumludur. Mobil-first yaklaşım ile tasarlanan şablonlar, tüm cihazlarda (masaüstü, tablet, mobil) mükemmel bir kullanıcı deneyimi sunar.
+                          </div>
+                      </div>
+                  </div>
+                  <div class="faq-item fade-in">
+                      <div class="faq-question">
+                          <span>Hazır sitelerde SEO optimizasyonu var mı?</span>
+                          <i class="fas fa-plus faq-icon"></i>
+                      </div>
+                      <div class="faq-answer">
+                          <div class="faq-answer-content">
+                              Evet, tüm sektörel hazır sitelerimizde SEO optimizasyonu dahil edilmiştir. Meta taglar, site haritası, hız optimizasyonu ve arama motoru uyumluluğu standart olarak sunulur. Ayrıca, ek SEO paketi hizmeti de alabilirsiniz.
+                          </div>
+                      </div>
+                  </div>
+                  <div class="faq-item fade-in">
+                      <div class="faq-question">
+                          <span>Hazır site fiyatlarına ne dahil?</span>
+                          <i class="fas fa-plus faq-icon"></i>
+                      </div>
+                      <div class="faq-answer">
+                          <div class="faq-answer-content">
+                              Hazır site fiyatlarımıza şablon seçimi, özelleştirme, domain ve hosting kurulumu, SSL sertifikası, içerik yükleme, test ve yayınlama dahildir. Ayrıca 3 ay boyunca ücretsiz teknik destek hizmeti de sunuyoruz.
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <!-- Call to Action Section -->
+      <section class="cta-section">
+          <div class="container">
+              <div class="cta-content fade-in">
+                  <h2 class="cta-title">Hazır Sitenizi Hemen Kurmaya Hazır mısınız?</h2>
+                  <p class="cta-subtitle">Sektörel hazır sitelerimizle hızlı ve uygun fiyatlı dijital varlığınızı oluşturun. Ücretsiz danışmanlık için hemen iletişime geçin.</p>
+                  <div class="cta-buttons">
+                      <a href="teklif-al.html" class="btn btn-primary">Ücretsiz Teklif Al</a>
+                      <a href="tel:+905309429478" class="btn btn-secondary">Hemen Arayın</a>
+                  </div>
+              </div>
+          </div>
+      </section>
+  </main>
+
+  <!-- Chat Widget -->
+        <div class="chat-widget">
+            <div class="chat-menu" id="chatMenu">
+                <a href="https://wa.me/905309429478" class="chat-option" target="_blank">
+                    <div class="chat-option-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <div class="chat-option-content">
+                        <h4>WhatsApp</h4>
+                        <p>Hızlı destek için</p>
+                    </div>
+                </a>
+
+                <a href="tel:+905309429478" class="chat-option">
+                    <div class="chat-option-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="chat-option-content">
+                        <h4>Telefon Araması</h4>
+                        <p>Doğrudan görüşme</p>
+                    </div>
+                </a>
+
+                <a href="#" class="chat-option" id="chatbotOption">
+                    <div class="chat-option-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <div class="chat-option-content">
+                        <h4>Canlı Destek</h4>
+                        <p>Online danışmanlık</p>
+                    </div>
+                </a>
+
+                <!-- ✅ Tema Değiştir butonu (a değil, button) -->
+                <div class="chat-option theme-option">
+                    <div class="chat-option-icon">
+                        <i class="fas fa-sun"></i>
+                    </div>
+                    <div class="chat-option-content">
+                        <h4>Tema Değiştir</h4>
+                        <p>Açık / Koyu mod</p>
+                    </div>
+                    <button id="themeToggle" class="theme-toggle" aria-label="Temayı Değiştir"></button>
+                </div>
+            </div>
+
+            <button class="chat-toggle" id="chatToggle">
+                <i class="fas fa-comments"></i>
+            </button>
+        </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+      <div class="container">
+          <div class="footer-content">
+              <div class="footer-section">
+                  <div class="footer-logo">
+                      <div class="footer-logo-icon">
+                          <i class="fas fa-globe"></i>
+                      </div>
+                                              <div class="footer-logo-text">World Bilişim</div>
+                  </div>
+                  <p>
+                      Bodrum'da dijital pazarlama, web tasarım ve SEO hizmetleri sunan lider ajans. 
+                                              Modern teknolojiler ve yenilikçi çözümlerle markanızı dijital world'da zirveye taşıyoruz.
+                  </p>
+                  <div class="social-links">
+                      <a href="https://facebook.com/dunyabil" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                      <a href="https://twitter.com/dunyabil" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                      <a href="https://instagram.com/dunyabil" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                      <a href="https://linkedin.com/company/dunyabil" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                      <a href="https://youtube.com/@dunyabil" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                      <a href="https://wa.me/905309429478" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                  </div>
+              </div>
+              <div class="footer-section">
+                  <h3>Hizmetlerimiz</h3>
+                  <p><a href="#services">Web Tasarım</a></p>
+                  <p><a href="#services">WordPress Geliştirme</a></p>
+                  <p><a href="#services">Sektörel Hazır Siteler</a></p>
+                  <p><a href="#services">SEO Hizmetleri</a></p>
+                  <p><a href="#services">E-Ticaret Çözümleri</a></p>
+                  <p><a href="#services">Dijital Pazarlama</a></p>
+              </div>
+              <div class="footer-section">
+                  <h3>Kurumsal</h3>
+                  <p><a href="#portfolio">Portföyümüz</a></p>
+                  <p><a href="kurumsal.html">Hakkımızda</a></p>
+                  <p><a href="kurumsal.html#tarihce">Tarihçemiz</a></p>
+                  <p><a href="basin-kiti.html">Basında Biz</a></p>
+                  <p><a href="kurumsal.html#politikalar">Politikalarımız</a></p>
+                  <p><a href="#blog">Blog</a></p>
+                  <p><a href="#contact">İletişim</a></p>
+              </div>
+              <div class="footer-section">
+                  <h3>İletişim Bilgileri</h3>
+                  <p><i class="fas fa-map-marker-alt" style="margin-right: 8px; color: var(--color-primary);"></i>
+                  Müskebi, Düzalan Cd. No:69, 48400 Bodrum/Muğla</p>
+                  <p><i class="fas fa-phone" style="margin-right: 8px; color: var(--color-primary);"></i>
+                  +90 0530 942 9478</p>
+                  <p><i class="fas fa-envelope" style="margin-right: 8px; color: var(--color-primary);"></i>
+                  info@worldbilisim.com<br>iletisim@worldbilisim.com</p>
+              </div>
+          </div>
+      </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+  <script>
+      // FAQ Accordion (if not already in script.js)
+      document.querySelectorAll('.faq-question').forEach(question => {
+          question.addEventListener('click', () => {
+              const faqItem = question.closest('.faq-item');
+              if (!faqItem) return;
+
+              const isActive = faqItem.classList.contains('active');
+              // Close all other open FAQs
+              document.querySelectorAll('.faq-item.active').forEach(item => {
+                  if (item !== faqItem) {
+                      item.classList.remove('active');
+                  }
+              });
+              // Toggle current FAQ
+              if (!isActive) {
+                  faqItem.classList.add('active');
+              } else {
+                  faqItem.classList.remove('active');
+              }
+          });
+      });
+  </script>
+</body>
+</html>

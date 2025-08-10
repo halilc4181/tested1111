@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>WordPress Geliştirme Hizmetleri - World Bilişim</title>
+        <meta name="description" content="World Bilişim olarak özel WordPress temaları, eklentileri ve web siteleri geliştiriyoruz. Güçlü, güvenli ve SEO uyumlu WordPress çözümleri ile işinizi büyütün.">
+  <meta name="keywords" content="wordpress geliştirme, wordpress tema, wordpress eklenti, wordpress web sitesi, wordpress güvenlik, wordpress seo, özel wordpress çözümleri, Bodrum wordpress geliştirme">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Animated Background -->
+  <div class="animated-bg"></div>
+
+  <!-- Floating Particles -->
+  <div class="particles" id="particles"></div>
+
+  <!-- Loading Screen -->
+  <div class="loading" id="loading">
+      <div class="loading-spinner"></div>
+  </div>
+
+  <!-- Top Header Bar -->
+  <div class="top-header">
+      <div class="container">
+          <div class="top-header-content">
+              <div class="top-header-left">
+                  <a href="mailto:info@worldbilisim.com" class="top-header-item">
+                      <i class="fas fa-envelope"></i>
+                      info@worldbilisim.com
+                  </a>
+                  <a href="tel:+905309429478" class="top-header-item">
+                      <i class="fas fa-phone"></i>
+                      +90 0530 942 9478
+                  </a>
+                  <div class="top-header-item">
+                      <i class="fas fa-map-marker-alt"></i>
+                      Müskebi, Düzalan Cd. No:69, 48400 Bodrum/Muğla
+                  </div>
+              </div>
+              <div class="top-header-right">
+                  <button id="" class="theme-toggle" aria-label="Temayı Değiştir">
+                      <i class="fas fa-sun"></i>
+                  </button>
+                  <a href="#" class="customer-panel-link">
+                      <i class="fas fa-user-shield"></i>
+                      Müşteri Paneli
+                  </a>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header" id="header">
+      <nav class="nav container">
+                          <div class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    World Bilişim
+                </div>
+          <button class="menu-toggle" id="menuToggle" aria-label="Menüyü Aç/Kapat">
+              <i class="fas fa-bars"></i>
+          </button>
+          <ul class="nav-menu" id="navMenu">
+              <li><a href="index.html">Ana Sayfa</a></li>
+              <li class="dropdown">
+                  <a href="javascript:void(0);" id="kurumsalMenu" data-href="hakkimizda.html">Kurumsal <i class="fas fa-chevron-down" style="font-size: 0.8em;"></i></a>
+                  <ul class="dropdown-menu">
+                      <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                      <li><a href="hakkimizda.html#tarihce">Tarihçemiz</a></li>
+                      <li><a href="">Basında Biz</a></li>
+                      <li><a href="politikalar.html">Politikalarımız</a></li>
+                  </ul>
+              </li>
+              <li><a href="hizmetler.html">Hizmetlerimiz</a></li>
+              <li><a href="referanslar.html">Portföyümüz</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="iletisim.html">İletişim</a></li>
+              <li><a href="teklif-al.html" class="cta-nav">Ücretsiz Teklif</a></li>
+          </ul>
+      </nav>
+  </header>
+
+  <main>
+      <!-- Breadcrumb Section -->
+      <section class="breadcrumb-section">
+          <div class="container">
+              <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                      <li><a href="index.html">Ana Sayfa</a></li>
+                      <li><a href="hizmetler.html">Hizmetler</a></li>
+                      <li aria-current="page">WordPress Geliştirme</li>
+                  </ol>
+              </nav>
+          </div>
+      </section>
+
+      <!-- Service Detail Hero Section -->
+      <section class="service-detail-hero">
+          <div class="container">
+              <div class="service-detail-hero-wrapper">
+                  <div class="service-detail-hero-content fade-in">
+                      <span class="section-badge">Uzman Seviye Hizmet</span>
+                      <h1 class="hero-title">WordPress Geliştirme Hizmetleri</h1>
+                      <p class="hero-subtitle">
+                          Özel WordPress temaları, eklentileri ve web siteleri geliştiriyoruz. Güçlü, güvenli ve SEO uyumlu WordPress çözümleri ile işinizi büyütün.
+                      </p>
+                      <div class="service-features-list">
+                          <span><i class="fas fa-check-circle"></i> Özel WordPress temaları</span>
+                          <span><i class="fas fa-check-circle"></i> Güvenlik optimizasyonu</span>
+                          <span><i class="fas fa-check-circle"></i> SEO uyumlu geliştirme</span>
+                          <span><i class="fas fa-check-circle"></i> Hızlı performans</span>
+                          <span><i class="fas fa-check-circle"></i> 6 ay ücretsiz destek</span>
+                      </div>
+                      <div class="hero-buttons">
+                          <a href="teklif-al.html" class="btn btn-primary">Hemen Başla</a>
+                          <a href="iletisim.html" class="btn btn-secondary">Ücretsiz Danışmanlık</a>
+                      </div>
+                  </div>
+                  <!-- Service Info Grid - Moved to Hero Section -->
+                  <div class="info-grid fade-in">
+                      <div class="info-card">
+                          <div class="info-icon"><i class="fas fa-clock"></i></div>
+                          <div class="info-text">
+                              <h3 class="info-title">Teslimat Süresi</h3>
+                              <p class="info-value">3-10 iş günü</p>
+                          </div>
+                      </div>
+                      <div class="info-card">
+                          <div class="info-icon"><i class="fas fa-star"></i></div>
+                          <div class="info-text">
+                              <h3 class="info-title">Deneyim Seviyesi</h3>
+                              <p class="info-value">Uzman (8+ yıl)</p>
+                          </div>
+                      </div>
+                      <div class="info-card">
+                          <div class="info-icon"><i class="fas fa-shield-alt"></i></div>
+                          <div class="info-text">
+                              <h3 class="info-title">Güvenlik</h3>
+                              <p class="info-value">SSL ve güvenlik paketi</p>
+                          </div>
+                      </div>
+                      <div class="info-card">
+                          <div class="info-icon"><i class="fas fa-sync-alt"></i></div>
+                          <div class="info-text">
+                              <h3 class="info-title">Güncelleme</h3>
+                              <p class="info-value">Ücretsiz güncellemeler</p>
+                          </div>
+                      </div>
+                      <div class="info-card">
+                          <div class="info-icon"><i class="fas fa-lira-sign"></i></div>
+                          <div class="info-text">
+                              <h3 class="info-title">Başlangıç Fiyatı</h3>
+                              <p class="info-value">₺1.800'den başlar</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <!-- How We Work Section - WordPress Development Process -->
+      <section class="how-we-work">
+          <div class="container">
+              <div class="section-header fade-in">
+                  <span class="section-badge">Çalışma Sürecimiz</span>
+                  <h2 class="section-title">WordPress Geliştirme Süreci</h2>
+                  <p class="section-subtitle">
+                      Profesyonel WordPress projelerinizi 8 adımda tamamlıyoruz.
+                  </p>
+              </div>
+              <div class="process-grid">
+                  <div class="process-step fade-in">
+                      <div class="process-number">1</div>
+                      <div class="process-icon">
+                          <i class="fas fa-handshake"></i>
+                      </div>
+                      <h3 class="process-title">İhtiyaç Analizi</h3>
+                      <p class="process-description">
+                          WordPress projenizin gereksinimlerini analiz ediyor, hedef kitlenizi belirliyor ve teknik detayları planlıyoruz.
+                      </p>
+                  </div>
+                  <div class="process-step fade-in">
+                      <div class="process-number">2</div>
+                      <div class="process-icon">
+                          <i class="fas fa-clipboard-list"></i>
+                      </div>
+                      <h3 class="process-title">Tema Seçimi & Planlama</h3>
+                      <p class="process-description">
+                          Mevcut tema kullanımı veya özel tema geliştirme kararı veriyor, site yapısını ve içerik planını oluşturuyoruz.
+                      </p>
+                  </div>
+                  <div class="process-step fade-in">
+                      <div class="process-number">3</div>
+                      <div class="process-icon">
+                          <i class="fas fa-palette"></i>
+                      </div>
+                      <h3 class="process-title">Tasarım & Görselleştirme</h3>
+                      <p class="process-description">
+                          WordPress tema tasarımını hazırlıyor, görsel öğeleri belirliyor ve kullanıcı deneyimini optimize ediyoruz.
+                      </p>
+                  </div>
+                  <div class="process-step fade-in">
+                      <div class="process-number">4</div>
+                      <div class="process-icon">
+                          <i class="fas fa-code"></i>
+                      </div>
+                      <h3 class="process-title">WordPress Geliştirme</h3>
+                      <p class="process-description">
+                          PHP, HTML, CSS ve JavaScript ile WordPress tema ve eklenti geliştirmesi yapıyor, özel fonksiyonlar ekliyoruz.
+                      </p>
+                  </div>
+                  <div class="process-step fade-in">
+                      <div class="process-number">5</div>
+                      <div class="process-icon">
+                          <i class="fas fa-vial"></i>
+                      </div>
+                      <h3 class="process-title">Test & Optimizasyon</h3>
+                      <p class="process-description">
+                          Tüm cihazlarda test ediyor, performans optimizasyonu yapıyor ve WordPress güvenlik ayarlarını tamamlıyoruz.
+                      </p>
+                  </div>
+                  <div class="process-step fade-in">
+                      <div class="process-number">6</div>
+                      <div class="process-icon">
+                          <i class="fas fa-rocket"></i>
+                      </div>
+                      <h3 class="process-title">Yayınlama & Kurulum</h3>
+                      <p class="process-description">
+                          WordPress sitenizi canlıya alıyor, hosting ayarlarını yapıyor ve domain bağlantısını tamamlıyoruz.
+                      </p>
+                  </div>
+                  <div class="process-step fade-in">
+                      <div class="process-number">7</div>
+                      <div class="process-icon">
+                          <i class="fas fa-graduation-cap"></i>
+                      </div>
+                      <h3 class="process-title">Eğitim & Teslim</h3>
+                      <p class="process-description">
+                          WordPress admin paneli kullanımı için detaylı eğitim veriyor, kullanım kılavuzu hazırlıyoruz.
+                      </p>
+                  </div>
+                  <div class="process-step fade-in">
+                      <div class="process-number">8</div>
+                      <div class="process-icon">
+                          <i class="fas fa-chart-line"></i>
+                      </div>
+                      <h3 class="process-title">Bakım & Destek</h3>
+                      <p class="process-description">
+                          WordPress güncellemelerini yönetiyor, güvenlik izlemesi yapıyor ve 6 ay boyunca ücretsiz destek sağlıyoruz.
+                      </p>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <!-- Features Section -->
+      <section class="features-section">
+          <div class="container">
+              <div class="section-header fade-in">
+                  <span class="section-badge">Özelliklerimiz</span>
+                  <h2 class="section-title">Neden WordPress Geliştirme?</h2>
+                  <p class="section-subtitle">
+                      WordPress geliştirme hizmetlerimizde sunduğumuz değer katma özellikler.
+                  </p>
+              </div>
+              <div class="features-grid">
+                  <div class="feature-card fade-in">
+                      <div class="feature-icon-wrapper">
+                          <i class="fas fa-paint-brush feature-icon"></i>
+                      </div>
+                      <h3 class="feature-title">Özel WordPress Temaları</h3>
+                      <p class="feature-description">Markanıza özel, benzersiz WordPress temaları geliştiriyoruz. Responsive tasarım ve modern kodlama standartları.</p>
+                      <ul class="feature-list">
+                          <li><i class="fas fa-check"></i> Özel tema geliştirme</li>
+                          <li><i class="fas fa-check"></i> Responsive tasarım</li>
+                          <li><i class="fas fa-check"></i> Modern kodlama</li>
+                          <li><i class="fas fa-check"></i> SEO uyumlu yapı</li>
+                      </ul>
+                  </div>
+                  <div class="feature-card fade-in">
+                      <div class="feature-icon-wrapper">
+                          <i class="fas fa-puzzle-piece feature-icon"></i>
+                      </div>
+                      <h3 class="feature-title">WordPress Eklentileri</h3>
+                      <p class="feature-description">İhtiyaçlarınıza özel WordPress eklentileri geliştiriyoruz. Güvenli, hızlı ve uyumlu çözümler.</p>
+                      <ul class="feature-list">
+                          <li><i class="fas fa-check"></i> Özel eklenti geliştirme</li>
+                          <li><i class="fas fa-check"></i> API entegrasyonları</li>
+                          <li><i class="fas fa-check"></i> Güvenlik standartları</li>
+                          <li><i class="fas fa-check"></i> Performans optimizasyonu</li>
+                      </ul>
+                  </div>
+                  <div class="feature-card fade-in">
+                      <div class="feature-icon-wrapper">
+                          <i class="fas fa-shield-alt feature-icon"></i>
+                      </div>
+                      <h3 class="feature-title">WordPress Güvenliği</h3>
+                      <p class="feature-description">Gelişmiş güvenlik önlemleri ile WordPress sitenizi koruyoruz. SSL, firewall ve güvenlik eklentileri.</p>
+                      <ul class="feature-list">
+                          <li><i class="fas fa-check"></i> SSL sertifikası</li>
+                          <li><i class="fas fa-check"></i> Güvenlik duvarı</li>
+                          <li><i class="fas fa-check"></i> Malware koruması</li>
+                          <li><i class="fas fa-check"></i> Düzenli güvenlik güncellemeleri</li>
+                      </ul>
+                  </div>
+                  <div class="feature-card fade-in">
+                      <div class="feature-icon-wrapper">
+                          <i class="fas fa-tachometer-alt feature-icon"></i>
+                      </div>
+                      <h3 class="feature-title">Performans Optimizasyonu</h3>
+                      <p class="feature-description">WordPress sitenizi hızlandırıyor, cache sistemleri kuruyor ve performansı maksimuma çıkarıyoruz.</p>
+                      <ul class="feature-list">
+                          <li><i class="fas fa-check"></i> Cache optimizasyonu</li>
+                          <li><i class="fas fa-check"></i> Görsel optimizasyonu</li>
+                          <li><i class="fas fa-check"></i> Database optimizasyonu</li>
+                          <li><i class="fas fa-check"></i> CDN entegrasyonu</li>
+                      </ul>
+                  </div>
+                  <div class="feature-card fade-in">
+                      <div class="feature-icon-wrapper">
+                          <i class="fas fa-search feature-icon"></i>
+                      </div>
+                      <h3 class="feature-title">SEO Uyumlu WordPress</h3>
+                      <p class="feature-description">WordPress sitenizi SEO standartlarına uygun geliştiriyor, arama motorlarında üst sıralarda yer almanızı sağlıyoruz.</p>
+                      <ul class="feature-list">
+                          <li><i class="fas fa-check"></i> SEO optimizasyonu</li>
+                          <li><i class="fas fa-check"></i> Schema markup</li>
+                          <li><i class="fas fa-check"></i> Meta tag optimizasyonu</li>
+                          <li><i class="fas fa-check"></i> Site haritası oluşturma</li>
+                      </ul>
+                  </div>
+                  <div class="feature-card fade-in">
+                      <div class="feature-icon-wrapper">
+                          <i class="fas fa-headset feature-icon"></i>
+                      </div>
+                      <h3 class="feature-title">WordPress Destek</h3>
+                      <p class="feature-description">6 ay boyunca ücretsiz WordPress destek ve bakım hizmeti sunuyoruz.</p>
+                      <ul class="feature-list">
+                          <li><i class="fas fa-check"></i> Teknik destek</li>
+                          <li><i class="fas fa-check"></i> WordPress güncellemeleri</li>
+                          <li><i class="fas fa-check"></i> Eklenti güncellemeleri</li>
+                          <li><i class="fas fa-check"></i> Yedekleme hizmeti</li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <!-- About WordPress Development Section -->
+      <section class="about-web-design">
+          <div class="container">
+              <div class="section-header fade-in">
+                  <span class="section-badge">WordPress Geliştirme Hakkında</span>
+                  <h2 class="section-title">WordPress Geliştirme Nedir?</h2>
+              </div>
+              <div class="about-content">
+                  <div class="about-text-container fade-in">
+                      <p>WordPress geliştirme, WordPress platformu üzerinde özel temalar, eklentiler ve web siteleri oluşturma sürecidir. WordPress, world genelinde web sitelerinin %43'ünü oluşturan en popüler içerik yönetim sistemidir. WordPress geliştirme, sadece hazır temaları kullanmakla sınırlı kalmayıp, özel çözümler üretmeyi de kapsar.</p>
+                      <h3>WordPress Geliştirmenin Önemi</h3>
+                      <p>WordPress'in esnek yapısı ve geniş eklenti ekosistemi, işletmelere özel çözümler geliştirme imkanı sunar. Özel WordPress geliştirme, markanızın benzersiz ihtiyaçlarını karşılayan, güvenli ve performanslı web siteleri oluşturmanızı sağlar. WordPress'in açık kaynak yapısı, sürekli güncellemeler ve geniş topluluk desteği ile uzun vadeli sürdürülebilir çözümler sunar.</p>
+                      <h3>WordPress Geliştirme Trendleri</h3>
+                      <p>2024 yılında WordPress geliştirme trendleri, headless WordPress, Gutenberg blok editörü, performans optimizasyonu ve güvenlik odaklı geliştirmeler etrafında şekilleniyor. REST API entegrasyonları, modern JavaScript framework'leri ile entegrasyon ve mikroservis mimarileri, WordPress geliştirmenin geleceğini belirliyor.</p>
+                      <h3>WordPress Güvenlik ve Performans</h3>
+                      <p>WordPress güvenliği, geliştirme sürecinin kritik bir parçasıdır. Düzenli güncellemeler, güvenlik eklentileri, SSL sertifikaları ve güvenlik duvarları, WordPress sitelerinin korunması için vazgeçilmezdir. Performans optimizasyonu ise cache sistemleri, görsel optimizasyonu ve database optimizasyonu ile sağlanır.</p>
+                      <h3>WordPress Geliştirme Süreci</h3>
+                      <p>Başarılı bir WordPress geliştirme projesi, detaylı ihtiyaç analizi ile başlar. Tema seçimi veya özel tema geliştirme, eklenti entegrasyonu ve özel fonksiyonlar, projenin temel bileşenleridir. WordPress'in modüler yapısı, geliştirme sürecini hızlandırır ve esneklik sağlar.</p>
+                      <h3>WordPress Teknolojileri</h3>
+                      <p>WordPress geliştirme, PHP, HTML, CSS, JavaScript gibi temel web teknolojilerini kullanır. WordPress'in kendi API'leri, hook sistemi ve tema geliştirme standartları, geliştiricilere güçlü araçlar sunar. Modern WordPress geliştirme, React, Vue.js gibi JavaScript kütüphaneleri ile entegrasyonu da kapsar.</p>
+                  </div>
+                  <div class="about-sidebar fade-in">
+                      <div class="sidebar-card">
+                          <h4>Hızlı Bilgiler</h4>
+                          <ul>
+                              <li><i class="fas fa-check-circle"></i> Ortalama Proje Süresi: <strong>1-3 hafta</strong></li>
+                              <li><i class="fas fa-check-circle"></i> %100 WordPress Uyumlu</li>
+                              <li><i class="fas fa-check-circle"></i> SEO Optimizasyonu Dahil</li>
+                              <li><i class="fas fa-check-circle"></i> SSL Sertifikası</li>
+                              <li><i class="fas fa-check-circle"></i> 6 Ay Ücretsiz Destek</li>
+                          </ul>
+                      </div>
+                      <div class="sidebar-card">
+                          <h4>WordPress Özellikleri</h4>
+                          <ul>
+                              <li><i class="fas fa-check-circle"></i> Özel Tema Geliştirme</li>
+                              <li><i class="fas fa-check-circle"></i> WordPress Eklentileri</li>
+                              <li><i class="fas fa-check-circle"></i> Güvenlik Optimizasyonu</li>
+                              <li><i class="fas fa-check-circle"></i> Admin Paneli</li>
+                              <li><i class="fas fa-check-circle"></i> Blog Sistemi</li>
+                              <li><i class="fas fa-check-circle"></i> İletişim Formu</li>
+                              <li><i class="fas fa-check-circle"></i> Sosyal Medya</li>
+                              <li><i class="fas fa-check-circle"></i> Google Analytics</li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <!-- Additional Services Section -->
+      <section class="additional-services">
+          <div class="container">
+              <div class="section-header fade-in">
+                  <span class="section-badge">Ek Hizmetler</span>
+                  <h2 class="section-title">WordPress Sitenizi Daha da Güçlendirin</h2>
+                  <p class="section-subtitle">
+                      WordPress geliştirme hizmetimizle birlikte alabileceğiniz ek hizmetler.
+                  </p>
+              </div>
+              <div class="additional-services-grid">
+                  <div class="additional-service-card fade-in">
+                      <h3 class="service-title">WordPress SEO Paketi</h3>
+                      <p class="service-description">WordPress sitenizi SEO için optimize edin</p>
+                      <ul class="service-features">
+                          <li><i class="fas fa-check"></i> Yoast SEO kurulumu</li>
+                          <li><i class="fas fa-check"></i> İçerik optimizasyonu</li>
+                          <li><i class="fas fa-check"></i> Site haritası oluşturma</li>
+                      </ul>
+                      <div class="service-price">
+                          <span>+₺800/ay</span>
+                          <button class="btn btn-primary btn-small">Ekle</button>
+                      </div>
+                  </div>
+                  <div class="additional-service-card fade-in">
+                      <h3 class="service-title">WordPress Bakım Paketi</h3>
+                      <p class="service-description">WordPress sitenizi güncel ve güvenli tutun</p>
+                      <ul class="service-features">
+                          <li><i class="fas fa-check"></i> Düzenli güncellemeler</li>
+                          <li><i class="fas fa-check"></i> Yedekleme hizmeti</li>
+                          <li><i class="fas fa-check"></i> Güvenlik izlemesi</li>
+                      </ul>
+                      <div class="service-price">
+                          <span>+₺1.200/ay</span>
+                          <button class="btn btn-primary btn-small">Ekle</button>
+                      </div>
+                  </div>
+                  <div class="additional-service-card fade-in">
+                      <h3 class="service-title">WooCommerce Entegrasyonu</h3>
+                      <p class="service-description">WordPress sitenizde e-ticaret yapın</p>
+                      <ul class="service-features">
+                          <li><i class="fas fa-check"></i> WooCommerce kurulumu</li>
+                          <li><i class="fas fa-check"></i> Ödeme sistemi entegrasyonu</li>
+                          <li><i class="fas fa-check"></i> Stok yönetimi</li>
+                      </ul>
+                      <div class="service-price">
+                          <span>+₺2.500</span>
+                          <button class="btn btn-primary btn-small">Ekle</button>
+                      </div>
+                  </div>
+                  <div class="additional-service-card fade-in">
+                      <h3 class="service-title">WordPress Hosting</h3>
+                      <p class="service-description">WordPress için optimize edilmiş hosting</p>
+                      <ul class="service-features">
+                          <li><i class="fas fa-check"></i> WordPress optimizasyonu</li>
+                          <li><i class="fas fa-check"></i> Günlük yedekleme</li>
+                          <li><i class="fas fa-check"></i> SSL sertifikası</li>
+                      </ul>
+                      <div class="service-price">
+                          <span>+₺400/yıl</span>
+                          <button class="btn btn-primary btn-small">Ekle</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <!-- Social Proof & Certifications - Specific for WordPress -->
+      <section class="social-proof">
+          <div class="container">
+              <div class="section-header fade-in">
+                  <span class="section-badge">Güven & Sertifikalar</span>
+                  <h2 class="section-title">WordPress Uzmanı</h2>
+                  <p class="section-subtitle">
+                      WordPress geliştirme alanındaki uzmanlığımızı kanıtlayan sertifikalar ve başarılarımız.
+                  </p>
+              </div>
+              <div class="certifications-grid">
+                  <div class="certification-item fade-in">
+                      <div class="certification-icon">
+                          <i class="fab fa-wordpress"></i>
+                      </div>
+                      <h4 class="certification-name">WordPress Uzmanı</h4>
+                      <p class="certification-desc">Sertifikalı WordPress geliştirici</p>
+                  </div>
+                  <div class="certification-item fade-in">
+                      <div class="certification-icon">
+                          <i class="fas fa-star"></i>
+                      </div>
+                      <h4 class="certification-name">8+ Yıl Deneyim</h4>
+                      <p class="certification-desc">WordPress geliştirme alanında uzman ekip</p>
+                  </div>
+                  <div class="certification-item fade-in">
+                      <div class="certification-icon">
+                          <i class="fas fa-users"></i>
+                      </div>
+                      <h4 class="certification-name">300+ WordPress Projesi</h4>
+                      <p class="certification-desc">Başarıyla tamamlanan WordPress projeleri</p>
+                  </div>
+                  <div class="certification-item fade-in">
+                      <div class="certification-icon">
+                          <i class="fas fa-lock"></i>
+                      </div>
+                      <h4 class="certification-name">Güvenlik Uzmanı</h4>
+                      <p class="certification-desc">WordPress güvenlik uzmanlığı</p>
+                  </div>
+                  <div class="certification-item fade-in">
+                      <div class="certification-icon">
+                          <i class="fas fa-smile"></i>
+                      </div>
+                      <h4 class="certification-name">%99 Memnuniyet</h4>
+                      <p class="certification-desc">WordPress müşteri memnuniyet oranımız</p>
+                  </div>
+                  <div class="certification-item fade-in">
+                      <div class="certification-icon">
+                          <i class="fas fa-headset"></i>
+                      </div>
+                      <h4 class="certification-name">7/24 WordPress Destek</h4>
+                      <p class="certification-desc">Kesintisiz WordPress teknik destek hizmeti</p>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <!-- Reference Works Section - Specific for WordPress -->
+      <section class="reference-works">
+          <div class="container">
+              <div class="section-header fade-in">
+                  <span class="section-badge">Referans Çalışmalarımız</span>
+                  <h2 class="section-title">WordPress Projelerimiz</h2>
+                  <p class="section-subtitle">
+                      Farklı sektörlerden müşterilerimiz için gerçekleştirdiğimiz WordPress geliştirme projeleri.
+                  </p>
+              </div>
+
+              <div class="portfolio-cards-grid">
+                  <div class="portfolio-detail-card fade-in">
+                      <div class="portfolio-detail-image">
+                          <i class="fab fa-wordpress"></i>
+                      </div>
+                      <div class="portfolio-detail-content">
+                          <h3 class="portfolio-detail-title">E-ticaret WordPress Sitesi</h3>
+                          <span class="portfolio-detail-client">Fashion Store WooCommerce</span>
+                          <p class="portfolio-detail-description">Moda markası için özel WordPress teması ve WooCommerce entegrasyonu. Gelişmiş filtreleme ve ödeme sistemleri.</p>
+                          <div class="portfolio-stats">
+                              <div class="stat-item">
+                                  <span class="stat-number">350%</span>
+                                  <span class="stat-label">Online Satış Artışı</span>
+                              </div>
+                              <div class="stat-item">
+                                  <span class="stat-number">65%</span>
+                                  <span class="stat-label">Dönüşüm Oranı</span>
+                              </div>
+                          </div>
+                          <div class="portfolio-detail-tags">
+                              <span class="portfolio-tag">WordPress</span>
+                              <span class="portfolio-tag">WooCommerce</span>
+                              <span class="portfolio-tag">Custom Theme</span>
+                          </div>
+                          <a href="#" class="portfolio-detail-link">Projeyi İncele <i class="fas fa-arrow-right"></i></a>
+                      </div>
+                  </div>
+                  <div class="portfolio-detail-card fade-in">
+                      <div class="portfolio-detail-image" style="background: var(--gradient-button-accent);">
+                          <i class="fas fa-building"></i>
+                      </div>
+                      <div class="portfolio-detail-content">
+                          <h3 class="portfolio-detail-title">Kurumsal WordPress Sitesi</h3>
+                          <span class="portfolio-detail-client">TechCorp WordPress</span>
+                          <p class="portfolio-detail-description">B2B teknoloji şirketi için özel WordPress teması. Gelişmiş admin paneli ve çoklu dil desteği.</p>
+                          <div class="portfolio-stats">
+                              <div class="stat-item">
+                                  <span class="stat-number">280%</span>
+                                  <span class="stat-label">Trafik Artışı</span>
+                              </div>
+                              <div class="stat-item">
+                                  <span class="stat-number">95%</span>
+                                  <span class="stat-label">Müşteri Memnuniyeti</span>
+                              </div>
+                          </div>
+                          <div class="portfolio-detail-tags">
+                              <span class="portfolio-tag">WordPress</span>
+                              <span class="portfolio-tag">Custom Theme</span>
+                              <span class="portfolio-tag">Multi-language</span>
+                          </div>
+                          <a href="#" class="portfolio-detail-link">Projeyi İncele <i class="fas fa-arrow-right"></i></a>
+                      </div>
+                  </div>
+                  <div class="portfolio-detail-card fade-in">
+                      <div class="portfolio-detail-image" style="background: var(--gradient-button-tertiary);">
+                          <i class="fas fa-hotel"></i>
+                      </div>
+                      <div class="portfolio-detail-content">
+                          <h3 class="portfolio-detail-title">Otel Rezervasyon WordPress</h3>
+                          <span class="portfolio-detail-client">Boutique Hotel Booking</span>
+                          <p class="portfolio-detail-description">Lüks otel için WordPress tabanlı rezervasyon sistemi. Özel eklenti geliştirme ve ödeme entegrasyonu.</p>
+                          <div class="portfolio-stats">
+                              <div class="stat-item">
+                                  <span class="stat-number">420%</span>
+                                  <span class="stat-label">Online Rezervasyon</span>
+                              </div>
+                              <div class="stat-item">
+                                  <span class="stat-number">98%</span>
+                                  <span class="stat-label">Müşteri Memnuniyeti</span>
+                              </div>
+                          </div>
+                          <div class="portfolio-detail-tags">
+                              <span class="portfolio-tag">WordPress</span>
+                              <span class="portfolio-tag">Custom Plugin</span>
+                              <span class="portfolio-tag">Booking System</span>
+                          </div>
+                          <a href="#" class="portfolio-detail-link">Projeyi İncele <i class="fas fa-arrow-right"></i></a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <!-- FAQ Section - Specific for WordPress -->
+      <section class="faq">
+          <div class="container">
+              <div class="section-header fade-in">
+                  <span class="section-badge">Sıkça Sorulan Sorular</span>
+                  <h2 class="section-title">WordPress geliştirme hizmetlerimiz hakkında merak ettikleriniz.</h2>
+              </div>
+              <div class="faq-container">
+                  <div class="faq-item fade-in">
+                      <div class="faq-question">
+                          <span>WordPress geliştirme süreci ne kadar sürer?</span>
+                          <i class="fas fa-plus faq-icon"></i>
+                      </div>
+                      <div class="faq-answer">
+                          <div class="faq-answer-content">
+                              WordPress projelerinin süresi, projenin karmaşıklığına ve özelliklerine bağlı olarak değişir. Basit bir WordPress sitesi 1-2 hafta, özel tema geliştirme 2-3 hafta, karmaşık e-ticaret siteleri 3-4 hafta sürebilir. Detaylı bir zaman çizelgesi, proje analizi sonrası sunulur.
+                          </div>
+                      </div>
+                  </div>
+                  <div class="faq-item fade-in">
+                      <div class="faq-question">
+                          <span>Hangi WordPress teknolojilerini kullanıyorsunuz?</span>
+                          <i class="fas fa-plus faq-icon"></i>
+                      </div>
+                      <div class="faq-answer">
+                          <div class="faq-answer-content">
+                              WordPress geliştirme sürecinde PHP, HTML, CSS, JavaScript gibi temel teknolojilerin yanı sıra, WordPress'in kendi API'leri, hook sistemi ve tema geliştirme standartlarını kullanıyoruz. WooCommerce, Advanced Custom Fields, Yoast SEO gibi popüler eklentilerle entegrasyon yapıyoruz.
+                          </div>
+                      </div>
+                  </div>
+                  <div class="faq-item fade-in">
+                      <div class="faq-question">
+                          <span>WordPress güvenliği nasıl sağlanıyor?</span>
+                          <i class="fas fa-plus faq-icon"></i>
+                      </div>
+                      <div class="faq-answer">
+                          <div class="faq-answer-content">
+                              WordPress güvenliği için SSL sertifikası, güvenlik eklentileri, düzenli güncellemeler ve güvenlik duvarı kurulumu yapıyoruz. Ayrıca, özel geliştirmelerde güvenlik standartlarına uygun kodlama yapıyor ve düzenli güvenlik testleri gerçekleştiriyoruz.
+                          </div>
+                      </div>
+                  </div>
+                  <div class="faq-item fade-in">
+                      <div class="faq-question">
+                          <span>Özel WordPress eklentisi geliştiriyor musunuz?</span>
+                          <i class="fas fa-plus faq-icon"></i>
+                      </div>
+                      <div class="faq-answer">
+                          <div class="faq-answer-content">
+                              Evet, ihtiyaçlarınıza özel WordPress eklentileri geliştiriyoruz. Özel fonksiyonlar, API entegrasyonları, özel formlar ve iş süreçlerinize uygun eklentiler oluşturabiliyoruz. Tüm eklentilerimiz WordPress standartlarına uygun ve güvenli şekilde geliştirilir.
+                          </div>
+                      </div>
+                  </div>
+                  <div class="faq-item fade-in">
+                      <div class="faq-question">
+                          <span>WordPress siteniz mobil uyumlu olacak mı?</span>
+                          <i class="fas fa-plus faq-icon"></i>
+                      </div>
+                      <div class="faq-answer">
+                          <div class="faq-answer-content">
+                              Kesinlikle! Geliştirdiğimiz tüm WordPress siteleri %100 responsive ve mobil uyumludur. WordPress temalarımız, tüm cihazlarda (masaüstü, tablet, mobil) mükemmel bir kullanıcı deneyimi sunacak şekilde optimize edilir.
+                          </div>
+                      </div>
+                  </div>
+                  <div class="faq-item fade-in">
+                      <div class="faq-question">
+                          <span>WordPress bakım hizmeti sunuyor musunuz?</span>
+                          <i class="fas fa-plus faq-icon"></i>
+                      </div>
+                      <div class="faq-answer">
+                          <div class="faq-answer-content">
+                              Evet, WordPress siteniz için kapsamlı bakım hizmeti sunuyoruz. Bu hizmet düzenli güncellemeler, yedekleme, güvenlik izlemesi, performans optimizasyonu ve teknik destek içerir. 6 ay boyunca ücretsiz destek hizmeti de sunuyoruz.
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <!-- Call to Action Section -->
+      <section class="cta-section">
+          <div class="container">
+              <div class="cta-content fade-in">
+                  <h2 class="cta-title">WordPress Sitenizi Hayata Geçirmeye Hazır mısınız?</h2>
+                  <p class="cta-subtitle">Profesyonel WordPress geliştirme hizmetimizle işinizi büyütün. Ücretsiz danışmanlık için hemen iletişime geçin.</p>
+                  <div class="cta-buttons">
+                      <a href="teklif-al.html" class="btn btn-primary">Ücretsiz Teklif Al</a>
+                      <a href="tel:+905309429478" class="btn btn-secondary">Hemen Arayın</a>
+                  </div>
+              </div>
+          </div>
+      </section>
+  </main>
+
+  <!-- Chat Widget -->
+        <div class="chat-widget">
+            <div class="chat-menu" id="chatMenu">
+                <a href="https://wa.me/905309429478" class="chat-option" target="_blank">
+                    <div class="chat-option-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <div class="chat-option-content">
+                        <h4>WhatsApp</h4>
+                        <p>Hızlı destek için</p>
+                    </div>
+                </a>
+
+                <a href="tel:+905309429478" class="chat-option">
+                    <div class="chat-option-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="chat-option-content">
+                        <h4>Telefon Araması</h4>
+                        <p>Doğrudan görüşme</p>
+                    </div>
+                </a>
+
+                <a href="#" class="chat-option" id="chatbotOption">
+                    <div class="chat-option-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <div class="chat-option-content">
+                        <h4>Canlı Destek</h4>
+                        <p>Online danışmanlık</p>
+                    </div>
+                </a>
+
+                <!-- ✅ Tema Değiştir butonu (a değil, button) -->
+                <div class="chat-option theme-option">
+                    <div class="chat-option-icon">
+                        <i class="fas fa-sun"></i>
+                    </div>
+                    <div class="chat-option-content">
+                        <h4>Tema Değiştir</h4>
+                        <p>Açık / Koyu mod</p>
+                    </div>
+                    <button id="themeToggle" class="theme-toggle" aria-label="Temayı Değiştir"></button>
+                </div>
+            </div>
+
+            <button class="chat-toggle" id="chatToggle">
+                <i class="fas fa-comments"></i>
+            </button>
+        </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+      <div class="container">
+          <div class="footer-content">
+              <div class="footer-section">
+                  <div class="footer-logo">
+                      <div class="footer-logo-icon">
+                          <i class="fas fa-globe"></i>
+                      </div>
+                                              <div class="footer-logo-text">World Bilişim</div>
+                  </div>
+                  <p>
+                      Bodrum'da dijital pazarlama, web tasarım ve SEO hizmetleri sunan lider ajans. 
+                                              Modern teknolojiler ve yenilikçi çözümlerle markanızı dijital world'da zirveye taşıyoruz.
+                  </p>
+                  <div class="social-links">
+                      <a href="https://facebook.com/dunyabil" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                      <a href="https://twitter.com/dunyabil" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                      <a href="https://instagram.com/dunyabil" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                      <a href="https://linkedin.com/company/dunyabil" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                      <a href="https://youtube.com/@dunyabil" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                      <a href="https://wa.me/905309429478" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                  </div>
+              </div>
+              <div class="footer-section">
+                  <h3>Hizmetlerimiz</h3>
+                  <p><a href="#services">Web Tasarım</a></p>
+                  <p><a href="#services">WordPress Geliştirme</a></p>
+                  <p><a href="#services">SEO Hizmetleri</a></p>
+                  <p><a href="#services">E-Ticaret Çözümleri</a></p>
+                  <p><a href="#services">Google Ads</a></p>
+                  <p><a href="#services">Dijital Pazarlama</a></p>
+              </div>
+              <div class="footer-section">
+                  <h3>Kurumsal</h3>
+                  <p><a href="#portfolio">Portföyümüz</a></p>
+                  <p><a href="kurumsal.html">Hakkımızda</a></p>
+                  <p><a href="kurumsal.html#tarihce">Tarihçemiz</a></p>
+                  <p><a href="basin-kiti.html">Basında Biz</a></p>
+                  <p><a href="kurumsal.html#politikalar">Politikalarımız</a></p>
+                  <p><a href="#blog">Blog</a></p>
+                  <p><a href="#contact">İletişim</a></p>
+              </div>
+              <div class="footer-section">
+                  <h3>İletişim Bilgileri</h3>
+                  <p><i class="fas fa-map-marker-alt" style="margin-right: 8px; color: var(--color-primary);"></i>
+                  Müskebi, Düzalan Cd. No:69, 48400 Bodrum/Muğla</p>
+                  <p><i class="fas fa-phone" style="margin-right: 8px; color: var(--color-primary);"></i>
+                  +90 0530 942 9478</p>
+                  <p><i class="fas fa-envelope" style="margin-right: 8px; color: var(--color-primary);"></i>
+                  info@worldbilisim.com<br>iletisim@worldbilisim.com</p>
+              </div>
+          </div>
+      </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+  <script>
+      // FAQ Accordion (if not already in script.js)
+      document.querySelectorAll('.faq-question').forEach(question => {
+          question.addEventListener('click', () => {
+              const faqItem = question.closest('.faq-item');
+              if (!faqItem) return;
+
+              const isActive = faqItem.classList.contains('active');
+              // Close all other open FAQs
+              document.querySelectorAll('.faq-item.active').forEach(item => {
+                  if (item !== faqItem) {
+                      item.classList.remove('active');
+                  }
+              });
+              // Toggle current FAQ
+              if (!isActive) {
+                  faqItem.classList.add('active');
+              } else {
+                  faqItem.classList.remove('active');
+              }
+          });
+      });
+  </script>
+</body>
+</html>

@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>İletişim - World Bilişim</title>
+  <meta name="description" content="World Bilişim ile iletişime geçin. Bodrum'daki ofisimiz, telefon, e-posta ve mesaj formu ile bize ulaşın.">
+  <meta name="keywords" content="iletişim, adres, telefon, e-posta, mesaj formu, sosyal medya, Bodrum">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Animated Background -->
+  <div class="animated-bg"></div>
+
+  <!-- Floating Particles -->
+  <div class="particles" id="particles"></div>
+
+  <!-- Loading Screen -->
+  <div class="loading" id="loading">
+      <div class="loading-spinner"></div>
+  </div>
+
+  <!-- Top Header Bar -->
+  <div class="top-header">
+      <div class="container">
+          <div class="top-header-content">
+              <div class="top-header-left">
+                  <a href="mailto:info@worldbilisim.com" class="top-header-item">
+                      <i class="fas fa-envelope"></i>
+                      info@worldbilisim.com
+                  </a>
+                  <a href="tel:+905309429478" class="top-header-item">
+                      <i class="fas fa-phone"></i>
+                      +90 0530 942 9478
+                  </a>
+                  <div class="top-header-item">
+                      <i class="fas fa-map-marker-alt"></i>
+                      Müskebi, Düzalan Cd. No:69, 48400 Bodrum/Muğla
+                  </div>
+              </div>
+              <div class="top-header-right">
+                  <button id="" class="theme-toggle" aria-label="Temayı Değiştir">
+                      <i class="fas fa-sun"></i>
+                  </button>
+                  <a href="#" class="customer-panel-link">
+                      <i class="fas fa-user-shield"></i>
+                      Müşteri Paneli
+                  </a>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header" id="header">
+      <nav class="nav container">
+          <div class="logo">
+              <div class="logo-icon">
+                  <i class="fas fa-globe"></i>
+              </div>
+              World Bilişim
+          </div>
+          <button class="menu-toggle" id="menuToggle" aria-label="Menüyü Aç/Kapat">
+              <i class="fas fa-bars"></i>
+          </button>
+          <ul class="nav-menu" id="navMenu">
+              <li><a href="index.html">Ana Sayfa</a></li>
+              <li class="dropdown">
+                  <a href="javascript:void(0);" id="kurumsalMenu" data-href="hakkimizda.html">Kurumsal <i class="fas fa-chevron-down" style="font-size: 0.8em;"></i></a>
+                  <ul class="dropdown-menu">
+                      <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                      <li><a href="hakkimizda.html#tarihce">Tarihçemiz</a></li>
+                      <li><a href="">Basında Biz</a></li>
+                      <li><a href="politikalar.html">Politikalarımız</a></li>
+                  </ul>
+              </li>
+              <li><a href="hizmetler.html">Hizmetlerimiz</a></li>
+              <li><a href="referanslar.html">Portföyümüz</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="iletisim.html">İletişim</a></li>
+              <li><a href="teklif-al.html" class="cta-nav">Ücretsiz Teklif</a></li>
+          </ul>
+      </nav>
+  </header>
+
+  <main>
+    <!-- Contact Section (from index.html, adapted for iletisim.html) -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-badge">İletişim</span>
+                <h2 class="section-title">Dijital Dönüşümünüze Başlayın</h2>
+                <p class="section-subtitle">
+                    Bodrum'da dijital pazarlama ve web tasarım hizmetleri için hemen iletişime geçin. 
+                    Ücretsiz analiz ve danışmanlık için randevu alın.
+                </p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info fade-in">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Bodrum Ofisimiz</h4>
+                            <p>Müskebi, Düzalan Cd. No:69<br>48400 Bodrum/Muğla</p>
+                            <p><a href="https://maps.app.goo.gl/your-google-maps-link" target="_blank" class="contact-link">Haritada Görüntüle <i class="fas fa-arrow-right"></i></a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>7/24 Destek Hattı</h4>
+                            <p>+90 0530 942 9478<br>info@worldbilisim.com<br>iletisim@worldbilisim.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>E-posta Adreslerimiz</h4>
+                            <p>info@worldbilisim.com<br>iletisim@worldbilisim.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Çalışma Saatleri</h4>
+                            <p>Hafta içi: 10:00 - 18:30<br>
+                            Cumartesi: 10:00 - 17:00<br>
+                            Pazar: Sadece Acil Durumlar</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-share-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Sosyal Medya</h4>
+                            <div class="social-links contact-social-links" style="margin-top: 0.5rem; gap: 0.5rem;">
+                                <a href="https://facebook.com/worldbil" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://twitter.com/worldbil" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                                <a href="https://instagram.com/worldbil" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                                <a href="https://linkedin.com/company/worldbil" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="https://youtube.com/@worldbil" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                                <a href="https://wa.me/905309429478" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper fade-in">
+                    <form id="contactForm" class="modern-contact-form">
+                        <div class="form-group">
+                            <label for="name">Ad Soyad *</label>
+                            <input type="text" id="name" name="name" required placeholder="Adınız ve Soyadınız">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-posta Adresi *</label>
+                            <input type="email" id="email" name="email" required placeholder="ornek@email.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Telefon Numarası</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+90 555 123 45 67">
+                        </div>
+                        <div class="form-group">
+                            <label for="company">Şirket Adı</label>
+                            <input type="text" id="company" name="company" placeholder="Şirket Adınız">
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Hizmet Türü</label>
+                            <select id="service" name="service">
+                                <option value="">Hizmet Seçiniz</option>
+                                <option value="web-tasarim">Web Tasarım</option>
+                                <option value="seo">SEO Hizmetleri</option>
+                                <option value="e-ticaret">E-Ticaret</option>
+                                <option value="google-ads">Google Ads</option>
+                                <option value="sosyal-medya">Sosyal Medya Yönetimi</option>
+                                <option value="danismanlik">Dijital Pazarlama Danışmanlığı</option>
+                                <option value="ozel">Özel Çözüm</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="budget">Proje Bütçesi</label>
+                            <select id="budget" name="budget">
+                                <option value="">Bütçe Aralığı Seçiniz</option>
+                                <option value="5k-15k">5.000₺ - 15.000₺</option>
+                                <option value="15k-30k">15.000₺ - 30.000₺</option>
+                                <option value="30k-50k">30.000₺ - 50.000₺</option>
+                                <option value="50k+">50.000₺+</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Proje Detayları *</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Projeniz hakkında detaylı bilgi verin..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">
+                            <i class="fas fa-paper-plane"></i>
+                            Ücretsiz Teklif Al
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Google Maps Section -->
+    <section class="google-maps-section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-badge">Konumumuz</span>
+                <h2 class="section-title">Bize Kolayca Ulaşın</h2>
+                <p class="section-subtitle">
+                    Bodrum'daki ofisimizin konumunu harita üzerinden görüntüleyebilirsiniz.
+                </p>
+            </div>
+            <div class="map-container fade-in">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3189.98765432109!2d27.3978923152918!3d37.0378923798923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14be6d7b0b0b0b0b%3A0x123456789abcdef!2zTcO8c2tlYmksIETDvHphbGFuIENkLiBObyA2OSwgNDg0MDAgQm9kcnVtL011xJ9sYQ!5e0!3m2!1str!2str!4v1678901234567!5m2!1str!2str" 
+                    width="600" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="World Bilişim Ofis Konumu"
+                ></iframe>
+            </div>
+        </div>
+    </section>
+  </main>
+
+  <!-- Chat Widget -->
+        <div class="chat-widget">
+            <div class="chat-menu" id="chatMenu">
+                <a href="https://wa.me/905309429478" class="chat-option" target="_blank">
+                    <div class="chat-option-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <div class="chat-option-content">
+                        <h4>WhatsApp</h4>
+                        <p>Hızlı destek için</p>
+                    </div>
+                </a>
+
+                <a href="tel:+905309429478" class="chat-option">
+                    <div class="chat-option-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="chat-option-content">
+                        <h4>Telefon Araması</h4>
+                        <p>Doğrudan görüşme</p>
+                    </div>
+                </a>
+
+                <a href="#" class="chat-option" id="chatbotOption">
+                    <div class="chat-option-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <div class="chat-option-content">
+                        <h4>Canlı Destek</h4>
+                        <p>Online danışmanlık</p>
+                    </div>
+                </a>
+
+                <!-- ✅ Tema Değiştir butonu (a değil, button) -->
+                <div class="chat-option theme-option">
+                    <div class="chat-option-icon">
+                        <i class="fas fa-sun"></i>
+                    </div>
+                    <div class="chat-option-content">
+                        <h4>Tema Değiştir</h4>
+                        <p>Açık / Koyu mod</p>
+                    </div>
+                    <button id="themeToggle" class="theme-toggle" aria-label="Temayı Değiştir"></button>
+                </div>
+            </div>
+
+            <button class="chat-toggle" id="chatToggle">
+                <i class="fas fa-comments"></i>
+            </button>
+        </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+      <div class="container">
+          <div class="footer-content">
+              <div class="footer-section">
+                  <div class="footer-logo">
+                      <div class="footer-logo-icon">
+                          <i class="fas fa-globe"></i>
+                      </div>
+                      <div class="footer-logo-text">World Bilişim</div>
+                  </div>
+                  <p>
+                      Bodrum'da dijital pazarlama, web tasarım ve SEO hizmetleri sunan lider ajans. 
+                                              Modern teknolojiler ve yenilikçi çözümlerle markanızı dijital world'da zirveye taşıyoruz.
+                  </p>
+                  <div class="social-links">
+                      <a href="https://facebook.com/worldbil" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                      <a href="https://twitter.com/worldbil" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                      <a href="https://instagram.com/worldbil" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                      <a href="https://linkedin.com/company/worldbil" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                      <a href="https://youtube.com/@worldbil" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                      <a href="https://wa.me/905309429478" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                  </div>
+              </div>
+              <div class="footer-section">
+                  <h3>Hizmetlerimiz</h3>
+                  <p><a href="#services">Web Tasarım</a></p>
+                  <p><a href="#services">SEO Hizmetleri</a></p>
+                  <p><a href="#services">E-Ticaret Çözümleri</a></p>
+                  <p><a href="#services">Google Ads</a></p>
+                  <p><a href="#services">Sosyal Medya Yönetimi</a></p>
+                  <p><a href="#services">Dijital Pazarlama</a></p>
+              </div>
+              <div class="footer-section">
+                  <h3>Kurumsal</h3>
+                  <p><a href="#portfolio">Portföyümüz</a></p>
+                  <p><a href="kurumsal.html">Hakkımızda</a></p>
+                  <p><a href="kurumsal.html#tarihce">Tarihçemiz</a></p>
+                  <p><a href="basin-kiti.html">Basında Biz</a></p>
+                  <p><a href="kurumsal.html#politikalar">Politikalarımız</a></p>
+                  <p><a href="#blog">Blog</a></p>
+                  <p><a href="#contact">İletişim</a></p>
+              </div>
+              <div class="footer-section">
+                  <h3>İletişim Bilgileri</h3>
+                  <p><i class="fas fa-map-marker-alt" style="margin-right: 8px; color: var(--color-primary);"></i>
+                  Müskebi, Düzalan Cd. No:69, 48400 Bodrum/Muğla</p>
+                  <p><i class="fas fa-phone" style="margin-right: 8px; color: var(--color-primary);"></i>
+                  +90 0530 942 9478</p>
+                  <p><i class="fas fa-envelope" style="margin-right: 8px; color: var(--color-primary);"></i>
+                  info@worldbilisim.com<br>iletisim@worldbilisim.com</p>
+              </div>
+          </div>
+      </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

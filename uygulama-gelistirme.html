@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Uygulama Geliştirme - World Bilişim</title>
+  <meta name="description" content="World Bilişim olarak mobil ve web uygulamaları geliştiriyoruz. iOS, Android ve cross-platform uygulamalar ile işinizi dijital world'da büyütün. Modern teknolojiler ve kullanıcı dostu arayüzler.">
+  <meta name="keywords" content="uygulama geliştirme, mobil uygulama, web uygulaması, iOS uygulama, Android uygulama, cross-platform uygulama, React Native, Flutter, Bodrum uygulama geliştirme">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Animated Background -->
+  <div class="animated-bg"></div>
+
+  <!-- Floating Particles -->
+  <div class="particles" id="particles"></div>
+
+  <!-- Loading Screen -->
+  <div class="loading" id="loading">
+      <div class="loading-spinner"></div>
+  </div>
+
+  <!-- Top Header Bar -->
+  <div class="top-header">
+      <div class="container">
+          <div class="top-header-content">
+              <div class="top-header-left">
+                  <a href="mailto:info@worldbilisim.com" class="top-header-item">
+                      <i class="fas fa-envelope"></i>
+                      info@worldbilisim.com
+                  </a>
+                  <a href="tel:+905309429478" class="top-header-item">
+                      <i class="fas fa-phone"></i>
+                      +90 0530 942 9478
+                  </a>
+                  <div class="top-header-item">
+                      <i class="fas fa-map-marker-alt"></i>
+                      Müskebi, Düzalan Cd. No:69, 48400 Bodrum/Muğla
+                  </div>
+              </div>
+              <div class="top-header-right">
+                  <button id="" class="theme-toggle" aria-label="Temayı Değiştir">
+                      <i class="fas fa-sun"></i>
+                  </button>
+                  <a href="#" class="customer-panel-link">
+                      <i class="fas fa-user-shield"></i>
+                      Müşteri Paneli
+                  </a>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header" id="header">
+      <nav class="nav container">
+          <div class="logo">
+              <div class="logo-icon">
+                  <i class="fas fa-globe"></i>
+              </div>
+              World Bilişim
+          </div>
+          <button class="menu-toggle" id="menuToggle" aria-label="Menüyü Aç/Kapat">
+              <i class="fas fa-bars"></i>
+          </button>
+          <ul class="nav-menu" id="navMenu">
+              <li><a href="index.html">Ana Sayfa</a></li>
+              <li class="dropdown">
+                  <a href="javascript:void(0);" id="kurumsalMenu" data-href="hakkimizda.html">Kurumsal <i class="fas fa-chevron-down" style="font-size: 0.8em;"></i></a>
+                  <ul class="dropdown-menu">
+                      <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                      <li><a href="hakkimizda.html#tarihce">Tarihçemiz</a></li>
+                      <li><a href="">Basında Biz</a></li>
+                      <li><a href="politikalar.html">Politikalarımız</a></li>
+                  </ul>
+              </li>
+              <li><a href="hizmetler.html">Hizmetlerimiz</a></li>
+              <li><a href="referanslar.html">Portföyümüz</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="iletisim.html">İletişim</a></li>
+              <li><a href="teklif-al.html" class="cta-nav">Ücretsiz Teklif</a></li>
+          </ul>
+      </nav>
+  </header>
+
+  <main>
+      <!-- Breadcrumb Section -->
+      <section class="breadcrumb-section">
+          <div class="container">
+              <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                      <li><a href="index.html">Ana Sayfa</a></li>
+                      <li><a href="hizmetler.html">Hizmetler</a></li>
+                      <li aria-current="page">Uygulama Geliştirme</li>
+                  </ol>
+              </nav>
+          </div>
+      </section>
+
+      <!-- Service Detail Hero Section -->
+      <section class="service-detail-hero">
+          <div class="container">
+              <div class="service-detail-hero-wrapper">
+                  <div class="service-detail-hero-content fade-in">
+                      <span class="section-badge">Modern Teknolojiler</span>
+                      <h1 class="hero-title">Uygulama Geliştirme</h1>
+                      <p class="hero-subtitle">
+                          Mobil ve web uygulamaları geliştiriyoruz. iOS, Android ve cross-platform uygulamalar ile işinizi dijital world'da büyütün. Modern teknolojiler ve kullanıcı dostu arayüzler.
+                      </p>
+                      <div class="service-features-list">
+                          <span><i class="fas fa-check-circle"></i> Mobil uygulama geliştirme</span>
+                          <span><i class="fas fa-check-circle"></i> Web uygulamaları</span>
+                          <span><i class="fas fa-check-circle"></i> Cross-platform çözümler</span>
+                          <span><i class="fas fa-check-circle"></i> Modern teknolojiler</span>
+                          <span><i class="fas fa-check-circle"></i> Kullanıcı dostu arayüzler</span>
+                      </div>
+                      <div class="hero-buttons">
+                          <a href="teklif-al.html" class="btn btn-primary">Hemen Başla</a>
+                          <a href="iletisim.html" class="btn btn-secondary">Ücretsiz Danışmanlık</a>
+                      </div>
+                  </div>
+                  <!-- Service Info Grid - Moved to Hero Section -->
+                  <div class="info-grid fade-in">
+                      <div class="info-card">
+                          <div class="info-icon"><i class="fas fa-clock"></i></div>
+                          <div class="info-text">
+                              <h3 class="info-title">Geliştirme Süresi</h3>
+                              <p class="info-value">4-12 hafta</p>
+                          </div>
+                      </div>
+                      <div class="info-card">
+                          <div class="info-icon"><i class="fas fa-star"></i></div>
+                          <div class="info-text">
+                              <h3 class="info-title">Deneyim Seviyesi</h3>
+                              <p class="info-value">Uzman (8+ yıl)</p>
+                          </div>
+                      </div>
+                      <div class="info-card">
+                          <div class="info-icon"><i class="fas fa-shield-alt"></i></div>
+                          <div class="info-text">
+                              <h3 class="info-title">Güvenlik</h3>
+                              <p class="info-value">SSL ve güvenlik paketi</p>
+                          </div>
+                      </div>
+                      <div class="info-card">
+                          <div class="info-icon"><i class="fas fa-sync-alt"></i></div>
+                          <div class="info-text">
+                              <h3 class="info-title">Güncelleme</h3>
+                              <p class="info-value">Ücretsiz güncellemeler</p>
+                          </div>
+                      </div>
+                      <div class="info-card">
+                          <div class="info-icon"><i class="fas fa-lira-sign"></i></div>
+                          <div class="info-text">
+                              <h3 class="info-title">Başlangıç Fiyatı</h3>
+                              <p class="info-value">₺15.000'den başlar</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <!-- How We Work Section - Application Development Process -->
+      <section class="how-we-work">
+          <div class="container">
+              <div class="section-header fade-in">
+                  <span class="section-badge">Çalışma Sürecimiz</span>
+                  <h2 class="section-title">Uygulama Geliştirme Süreci</h2>
+                  <p class="section-subtitle">
+                      Uygulamanızı 8 adımda profesyonel bir şekilde geliştiriyoruz.
+                  </p>
+              </div>
+              <div class="process-grid">
+                  <div class="process-step fade-in">
+                      <div class="process-number">1</div>
+                      <div class="process-icon">
+                          <i class="fas fa-lightbulb"></i>
+                      </div>
+                      <h3 class="process-title">Fikir & Analiz</h3>
+                      <p class="process-description">
+                          Uygulama fikrinizi analiz ediyor, hedef kitleyi belirliyor ve teknik gereksinimleri ortaya çıkarıyoruz.
+                      </p>
+                  </div>
+                  <div class="process-step fade-in">
+                      <div class="process-number">2</div>
+                      <div class="process-icon">
+                          <i class="fas fa-pencil-ruler"></i>
+                      </div>
+                      <h3 class="process-title">Tasarım & Prototip</h3>
+                      <p class="process-description">
+                          Kullanıcı deneyimi tasarımı yapıyor, wireframe'ler oluşturuyor ve interaktif prototipler hazırlıyoruz.
+                      </p>
+                  </div>
+                  <div class="process-step fade-in">
+                      <div class="process-number">3</div>
+                      <div class="process-icon">
+                          <i class="fas fa-code"></i>
+                      </div>
+                      <h3 class="process-title">Teknik Planlama</h3>
+                      <p class="process-description">
+                          Teknoloji stack'ini belirliyor, veritabanı yapısını planlıyor ve API tasarımını oluşturuyoruz.
+                      </p>
+                  </div>
+                  <div class="process-step fade-in">
+                      <div class="process-number">4</div>
+                      <div class="process-icon">
+                          <i class="fas fa-laptop-code"></i>
+                      </div>
+                      <h3 class="process-title">Geliştirme</h3>
+                      <p class="process-description">
+                          Frontend ve backend geliştirme sürecini başlatıyor, modüler yapıda kodlama yapıyoruz.
+                      </p>
+                  </div>
+                  <div class="process-step fade-in">
+                      <div class="process-number">5</div>
+                      <div class="process-icon">
+                          <i class="fas fa-database"></i>
+                      </div>
+                      <h3 class="process-title">Veritabanı & API</h3>
+                      <p class="process-description">
+                          Veritabanı yapısını kuruyor, API'leri geliştiriyor ve backend servislerini tamamlıyoruz.
+                      </p>
+                  </div>
+                  <div class="process-step fade-in">
+                      <div class="process-number">6</div>
+                      <div class="process-icon">
+                          <i class="fas fa-mobile-alt"></i>
+                      </div>
+                      <h3 class="process-title">Mobil Geliştirme</h3>
+                      <p class="process-description">
+                          iOS ve Android uygulamalarını geliştiriyor, cross-platform çözümler uyguluyoruz.
+                      </p>
+                  </div>
+                  <div class="process-step fade-in">
+                      <div class="process-number">7</div>
+                      <div class="process-icon">
+                          <i class="fas fa-vial"></i>
+                      </div>
+                      <h3 class="process-title">Test & Optimizasyon</h3>
+                      <p class="process-description">
+                          Kapsamlı testler yapıyor, performans optimizasyonu sağlıyor ve hataları gideriyoruz.
+                      </p>
+                  </div>
+                  <div class="process-step fade-in">
+                      <div class="process-number">8</div>
+                      <div class="process-icon">
+                          <i class="fas fa-rocket"></i>
+                      </div>
+                      <h3 class="process-title">Yayınlama & Destek</h3>
+                      <p class="process-description">
+                          Uygulamayı app store'larda yayınlıyor, kullanıcı eğitimi veriyor ve sürekli destek sağlıyoruz.
+                      </p>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <!-- Features Section -->
+      <section class="features-section">
+          <div class="container">
+              <div class="section-header fade-in">
+                  <span class="section-badge">Özelliklerimiz</span>
+                  <h2 class="section-title">Neden Uygulama Geliştirme?</h2>
+                  <p class="section-subtitle">
+                      Uygulama geliştirme hizmetlerimizde sunduğumuz değer katma özellikler.
+                  </p>
+              </div>
+              <div class="features-grid">
+                  <div class="feature-card fade-in">
+                      <div class="feature-icon-wrapper">
+                          <i class="fas fa-mobile-alt feature-icon"></i>
+                      </div>
+                      <h3 class="feature-title">Mobil Uygulama Geliştirme</h3>
+                      <p class="feature-description">iOS ve Android platformları için native uygulamalar geliştiriyoruz. Kullanıcı deneyimi odaklı tasarım ve modern teknolojiler.</p>
+                      <ul class="feature-list">
+                          <li><i class="fas fa-check"></i> iOS uygulama geliştirme</li>
+                          <li><i class="fas fa-check"></i> Android uygulama geliştirme</li>
+                          <li><i class="fas fa-check"></i> Native performans</li>
+                          <li><i class="fas fa-check"></i> Platform özel özellikler</li>
+                      </ul>
+                  </div>
+                  <div class="feature-card fade-in">
+                      <div class="feature-icon-wrapper">
+                          <i class="fas fa-globe feature-icon"></i>
+                      </div>
+                      <h3 class="feature-title">Web Uygulamaları</h3>
+                      <p class="feature-description">Modern web teknolojileri ile responsive ve hızlı web uygulamaları geliştiriyoruz. PWA desteği ve offline çalışma.</p>
+                      <ul class="feature-list">
+                          <li><i class="fas fa-check"></i> Progressive Web Apps</li>
+                          <li><i class="fas fa-check"></i> Responsive tasarım</li>
+                          <li><i class="fas fa-check"></i> Offline çalışma</li>
+                          <li><i class="fas fa-check"></i> Cross-browser uyumluluk</li>
+                      </ul>
+                  </div>
+                  <div class="feature-card fade-in">
+                      <div class="feature-icon-wrapper">
+                          <i class="fas fa-layer-group feature-icon"></i>
+                      </div>
+                      <h3 class="feature-title">Cross-Platform Geliştirme</h3>
+                      <p class="feature-description">React Native ve Flutter ile tek kod tabanından hem iOS hem Android uygulamaları geliştiriyoruz.</p>
+                      <ul class="feature-list">
+                          <li><i class="fas fa-check"></i> React Native</li>
+                          <li><i class="fas fa-check"></i> Flutter</li>
+                          <li><i class="fas fa-check"></i> Tek kod tabanı</li>
+                          <li><i class="fas fa-check"></i> Hızlı geliştirme</li>
+                      </ul>
+                  </div>
+                  <div class="feature-card fade-in">
+                      <div class="feature-icon-wrapper">
+                          <i class="fas fa-cogs feature-icon"></i>
+                      </div>
+                      <h3 class="feature-title">Backend & API Geliştirme</h3>
+                      <p class="feature-description">Güçlü backend sistemleri ve RESTful API'ler geliştiriyoruz. Ölçeklenebilir ve güvenli çözümler.</p>
+                      <ul class="feature-list">
+                          <li><i class="fas fa-check"></i> RESTful API'ler</li>
+                          <li><i class="fas fa-check"></i> Microservices</li>
+                          <li><i class="fas fa-check"></i> Veritabanı tasarımı</li>
+                          <li><i class="fas fa-check"></i> Güvenlik optimizasyonu</li>
+                      </ul>
+                  </div>
+                  <div class="feature-card fade-in">
+                      <div class="feature-icon-wrapper">
+                          <i class="fas fa-paint-brush feature-icon"></i>
+                      </div>
+                      <h3 class="feature-title">UI/UX Tasarım</h3>
+                      <p class="feature-description">Kullanıcı deneyimi odaklı tasarım yapıyoruz. Modern arayüzler ve sezgisel kullanıcı deneyimi.</p>
+                      <ul class="feature-list">
+                          <li><i class="fas fa-check"></i> Kullanıcı deneyimi tasarımı</li>
+                          <li><i class="fas fa-check"></i> Modern arayüzler</li>
+                          <li><i class="fas fa-check"></i> Prototip geliştirme</li>
+                          <li><i class="fas fa-check"></i> Kullanıcı testleri</li>
+                      </ul>
+                  </div>
+                  <div class="feature-card fade-in">
+                      <div class="feature-icon-wrapper">
+                          <i class="fas fa-cloud feature-icon"></i>
+                      </div>
+                      <h3 class="feature-title">Cloud & DevOps</h3>
+                      <p class="feature-description">Cloud tabanlı çözümler ve DevOps süreçleri ile uygulamanızı güvenli ve ölçeklenebilir hale getiriyoruz.</p>
+                      <ul class="feature-list">
+                          <li><i class="fas fa-check"></i> Cloud deployment</li>
+                          <li><i class="fas fa-check"></i> CI/CD pipeline</li>
+                          <li><i class="fas fa-check"></i> Monitoring & analytics</li>
+                          <li><i class="fas fa-check"></i> Otomatik yedekleme</li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <!-- About Application Development Section -->
+      <section class="about-web-design">
+          <div class="container">
+              <div class="section-header fade-in">
+                  <span class="section-badge">Uygulama Geliştirme Hakkında</span>
+                  <h2 class="section-title">Uygulama Geliştirme Nedir?</h2>
+              </div>
+              <div class="about-content">
+                  <div class="about-text-container fade-in">
+                      <p>Uygulama geliştirme, mobil ve web platformları için yazılım uygulamaları oluşturma sürecidir. Bu süreç, kullanıcı ihtiyaçlarını analiz etmekten başlayarak, tasarım, geliştirme, test ve yayınlama aşamalarını kapsar. Modern teknolojiler kullanılarak kullanıcı dostu, performanslı ve güvenli uygulamalar geliştirilir.</p>
+                      <h3>Mobil Uygulama Geliştirme</h3>
+                      <p>Mobil uygulama geliştirme, iOS ve Android platformları için özel olarak tasarlanmış uygulamalar oluşturma sürecidir. Native geliştirme ile platform özel özelliklerden yararlanılırken, cross-platform geliştirme ile tek kod tabanından her iki platforma uygulama geliştirilebilir. React Native, Flutter gibi modern framework'ler kullanılarak hızlı ve etkili geliştirme yapılır.</p>
+                      <h3>Web Uygulaması Geliştirme</h3>
+                      <p>Web uygulamaları, tarayıcı üzerinden erişilebilen ve kullanıcıların ihtiyaçlarını karşılayan yazılım çözümleridir. Progressive Web Apps (PWA) teknolojisi ile mobil uygulama deneyimi sunan web uygulamaları geliştirilir. Responsive tasarım, offline çalışma ve push notification gibi özellikler ile kullanıcı deneyimi en üst seviyeye çıkarılır.</p>
+                      <h3>Backend ve API Geliştirme</h3>
+                      <p>Uygulamanın arka planında çalışan backend sistemleri, veritabanı yönetimi, API geliştirme ve sunucu yönetimi süreçlerini kapsar. RESTful API'ler, microservices mimarisi ve cloud tabanlı çözümler ile ölçeklenebilir ve güvenli backend sistemleri oluşturulur. Node.js, Python, Java gibi modern teknolojiler kullanılarak güçlü backend sistemleri geliştirilir.</p>
+                      <h3>UI/UX Tasarım</h3>
+                      <p>Kullanıcı arayüzü (UI) ve kullanıcı deneyimi (UX) tasarımı, uygulamanın başarısında kritik rol oynar. Kullanıcı odaklı tasarım yaklaşımı ile sezgisel, kullanıcı dostu ve görsel olarak çekici arayüzler oluşturulur. Prototip geliştirme, kullanıcı testleri ve sürekli iyileştirme süreçleri ile en iyi kullanıcı deneyimi sağlanır.</p>
+                      <h3>Test ve Kalite Güvencesi</h3>
+                      <p>Uygulama geliştirme sürecinin en önemli aşamalarından biri test ve kalite güvencesidir. Unit testler, integration testler, UI testler ve kullanıcı kabul testleri ile uygulamanın kalitesi garanti altına alınır. Performans optimizasyonu, güvenlik testleri ve kullanılabilirlik testleri ile uygulama production'a hazır hale getirilir.</p>
+                  </div>
+                  <div class="about-sidebar fade-in">
+                      <div class="sidebar-card">
+                          <h4>Hızlı Bilgiler</h4>
+                          <ul>
+                              <li><i class="fas fa-check-circle"></i> Ortalama Geliştirme Süresi: <strong>4-12 hafta</strong></li>
+                              <li><i class="fas fa-check-circle"></i> %100 Mobil Uyumlu</li>
+                              <li><i class="fas fa-check-circle"></i> Cross-Platform Destek</li>
+                              <li><i class="fas fa-check-circle"></i> Modern Teknolojiler</li>
+                              <li><i class="fas fa-check-circle"></i> 6 Ay Ücretsiz Destek</li>
+                          </ul>
+                      </div>
+                      <div class="sidebar-card">
+                          <h4>Teknoloji Stack'i</h4>
+                          <ul>
+                              <li><i class="fas fa-check-circle"></i> React Native</li>
+                              <li><i class="fas fa-check-circle"></i> Flutter</li>
+                              <li><i class="fas fa-check-circle"></i> Node.js</li>
+                              <li><i class="fas fa-check-circle"></i> Python</li>
+                              <li><i class="fas fa-check-circle"></i> MongoDB</li>
+                              <li><i class="fas fa-check-circle"></i> AWS/Azure</li>
+                              <li><i class="fas fa-check-circle"></i> Docker</li>
+                              <li><i class="fas fa-check-circle"></i> Git</li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <!-- Additional Services Section -->
+      <section class="additional-services">
+          <div class="container">
+              <div class="section-header fade-in">
+                  <span class="section-badge">Ek Hizmetler</span>
+                  <h2 class="section-title">Uygulamanızı Daha da Güçlendirin</h2>
+                  <p class="section-subtitle">
+                      Uygulama geliştirme hizmetimizle birlikte alabileceğiniz ek hizmetler.
+                  </p>
+              </div>
+              <div class="additional-services-grid">
+                  <div class="additional-service-card fade-in">
+                      <h3 class="service-title">App Store Optimizasyonu</h3>
+                      <p class="service-description">Uygulamanızı app store'larda üst sıralara taşıyın</p>
+                      <ul class="service-features">
+                          <li><i class="fas fa-check"></i> ASO stratejisi</li>
+                          <li><i class="fas fa-check"></i> Anahtar kelime optimizasyonu</li>
+                          <li><i class="fas fa-check"></i> Görsel optimizasyonu</li>
+                      </ul>
+                      <div class="service-price">
+                          <span>+₺2.500</span>
+                          <button class="btn btn-primary btn-small">Ekle</button>
+                      </div>
+                  </div>
+                  <div class="additional-service-card fade-in">
+                      <h3 class="service-title">Analytics & Monitoring</h3>
+                      <p class="service-description">Uygulama performansını izleyin ve analiz edin</p>
+                      <ul class="service-features">
+                          <li><i class="fas fa-check"></i> Kullanıcı davranış analizi</li>
+                          <li><i class="fas fa-check"></i> Performans izleme</li>
+                          <li><i class="fas fa-check"></i> Hata takibi</li>
+                      </ul>
+                      <div class="service-price">
+                          <span>+₺1.800/ay</span>
+                          <button class="btn btn-primary btn-small">Ekle</button>
+                      </div>
+                  </div>
+                  <div class="additional-service-card fade-in">
+                      <h3 class="service-title">Push Notification</h3>
+                      <p class="service-description">Kullanıcılarınızla etkileşimi artırın</p>
+                      <ul class="service-features">
+                          <li><i class="fas fa-check"></i> Otomatik bildirimler</li>
+                          <li><i class="fas fa-check"></i> Segmentasyon</li>
+                          <li><i class="fas fa-check"></i> A/B testleri</li>
+                      </ul>
+                      <div class="service-price">
+                          <span>+₺1.200/ay</span>
+                          <button class="btn btn-primary btn-small">Ekle</button>
+                      </div>
+                  </div>
+                  <div class="additional-service-card fade-in">
+                      <h3 class="service-title">Cloud Hosting</h3>
+                      <p class="service-description">Yüksek performans ve güvenlik</p>
+                      <ul class="service-features">
+                          <li><i class="fas fa-check"></i> AWS/Azure hosting</li>
+                          <li><i class="fas fa-check"></i> Otomatik ölçeklendirme</li>
+                          <li><i class="fas fa-check"></i> SSL sertifikası</li>
+                      </ul>
+                      <div class="service-price">
+                          <span>+₺500/ay</span>
+                          <button class="btn btn-primary btn-small">Ekle</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <!-- Social Proof & Certifications - Specific for Application Development -->
+      <section class="social-proof">
+          <div class="container">
+              <div class="section-header fade-in">
+                  <span class="section-badge">Güven & Sertifikalar</span>
+                  <h2 class="section-title">Güvenilir Uygulama Geliştirme Ortağınız</h2>
+                  <p class="section-subtitle">
+                      Uygulama geliştirme alanındaki uzmanlığımızı kanıtlayan başarılarımız.
+                  </p>
+              </div>
+              <div class="certifications-grid">
+                  <div class="certification-item fade-in">
+                      <div class="certification-icon">
+                          <i class="fas fa-mobile-alt"></i>
+                      </div>
+                      <h4 class="certification-name">150+ Uygulama</h4>
+                      <p class="certification-desc">Başarıyla geliştirilen uygulamalar</p>
+                  </div>
+                  <div class="certification-item fade-in">
+                      <div class="certification-icon">
+                          <i class="fas fa-star"></i>
+                      </div>
+                      <h4 class="certification-name">8+ Yıl Deneyim</h4>
+                      <p class="certification-desc">Uygulama geliştirme alanında uzman ekip</p>
+                  </div>
+                  <div class="certification-item fade-in">
+                      <div class="certification-icon">
+                          <i class="fas fa-users"></i>
+                      </div>
+                      <h4 class="certification-name">50K+ Kullanıcı</h4>
+                      <p class="certification-desc">Geliştirdiğimiz uygulamaları kullanan kişi</p>
+                  </div>
+                  <div class="certification-item fade-in">
+                      <div class="certification-icon">
+                          <i class="fas fa-lock"></i>
+                      </div>
+                      <h4 class="certification-name">Güvenlik Uzmanı</h4>
+                      <p class="certification-desc">Uygulama güvenlik uzmanlığı</p>
+                  </div>
+                  <div class="certification-item fade-in">
+                      <div class="certification-icon">
+                          <i class="fas fa-smile"></i>
+                      </div>
+                      <h4 class="certification-name">%98 Memnuniyet</h4>
+                      <p class="certification-desc">Uygulama geliştirme müşteri memnuniyet oranımız</p>
+                  </div>
+                  <div class="certification-item fade-in">
+                      <div class="certification-icon">
+                          <i class="fas fa-headset"></i>
+                      </div>
+                      <h4 class="certification-name">7/24 Teknik Destek</h4>
+                      <p class="certification-desc">Kesintisiz uygulama teknik destek hizmeti</p>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <!-- Reference Works Section - Specific for Application Development -->
+      <section class="reference-works">
+          <div class="container">
+              <div class="section-header fade-in">
+                  <span class="section-badge">Referans Çalışmalarımız</span>
+                  <h2 class="section-title">Uygulama Projelerimiz</h2>
+                  <p class="section-subtitle">
+                      Farklı sektörlerden müşterilerimiz için gerçekleştirdiğimiz uygulama geliştirme projeleri.
+                  </p>
+              </div>
+
+              <div class="portfolio-cards-grid">
+                  <div class="portfolio-detail-card fade-in">
+                      <div class="portfolio-detail-image">
+                          <i class="fas fa-shopping-cart"></i>
+                      </div>
+                      <div class="portfolio-detail-content">
+                          <h3 class="portfolio-detail-title">E-ticaret Mobil Uygulaması</h3>
+                          <span class="portfolio-detail-client">Bodrum Moda Markası</span>
+                          <p class="portfolio-detail-description">Bodrum'da faaliyet gösteren moda markası için iOS ve Android uygulaması. Ürün kataloğu, sepet yönetimi ve ödeme sistemi entegrasyonu.</p>
+                          <div class="portfolio-stats">
+                              <div class="stat-item">
+                                  <span class="stat-number">450%</span>
+                                  <span class="stat-label">Mobil Satış</span>
+                              </div>
+                              <div class="stat-item">
+                                  <span class="stat-number">95%</span>
+                                  <span class="stat-label">Müşteri Memnuniyeti</span>
+                              </div>
+                          </div>
+                          <div class="portfolio-detail-tags">
+                              <span class="portfolio-tag">React Native</span>
+                              <span class="portfolio-tag">E-ticaret</span>
+                              <span class="portfolio-tag">Payment Gateway</span>
+                          </div>
+                          <a href="#" class="portfolio-detail-link">Projeyi İncele <i class="fas fa-arrow-right"></i></a>
+                      </div>
+                  </div>
+                  <div class="portfolio-detail-card fade-in">
+                      <div class="portfolio-detail-image" style="background: var(--gradient-button-accent);">
+                          <i class="fas fa-utensils"></i>
+                      </div>
+                      <div class="portfolio-detail-content">
+                          <h3 class="portfolio-detail-title">Restoran Rezervasyon Uygulaması</h3>
+                          <span class="portfolio-detail-client">Bodrum Restoran Zinciri</span>
+                          <p class="portfolio-detail-description">Bodrum'daki restoran zinciri için rezervasyon uygulaması. Masa rezervasyonu, menü görüntüleme ve online sipariş sistemi.</p>
+                          <div class="portfolio-stats">
+                              <div class="stat-item">
+                                  <span class="stat-number">320%</span>
+                                  <span class="stat-label">Online Rezervasyon</span>
+                              </div>
+                              <div class="stat-item">
+                                  <span class="stat-number">98%</span>
+                                  <span class="stat-label">Müşteri Memnuniyeti</span>
+                              </div>
+                          </div>
+                          <div class="portfolio-detail-tags">
+                              <span class="portfolio-tag">Flutter</span>
+                              <span class="portfolio-tag">Rezervasyon</span>
+                              <span class="portfolio-tag">Real-time</span>
+                          </div>
+                          <a href="#" class="portfolio-detail-link">Projeyi İncele <i class="fas fa-arrow-right"></i></a>
+                      </div>
+                  </div>
+                  <div class="portfolio-detail-card fade-in">
+                      <div class="portfolio-detail-image" style="background: var(--gradient-button-tertiary);">
+                          <i class="fas fa-car"></i>
+                      </div>
+                      <div class="portfolio-detail-content">
+                          <h3 class="portfolio-detail-title">Araç Kiralama Uygulaması</h3>
+                          <span class="portfolio-detail-client">Bodrum Turizm Şirketi</span>
+                          <p class="portfolio-detail-description">Bodrum'da araç kiralama hizmeti veren şirket için mobil uygulama. Araç rezervasyonu, konum takibi ve ödeme sistemi.</p>
+                          <div class="portfolio-stats">
+                              <div class="stat-item">
+                                  <span class="stat-number">280%</span>
+                                  <span class="stat-label">Online Rezervasyon</span>
+                              </div>
+                              <div class="stat-item">
+                                  <span class="stat-number">92%</span>
+                                  <span class="stat-label">Müşteri Memnuniyeti</span>
+                              </div>
+                          </div>
+                          <div class="portfolio-detail-tags">
+                              <span class="portfolio-tag">React Native</span>
+                              <span class="portfolio-tag">GPS Tracking</span>
+                              <span class="portfolio-tag">Payment System</span>
+                          </div>
+                          <a href="#" class="portfolio-detail-link">Projeyi İncele <i class="fas fa-arrow-right"></i></a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <!-- FAQ Section - Specific for Application Development -->
+      <section class="faq">
+          <div class="container">
+              <div class="section-header fade-in">
+                  <span class="section-badge">Sıkça Sorulan Sorular</span>
+                  <h2 class="section-title">Uygulama geliştirme hakkında merak ettikleriniz.</h2>
+              </div>
+              <div class="faq-container">
+                  <div class="faq-item fade-in">
+                      <div class="faq-question">
+                          <span>Uygulama geliştirme süreci ne kadar sürer?</span>
+                          <i class="fas fa-plus faq-icon"></i>
+                      </div>
+                      <div class="faq-answer">
+                          <div class="faq-answer-content">
+                              Uygulama geliştirme süreci, uygulamanın karmaşıklığına ve özelliklerine bağlı olarak 4-12 hafta arasında değişir. Basit uygulamalar 4-6 hafta, orta karmaşıklıktaki uygulamalar 6-8 hafta, karmaşık uygulamalar ise 8-12 hafta sürebilir.
+                          </div>
+                      </div>
+                  </div>
+                  <div class="faq-item fade-in">
+                      <div class="faq-question">
+                          <span>Hangi platformlar için uygulama geliştiriyorsunuz?</span>
+                          <i class="fas fa-plus faq-icon"></i>
+                      </div>
+                      <div class="faq-answer">
+                          <div class="faq-answer-content">
+                              iOS, Android ve web platformları için uygulama geliştiriyoruz. Cross-platform geliştirme ile React Native ve Flutter kullanarak tek kod tabanından hem iOS hem Android uygulamaları geliştirebiliyoruz. Ayrıca Progressive Web Apps (PWA) teknolojisi ile web uygulamaları da geliştiriyoruz.
+                          </div>
+                      </div>
+                  </div>
+                  <div class="faq-item fade-in">
+                      <div class="faq-question">
+                          <span>Uygulama geliştirme fiyatlarına ne dahil?</span>
+                          <i class="fas fa-plus faq-icon"></i>
+                      </div>
+                      <div class="faq-answer">
+                          <div class="faq-answer-content">
+                              Uygulama geliştirme fiyatlarımıza analiz, tasarım, geliştirme, test, yayınlama ve 6 ay boyunca ücretsiz teknik destek dahildir. Ayrıca, uygulama store'larda yayınlama, dokümantasyon ve kullanıcı eğitimi de sunuyoruz.
+                          </div>
+                      </div>
+                  </div>
+                  <div class="faq-item fade-in">
+                      <div class="faq-question">
+                          <span>Uygulamanızı güncelleyebilir miyiz?</span>
+                          <i class="fas fa-plus faq-icon"></i>
+                      </div>
+                      <div class="faq-answer">
+                          <div class="faq-answer-content">
+                              Evet, tüm uygulamalarımız güncellenebilir yapıda tasarlanmıştır. Yeni özellikler ekleyebilir, mevcut özellikleri güncelleyebilir ve performans iyileştirmeleri yapabiliriz. Ayrıca, sürekli destek hizmeti ile uygulamanızı güncel tutuyoruz.
+                          </div>
+                      </div>
+                  </div>
+                  <div class="faq-item fade-in">
+                      <div class="faq-question">
+                          <span>Uygulama güvenliği nasıl sağlanıyor?</span>
+                          <i class="fas fa-plus faq-icon"></i>
+                      </div>
+                      <div class="faq-answer">
+                          <div class="faq-answer-content">
+                              Uygulama güvenliği, geliştirme sürecinin her aşamasında göz önünde bulundurulur. SSL sertifikaları, şifreleme, güvenli API'ler, kullanıcı kimlik doğrulama ve veri koruma önlemleri ile uygulamanızın güvenliği garanti altına alınır.
+                          </div>
+                      </div>
+                  </div>
+                  <div class="faq-item fade-in">
+                      <div class="faq-question">
+                          <span>Uygulama yayınlama süreci nasıl işliyor?</span>
+                          <i class="fas fa-plus faq-icon"></i>
+                      </div>
+                      <div class="faq-answer">
+                          <div class="faq-answer-content">
+                              Uygulama yayınlama süreci, app store'lara uygun formatta hazırlama, gerekli dokümantasyonu hazırlama, review sürecini yönetme ve yayınlama aşamalarını kapsar. Tüm süreç boyunca size rehberlik ediyoruz.
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <!-- Call to Action Section -->
+      <section class="cta-section">
+          <div class="container">
+              <div class="cta-content fade-in">
+                  <h2 class="cta-title">Uygulamanızı Geliştirmeye Hazır mısınız?</h2>
+                  <p class="cta-subtitle">Modern teknolojiler ve uzman ekibimizle uygulamanızı hayata geçirin. Ücretsiz danışmanlık için hemen iletişime geçin.</p>
+                  <div class="cta-buttons">
+                      <a href="teklif-al.html" class="btn btn-primary">Ücretsiz Teklif Al</a>
+                      <a href="tel:+905309429478" class="btn btn-secondary">Hemen Arayın</a>
+                  </div>
+              </div>
+          </div>
+      </section>
+  </main>
+
+  <!-- Chat Widget -->
+        <div class="chat-widget">
+            <div class="chat-menu" id="chatMenu">
+                <a href="https://wa.me/905309429478" class="chat-option" target="_blank">
+                    <div class="chat-option-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <div class="chat-option-content">
+                        <h4>WhatsApp</h4>
+                        <p>Hızlı destek için</p>
+                    </div>
+                </a>
+
+                <a href="tel:+905309429478" class="chat-option">
+                    <div class="chat-option-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="chat-option-content">
+                        <h4>Telefon Araması</h4>
+                        <p>Doğrudan görüşme</p>
+                    </div>
+                </a>
+
+                <a href="#" class="chat-option" id="chatbotOption">
+                    <div class="chat-option-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <div class="chat-option-content">
+                        <h4>Canlı Destek</h4>
+                        <p>Online danışmanlık</p>
+                    </div>
+                </a>
+
+                <!-- ✅ Tema Değiştir butonu (a değil, button) -->
+                <div class="chat-option theme-option">
+                    <div class="chat-option-icon">
+                        <i class="fas fa-sun"></i>
+                    </div>
+                    <div class="chat-option-content">
+                        <h4>Tema Değiştir</h4>
+                        <p>Açık / Koyu mod</p>
+                    </div>
+                    <button id="themeToggle" class="theme-toggle" aria-label="Temayı Değiştir"></button>
+                </div>
+            </div>
+
+            <button class="chat-toggle" id="chatToggle">
+                <i class="fas fa-comments"></i>
+            </button>
+        </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+      <div class="container">
+          <div class="footer-content">
+              <div class="footer-section">
+                  <div class="footer-logo">
+                      <div class="footer-logo-icon">
+                          <i class="fas fa-globe"></i>
+                      </div>
+                                              <div class="footer-logo-text">World Bilişim</div>
+                  </div>
+                  <p>
+                      Bodrum'da dijital pazarlama, web tasarım ve SEO hizmetleri sunan lider ajans. 
+                                              Modern teknolojiler ve yenilikçi çözümlerle markanızı dijital world'da zirveye taşıyoruz.
+                  </p>
+                  <div class="social-links">
+                      <a href="https://facebook.com/dunyabil" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                      <a href="https://twitter.com/dunyabil" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                      <a href="https://instagram.com/dunyabil" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                      <a href="https://linkedin.com/company/dunyabil" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                      <a href="https://youtube.com/@dunyabil" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                      <a href="https://wa.me/905309429478" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                  </div>
+              </div>
+              <div class="footer-section">
+                  <h3>Hizmetlerimiz</h3>
+                  <p><a href="#services">Web Tasarım</a></p>
+                  <p><a href="#services">WordPress Geliştirme</a></p>
+                  <p><a href="#services">Sektörel Hazır Siteler</a></p>
+                  <p><a href="#services">Uygulama Geliştirme</a></p>
+                  <p><a href="#services">SEO Hizmetleri</a></p>
+                  <p><a href="#services">E-Ticaret Çözümleri</a></p>
+              </div>
+              <div class="footer-section">
+                  <h3>Kurumsal</h3>
+                  <p><a href="#portfolio">Portföyümüz</a></p>
+                  <p><a href="kurumsal.html">Hakkımızda</a></p>
+                  <p><a href="kurumsal.html#tarihce">Tarihçemiz</a></p>
+                  <p><a href="basin-kiti.html">Basında Biz</a></p>
+                  <p><a href="kurumsal.html#politikalar">Politikalarımız</a></p>
+                  <p><a href="#blog">Blog</a></p>
+                  <p><a href="#contact">İletişim</a></p>
+              </div>
+              <div class="footer-section">
+                  <h3>İletişim Bilgileri</h3>
+                  <p><i class="fas fa-map-marker-alt" style="margin-right: 8px; color: var(--color-primary);"></i>
+                  Müskebi, Düzalan Cd. No:69, 48400 Bodrum/Muğla</p>
+                  <p><i class="fas fa-phone" style="margin-right: 8px; color: var(--color-primary);"></i>
+                  +90 0530 942 9478</p>
+                  <p><i class="fas fa-envelope" style="margin-right: 8px; color: var(--color-primary);"></i>
+                  info@worldbilisim.com<br>iletisim@worldbilisim.com</p>
+              </div>
+          </div>
+      </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+  <script>
+      // FAQ Accordion (if not already in script.js)
+      document.querySelectorAll('.faq-question').forEach(question => {
+          question.addEventListener('click', () => {
+              const faqItem = question.closest('.faq-item');
+              if (!faqItem) return;
+
+              const isActive = faqItem.classList.contains('active');
+              // Close all other open FAQs
+              document.querySelectorAll('.faq-item.active').forEach(item => {
+                  if (item !== faqItem) {
+                      item.classList.remove('active');
+                  }
+              });
+              // Toggle current FAQ
+              if (!isActive) {
+                  faqItem.classList.add('active');
+              } else {
+                  faqItem.classList.remove('active');
+              }
+          });
+      });
+  </script>
+</body>
+</html>
